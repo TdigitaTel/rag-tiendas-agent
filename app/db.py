@@ -1,23 +1,25 @@
-import os
-from sqlalchemy import create_engine, text
-from dotenv import load_dotenv
+from llama_index.vector_stores.postgres import PGVectorStore
+from app.config import DB_CONFIG
+from app.logger import get_logger
+from llama_index.vector_stores.postgres import PGVectorStore
+from app.config import DB_CONFIG
+from app.logger import get_logger
 
-print("🚀 Ejecutando db.py...")
+logger = get_logger(__name__)
 
-load_dotenv()
+def get_vector_store():
+    logger.info("🔌 Conectando a PostgreSQL")
 
-DB_URL = os.getenv("DB_URL")
-print("DB_URL:", DB_URL)
+    store = PGVectorStore.from_params(
+        database=DB_CONFIG["database"],
+        host=DB_CONFIG["host"],
+        port=DB_CONFIG["port"],
+        user=DB_CONFIG["user"],
+        password=DB_CONFIG["password"],
+        table_name=DB_CONFIG["table_name"],
+        embed_dim=DB_CONFIG["embed_dim"],
+        perform_setup=True
+    )
 
-engine = create_engine(DB_URL)
-
-def test_connection():
-    try:
-        with engine.connect() as connection:
-            result = connection.execute(text("SELECT 1"))
-            print("✅ Conexión exitosa:", list(result))
-    except Exception as e:
-        print("❌ Error de conexión:", e)
-
-if __name__ == "__main__":
-    test_connection()
+    logger.info("✅ PostgreSQL listo")
+    return store
