@@ -1,5 +1,4 @@
 from sqlalchemy import create_engine, text
-
 from llama_index.core import VectorStoreIndex
 from llama_index.vector_stores.postgres import PGVectorStore
 
@@ -9,7 +8,10 @@ from app.logger import get_logger
 logger = get_logger(__name__)
 
 
-# 🔌 conexión SQL
+# ==============================
+# 🔌 CONEXIONES
+# ==============================
+
 def get_db_url():
     return (
         f"postgresql://{DB_CONFIG['user']}:{DB_CONFIG['password']}@"
@@ -17,7 +19,6 @@ def get_db_url():
     )
 
 
-# 🔌 conexión vectorial
 def get_vector_store():
     return PGVectorStore.from_params(
         database=DB_CONFIG["database"],
@@ -33,20 +34,29 @@ def get_vector_store():
 engine = create_engine(get_db_url())
 
 
-# 🧠 NORMALIZACIÓN (LLM)
+# ==============================
+# 🧠 NORMALIZACIÓN
+# ==============================
+
 def normalizar_query(q: str) -> str:
     prompt = f"""
-Convierte esta consulta en una búsqueda corta de productos.
+Convierte esta consulta en una búsqueda de productos optimizada para catálogo.
 
 Reglas:
-- elimina palabras innecesarias
-- corrige errores
-- mantén términos técnicos
-- no expliques nada
 
-Ejemplos:
-"tienes stock de codos de media" → codo 1/2
-"tubo aluminio blanco" → tubo aluminio blanco
+- usa SIEMPRE singular (machones → machon)
+- corrige errores (mcho → machon)
+
+- normaliza medidas:
+  - media → 1/2
+  - tres cuartos → 3/4
+  - una pulgada → 1"
+  - pulgadas → "
+
+- usa términos típicos de producto (codo, tubo, machon, latiguillo…)
+- elimina palabras irrelevantes (hola, tienes, stock…)
+- no expliques nada
+- devuelve solo la búsqueda final
 
 Consulta:
 {q}
@@ -54,15 +64,11 @@ Consulta:
     return LLM.complete(prompt).text.strip().lower()
 
 
-# 🚀 FUNCIÓN PRINCIPAL
-def asesor_stock(question: str) -> str:
-    logger.info(f"📦 STOCK query: {question}")
+# ==============================
+# 🔎 VECTOR SEARCH
+# ==============================
 
-    # 🔹 1. normalizar
-    query_clean = normalizar_query(question)
-    logger.info(f"🧠 Query normalizada: {query_clean}")
-
-    # 🔹 2. vector search
+def buscar_vectores(query_clean: str):
     vector_store = get_vector_store()
 
     index = VectorStoreIndex.from_vector_store(
@@ -71,60 +77,119 @@ def asesor_stock(question: str) -> str:
     )
 
     query_engine = index.as_query_engine(similarity_top_k=30)
-
     results = query_engine.query(query_clean)
 
-    # 🔍 DEBUG VECTOR
-    logger.info("📊 Resultados vectoriales:")
-    for i, node in enumerate(results.source_nodes):
-        logger.info(
-            f"{i} | score={node.score:.4f} | "
-            f"articulo={node.metadata.get('articulo')} | "
-            f"texto={node.text[:80]}"
-        )
+    return results.source_nodes
 
-    # 🔹 3. construir candidatos
+
+# ==============================
+# 🔍 VALIDACIÓN DE DOMINIO (🔥 NUEVO)
+# ==============================
+
+def es_producto_valido(nodes):
+    if not nodes:
+        return False
+
+    top_score = nodes[0].score
+
+    # 🔥 threshold realista
+    if top_score < 0.55:
+        logger.warning(f"❌ Score bajo → {top_score}")
+        return False
+
+    return True
+
+
+# ==============================
+# 🔍 FILTRO INTELIGENTE
+# ==============================
+
+def filtrar_por_palabras(nodes, query_clean):
+    palabras = query_clean.split()
+
+    medida = next((p for p in palabras if "/" in p or '"' in p), None)
+
+    resultados = []
+
+    for node in nodes:
+        texto = node.text.lower()
+
+        # medida obligatoria
+        if medida and medida not in texto:
+            continue
+
+        matches = sum(1 for p in palabras if p in texto)
+
+        resultados.append({
+            "node": node,
+            "matches": matches,
+            "score": node.score
+        })
+
+    # 🔥 FILTRO DURO
+    resultados_filtrados = [r for r in resultados if r["matches"] >= 2]
+
+    # 🔥 fallback correcto (NO romper)
+    if not resultados_filtrados:
+        logger.warning("⚠️ fallback activado")
+        resultados_filtrados = resultados
+
+    resultados_filtrados.sort(
+        key=lambda x: (x["matches"], x["score"]),
+        reverse=True
+    )
+
+    return [r["node"] for r in resultados_filtrados]
+
+
+# ==============================
+# 🎯 ARTÍCULOS
+# ==============================
+
+def obtener_articulos(nodes):
     candidatos = []
 
-    for node in results.source_nodes:
-        score = node.score
+    for node in nodes:
         art = node.metadata.get("articulo")
-
         if art:
-            candidatos.append((score, str(art)))
+            candidatos.append((node.score, str(art)))
 
-    logger.info(f"📦 Total candidatos: {len(candidatos)}")
-
-    for c in candidatos[:10]:
-        logger.info(f"score={c[0]:.4f} articulo={c[1]}")
-
-    # 🔹 4. ordenar por score
     candidatos.sort(key=lambda x: x[0], reverse=True)
 
-    # 🔹 5. detectar si hay resultados reales
-    MAX_SCORE = max([c[0] for c in candidatos], default=0)
+    # 🔥 límite controlado
+    candidatos = candidatos[:10]
 
-    logger.info(f"📈 Max score: {MAX_SCORE:.4f}")
+    return [c[1] for c in candidatos]
 
-    if MAX_SCORE < 0.40:
-        logger.warning("❌ Consulta fuera de dominio")
+
+# ==============================
+# 🧠 DECISIÓN
+# ==============================
+
+def evaluar_resultados(nodes, articulos):
+    if not nodes:
         return "❌ No trabajamos ese tipo de productos"
 
-    # 🔹 6. aplicar umbral
-    UMBRAL = 0.40
+    if len(articulos) > 10:
+        return (
+            "Tengo varios tipos de productos relacionados.\n"
+            "¿Puedes especificar más?"
+        )
 
-    candidatos_filtrados = [c for c in candidatos if c[0] >= UMBRAL][:10]
+    if 5 < len(articulos) <= 10:
+        return (
+            f"He encontrado {len(articulos)} opciones.\n"
+            "¿Quieres que te las muestre todas?"
+        )
 
-    logger.info(f"🎯 Después de umbral ({UMBRAL}): {len(candidatos_filtrados)}")
+    return None
 
-    articulos = [c[1] for c in candidatos_filtrados]
 
-    if not articulos:
-        return "❌ No encontré productos relevantes"
+# ==============================
+# 🗄️ SQL
+# ==============================
 
-    logger.info(f"🔎 Artículos finales: {articulos}")
-
-    # 🔹 7. SQL
+def consultar_stock(articulos):
     sql = text("""
         SELECT descripcion,
                stock_almeiras,
@@ -137,24 +202,27 @@ def asesor_stock(question: str) -> str:
         WHERE articulo = ANY(:articulos)
     """)
 
-    logger.info(f"🗄️ Ejecutando SQL con artículos: {articulos}")
-
     with engine.connect() as conn:
         rows = conn.execute(sql, {"articulos": articulos}).fetchall()
 
-    logger.info(f"📊 Filas devueltas por SQL: {len(rows)}")
-
     if not rows:
-        return "❌ No hay stock disponible"
+        return []
 
-    # 🔹 8. eliminar duplicados
     unique = {}
     for r in rows:
         unique[r.descripcion] = r
 
-    rows = list(unique.values())
+    return list(unique.values())
 
-    # 🔹 9. respuesta
+
+# ==============================
+# 📤 RESPUESTA
+# ==============================
+
+def formatear_respuesta(rows):
+    if not rows:
+        return "❌ No hay stock disponible"
+
     respuesta = "📦 Productos encontrados:\n\n"
 
     for r in rows:
@@ -169,3 +237,38 @@ def asesor_stock(question: str) -> str:
         )
 
     return respuesta
+
+
+# ==============================
+# 🚀 MAIN
+# ==============================
+
+def asesor_stock(question: str):
+    logger.info(f"📦 STOCK query: {question}")
+
+    query_clean = normalizar_query(question)
+
+    nodes = buscar_vectores(query_clean)
+
+    # 🔥 VALIDACIÓN REAL DE DOMINIO
+    if not es_producto_valido(nodes):
+        return "❌ No trabajamos ese tipo de productos", None
+
+    nodes_filtrados = filtrar_por_palabras(nodes, query_clean)
+
+    if not nodes_filtrados:
+        return "❌ No hay resultados relevantes", None
+
+    articulos = obtener_articulos(nodes_filtrados)
+
+    decision = evaluar_resultados(nodes_filtrados, articulos)
+
+    if decision:
+        return decision, {
+            "estado": "esperando_confirmacion",
+            "articulos": articulos
+        }
+
+    rows = consultar_stock(articulos)
+
+    return formatear_respuesta(rows), None

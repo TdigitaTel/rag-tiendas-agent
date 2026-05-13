@@ -1,4 +1,5 @@
 from app.query import query_index
+print("✅ query")
 from app.logger import get_logger
 
 logger = get_logger(__name__)

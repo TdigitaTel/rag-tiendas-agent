@@ -1,5 +1,8 @@
+print("✅ iniciando query")
 from llama_index.core import VectorStoreIndex
+print("✅ index")
 from app.db import get_vector_store
+print("✅ vector")
 from app.logger import get_logger
 from app.config import LLM
 import time
