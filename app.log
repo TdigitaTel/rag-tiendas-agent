@@ -872,3 +872,3117 @@ Delegación Culleredo
 Email: almeiras
 2026-05-13 16:23:03,813 | INFO | app.db | 🔌 Conectando a PostgreSQL
 2026-05-13 16:23:03,815 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 16:27:05,455 | INFO | app.supervisor | 🧠 SUPERVISOR: Hola
+2026-05-13 16:27:05,455 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:27:07,700 | INFO | app.supervisor | 🔀 Tool elegida: rag
+2026-05-13 16:27:07,700 | INFO | app.asesor | 📚 ASESOR: ejecutando RAG
+2026-05-13 16:27:07,701 | INFO | app.query | ❓ Pregunta: Hola
+2026-05-13 16:27:09,758 | INFO | app.query | ⏱ Respuesta en 2.06s
+2026-05-13 16:27:09,758 | DEBUG | app.query | 🔎 Fuente 0: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:27:09,758 | DEBUG | app.query | 🔎 Fuente 1: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:27:09,758 | DEBUG | app.query | 🔎 Fuente 2: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:27:09,758 | DEBUG | app.query | 🔎 Fuente 3: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:27:09,758 | DEBUG | app.query | 🔎 Fuente 4: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:27:20,481 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes stock de latiguillos
+2026-05-13 16:27:20,481 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:27:22,130 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 16:27:22,130 | INFO | app.asesor_stock | 📦 STOCK query: Tienes stock de latiguillos
+2026-05-13 16:27:26,028 | WARNING | app.asesor_stock | ❌ Score bajo → 0.3546375925640919
+2026-05-13 16:27:50,306 | INFO | app.supervisor | 🧠 SUPERVISOR: Stocknde machon
+2026-05-13 16:27:50,306 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:27:51,317 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 16:27:51,317 | INFO | app.asesor_stock | 📦 STOCK query: Stocknde machon
+2026-05-13 16:27:53,685 | WARNING | app.asesor_stock | ❌ Score bajo → 0.3071638571565163
+2026-05-13 16:29:03,385 | INFO | app.supervisor | 🧠 SUPERVISOR: Machin de laton de media
+2026-05-13 16:29:03,385 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:29:04,123 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 16:29:04,123 | INFO | app.asesor_stock | 📦 STOCK query: Machin de laton de media
+2026-05-13 16:29:12,209 | INFO | app.supervisor | 🧠 SUPERVISOR: Si
+2026-05-13 16:29:12,209 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['03003', '03026', '03028', '03029', '03027', '03025', '03023', '03007', '03017', '03041']}
+2026-05-13 16:29:13,028 | INFO | app.supervisor | 🧠 Intención detectada: confirmacion
+2026-05-13 16:29:35,850 | INFO | app.supervisor | 🧠 SUPERVISOR: Latiguilllo de media
+2026-05-13 16:29:35,851 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:29:37,178 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 16:29:37,178 | INFO | app.asesor_stock | 📦 STOCK query: Latiguilllo de media
+2026-05-13 16:29:39,448 | WARNING | app.asesor_stock | ❌ Score bajo → 0.45616275899094494
+2026-05-13 16:32:27,067 | INFO | app.supervisor | 🧠 SUPERVISOR: Cuantas unidades teneis de termo velis en santiago?
+2026-05-13 16:32:27,068 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:32:27,765 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 16:32:27,765 | INFO | app.asesor_stock | 📦 STOCK query: Cuantas unidades teneis de termo velis en santiago?
+2026-05-13 16:32:30,769 | WARNING | app.asesor_stock | ❌ Score bajo → 0.43299615822102755
+2026-05-13 16:32:54,346 | INFO | app.supervisor | 🧠 SUPERVISOR: Teneis tubo de pvc?
+2026-05-13 16:32:54,346 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:32:54,936 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 16:32:54,937 | INFO | app.asesor_stock | 📦 STOCK query: Teneis tubo de pvc?
+2026-05-13 16:33:02,204 | INFO | app.supervisor | 🧠 SUPERVISOR: Si
+2026-05-13 16:33:02,204 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['15000', '15010', '15004', '15006', '15001', '15011', '15005', '15013', '15002', '15003']}
+2026-05-13 16:33:03,212 | INFO | app.supervisor | 🧠 Intención detectada: confirmacion
+2026-05-13 16:33:21,760 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 16:33:21,762 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 16:33:22,251 | INFO | app.supervisor | 🧠 SUPERVISOR: Teneis cisternas oli?
+2026-05-13 16:33:22,251 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:33:23,387 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 16:33:23,387 | INFO | app.asesor_stock | 📦 STOCK query: Teneis cisternas oli?
+2026-05-13 16:33:25,558 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 16:33:25,558 | INFO | app.asesor_stock | 0 | score=0.4096 | articulo=34892 | texto=TANQUE ALIM. LATERAL ROCA VICTORIA 3/6 LITROS
+        A34139H000
+        Sanitar
+2026-05-13 16:33:25,558 | INFO | app.asesor_stock | 1 | score=0.4048 | articulo=30253 | texto=CISTERNA EMPOTRADA OLI74 PLUS SIMFLEX 80-90
+        601932
+        Sanitarios Ac
+2026-05-13 16:33:25,558 | INFO | app.asesor_stock | 2 | score=0.4042 | articulo=34893 | texto=TANQUE ALIM. INFERIOR ROCA VICTORIA 3/6 LITROS
+        A34139X000
+        Sanita
+2026-05-13 16:33:25,558 | INFO | app.asesor_stock | 3 | score=0.3918 | articulo=94367 | texto=TANQUE A/LAT 3/8 4.5/3L ARIS BLANCO
+        4753501
+        Sanitarios Cisternas
+2026-05-13 16:33:25,558 | INFO | app.asesor_stock | 4 | score=0.3884 | articulo=29850 | texto=DESCARGADOR CISTERNA EMPOTRADA SCHELL C-N80/C90
+        03 081 00 99
+        San
+2026-05-13 16:33:25,558 | INFO | app.asesor_stock | 5 | score=0.3881 | articulo=94302 | texto=TANQUE LIZZ BAJO INF 6/3L GALA
+        5754001
+        Sanitarios Cisternas
+2026-05-13 16:33:25,558 | INFO | app.asesor_stock | 6 | score=0.3859 | articulo=94303 | texto=TANQUE LIZZ BAJO LAT 6/3L GALA
+        5754501
+        Sanitarios Cisternas
+2026-05-13 16:33:25,558 | INFO | app.asesor_stock | 7 | score=0.3749 | articulo=34854 | texto=TANQUE AL. INFERIOR THE GAP SQUARE 3/4,5 LTS.
+        A341470000
+        Sanitar
+2026-05-13 16:33:25,558 | INFO | app.asesor_stock | 8 | score=0.3730 | articulo=94311 | texto=TANQUE BAJO STREET SQUARE BTW LATERAL  4,5/3L COMPACT GALA
+        0558001
+     
+2026-05-13 16:33:25,559 | INFO | app.asesor_stock | 9 | score=0.3704 | articulo=94312 | texto=TANQUE BAJO STREET SQUARE BTW INFERIOR 4,5/3L COMPACT GALA
+        0558101
+     
+2026-05-13 16:33:25,559 | INFO | app.asesor_stock | 10 | score=0.3646 | articulo=30255 | texto=BASTIDOR CISTERNA EMPOTR. OLI120 PLUS MEC. SANITARBLOCK
+        099949
+        S
+2026-05-13 16:33:25,559 | INFO | app.asesor_stock | 11 | score=0.3644 | articulo=30154 | texto=CAMPANA CISTERNA ALTA 12X175 FOMINAYA D025-GRANDE
+        0155003310
+        San
+2026-05-13 16:33:25,559 | INFO | app.asesor_stock | 12 | score=0.3615 | articulo=30256 | texto=BASTIDOR CISTERNA EMPOTR. OLI74 PLUS MECANICO S90 SANITARBLOCK
+        601803
+  
+2026-05-13 16:33:25,559 | INFO | app.asesor_stock | 13 | score=0.3607 | articulo=30161 | texto=DESCARGADOR CISTERNA ALTA C/ BASE METAL DC262
+        0156004910
+        Sanitar
+2026-05-13 16:33:25,559 | INFO | app.asesor_stock | 14 | score=0.3507 | articulo=30220 | texto=CISTERNA ALTA POLIPROPILENO SIN EQUIPAR
+        0153002011
+        Sanitarios Ac
+2026-05-13 16:33:25,559 | INFO | app.asesor_stock | 15 | score=0.3495 | articulo=1247000876 | texto=BASTIDOR CISTERNA EMPORT. OLI74 PLUS NEUMATICO S90 SANITARBLOCK
+        884235
+ 
+2026-05-13 16:33:25,559 | INFO | app.asesor_stock | 16 | score=0.3479 | articulo=93037E | texto=INODORO CISTERNA ALTA/EMPOTRAR S/DUAL WC KIDS
+        125011004U
+        Sanitar
+2026-05-13 16:33:25,559 | INFO | app.asesor_stock | 17 | score=0.3438 | articulo=30153 | texto=CAMPANA DESCARGADOR CISTERNA TANQUE ALTO D026-PEQUEÑA
+        0155004410
+       
+2026-05-13 16:33:25,559 | INFO | app.asesor_stock | 18 | score=0.3420 | articulo=30158 | texto=CAMPANA CISTERNA BAJA REBOSAD. EXT. Y BASE DE1
+        0147004100
+        Sanita
+2026-05-13 16:33:25,559 | INFO | app.asesor_stock | 19 | score=0.3401 | articulo=30362 | texto=FLOTADOR LATERAL TECE F10 CISTERNA EMPOTRADA
+        9820389
+        Sanitarios 
+2026-05-13 16:33:25,559 | INFO | app.asesor_stock | 20 | score=0.3383 | articulo=30136 | texto=MANGUITO INODORO D.90 CISTERNA EMPOTRADA JIMTEN
+        031387
+        Sanitario
+2026-05-13 16:33:25,559 | INFO | app.asesor_stock | 21 | score=0.3370 | articulo=66058 | texto=TANQUE ALIMENTACION LATERAL/POST. GROHE EURO
+        39333000
+        Sanitarios
+2026-05-13 16:33:25,560 | INFO | app.asesor_stock | 22 | score=0.3355 | articulo=30183 | texto=JUNTA BASE DESCARGADOR A CISTERNA SBS JD3
+        0138049020
+        Sanitarios 
+2026-05-13 16:33:25,560 | INFO | app.asesor_stock | 23 | score=0.3349 | articulo=27102 | texto=TANQUE ALIMENTACION INFERIOR UNISAN LOOK
+        134111004U
+        Sanitarios C
+2026-05-13 16:33:25,560 | INFO | app.asesor_stock | 24 | score=0.3347 | articulo=30121 | texto=DESCARGADOR CISTERNA HYDRO C/ADAP.,BASE, TORN. Y JUNTA
+        70113
+        San
+2026-05-13 16:33:25,560 | INFO | app.asesor_stock | 25 | score=0.3326 | articulo=30120 | texto=DESCARGADOR CISTERNA HYDRO C/ADAPTADOR
+        70111
+        Sanitarios Accesori
+2026-05-13 16:33:25,560 | INFO | app.asesor_stock | 26 | score=0.3313 | articulo=20251 | texto=ARMARIO CONTADOR AGUA POLIESTER 450X300X120 GATELL
+        CPV3450
+        Colec
+2026-05-13 16:33:25,560 | INFO | app.asesor_stock | 27 | score=0.3300 | articulo=30138 | texto=CONJUNTO COMPLETO CISTERNA ALTA FOMINAYA BL263
+        0153014110
+        Sanita
+2026-05-13 16:33:25,560 | INFO | app.asesor_stock | 28 | score=0.3299 | articulo=30127 | texto=TIRADOR CADENA CISTERNA ALTA ANILLA TRANSPARENTE
+        73411
+        Sanitario
+2026-05-13 16:33:25,560 | INFO | app.asesor_stock | 29 | score=0.3256 | articulo=30189 | texto=TAPON INFERIOR CISTERNA TP1
+        0138015030
+        Sanitarios Accesorios par
+2026-05-13 16:33:25,560 | WARNING | app.asesor_stock | ❌ Score bajo → 0.40959339102935444
+2026-05-13 16:33:31,909 | INFO | app.supervisor | 🧠 SUPERVISOR: Seguro?
+2026-05-13 16:33:31,909 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:33:32,619 | INFO | app.supervisor | 🔀 Tool elegida: rag
+2026-05-13 16:33:32,620 | INFO | app.asesor | 📚 ASESOR: ejecutando RAG
+2026-05-13 16:33:32,620 | INFO | app.query | ❓ Pregunta: Seguro?
+2026-05-13 16:33:33,646 | INFO | app.query | ⏱ Respuesta en 1.02s
+2026-05-13 16:33:33,646 | DEBUG | app.query | 🔎 Fuente 0: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:33:33,646 | DEBUG | app.query | 🔎 Fuente 1: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:33:33,646 | DEBUG | app.query | 🔎 Fuente 2: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:33:33,646 | DEBUG | app.query | 🔎 Fuente 3: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:33:33,646 | DEBUG | app.query | 🔎 Fuente 4: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:33:45,200 | INFO | app.supervisor | 🧠 SUPERVISOR: 😂 estoy seguro de que si
+2026-05-13 16:33:45,201 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:33:45,932 | INFO | app.supervisor | 🔀 Tool elegida: rag
+2026-05-13 16:33:45,932 | INFO | app.asesor | 📚 ASESOR: ejecutando RAG
+2026-05-13 16:33:45,933 | INFO | app.query | ❓ Pregunta: 😂 estoy seguro de que si
+2026-05-13 16:33:46,948 | INFO | app.query | ⏱ Respuesta en 1.02s
+2026-05-13 16:33:46,949 | DEBUG | app.query | 🔎 Fuente 0: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:33:46,949 | DEBUG | app.query | 🔎 Fuente 1: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:33:46,949 | DEBUG | app.query | 🔎 Fuente 2: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:33:46,949 | DEBUG | app.query | 🔎 Fuente 3: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:33:46,949 | DEBUG | app.query | 🔎 Fuente 4: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:33:52,998 | INFO | app.supervisor | 🧠 SUPERVISOR: Oli
+2026-05-13 16:33:52,998 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:33:53,423 | INFO | app.supervisor | 🔀 Tool elegida: rag
+2026-05-13 16:33:53,423 | INFO | app.asesor | 📚 ASESOR: ejecutando RAG
+2026-05-13 16:33:53,424 | INFO | app.query | ❓ Pregunta: Oli
+2026-05-13 16:33:54,635 | INFO | app.query | ⏱ Respuesta en 1.21s
+2026-05-13 16:33:54,635 | DEBUG | app.query | 🔎 Fuente 0: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:33:54,635 | DEBUG | app.query | 🔎 Fuente 1: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:33:54,635 | DEBUG | app.query | 🔎 Fuente 2: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:33:54,635 | DEBUG | app.query | 🔎 Fuente 3: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:33:54,635 | DEBUG | app.query | 🔎 Fuente 4: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 16:34:11,477 | INFO | app.supervisor | 🧠 SUPERVISOR: Oli es una marca que articulos teneis de esta marca?
+2026-05-13 16:34:11,477 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:34:12,051 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 16:34:12,052 | INFO | app.asesor_stock | 📦 STOCK query: Oli es una marca que articulos teneis de esta marca?
+2026-05-13 16:34:14,732 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 16:34:14,732 | INFO | app.asesor_stock | 0 | score=0.5145 | articulo=51162 | texto=ACEITE LUBRICANTE 3 EN 1 SPRAY 200 ML
+        775768
+        Productos quimicos 
+2026-05-13 16:34:14,732 | INFO | app.asesor_stock | 1 | score=0.4792 | articulo=41607 | texto=LATIGUILLO GASOIL RIVER OIL H1/4-H1/4 CODO
+        4582
+        Calefaccion Quem
+2026-05-13 16:34:14,732 | INFO | app.asesor_stock | 2 | score=0.4739 | articulo=30252 | texto=FLOTADOR ALIMENTACION LATERAL OLI AZOR PLUS 3/8"
+        020863
+        Sanitari
+2026-05-13 16:34:14,732 | INFO | app.asesor_stock | 3 | score=0.4653 | articulo=55389 | texto=PALETINA PINTOR Nº 12  25 MM
+        109352
+        Herramientas manuales De uso
+2026-05-13 16:34:14,732 | INFO | app.asesor_stock | 4 | score=0.4640 | articulo=51167 | texto=TOT-ROSC 200 GRS TIPO DENSO
+        770200
+        Productos quimicos (adhesivos
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 5 | score=0.4617 | articulo=41602 | texto=LATIGUILLO GASOIL RIVER OIL M1/4-H3/8
+        2730
+        Calefaccion Quemadore
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 6 | score=0.4615 | articulo=17510 | texto=BARRA ESTAÑO 30%
+        0101083R
+        Productos quimicos (adhesivos, lubrica
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 7 | score=0.4611 | articulo=51122 | texto=ROLLO TEFLON 12 X 12 X 0.10 AMARILLO GAS
+        8477
+        Productos quimicos
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 8 | score=0.4600 | articulo=11180 | texto=LUBRICANTE SILICONA (NO TOXICO) 50 GR PB
+        S.255
+        Productos quimico
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 9 | score=0.4570 | articulo=11655 | texto=LUBRICANTE DE SILICONA 50 GRS. POLIBUTILENO EGB
+        PBP.LUB
+        Producto
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 10 | score=0.4560 | articulo=51120 | texto=ROLLO TEFLON 12 M. X 12 MM X 0,1 MM
+        70011
+        Productos quimicos (ad
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 11 | score=0.4559 | articulo=51121 | texto=ROLLO TEFLON GRANDE 50 M. X 19 MM
+        70013
+        Productos quimicos (adhe
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 12 | score=0.4553 | articulo=51124 | texto=TEFLON EN PASTA 50 ML.
+        I23D500050
+        Productos quimicos (adhesivos,
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 13 | score=0.4553 | articulo=55713 | texto=BOTELLA GAS MULTIGAS 300
+        035510-A
+        Productos quimicos (adhesivos,
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 14 | score=0.4550 | articulo=09576 | texto=TE IGUAL IVAR MULTI PRESS 20
+        512002MP
+        Tuberia y accesorios Acces
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 15 | score=0.4549 | articulo=09581 | texto=TE IGUAL IVAR MULTI PRESS 40
+        512035
+        Tuberia y accesorios Accesor
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 16 | score=0.4539 | articulo=55388 | texto=PALETINA PINTOR Nº 9  20 MM
+        109350
+        Herramientas manuales De uso 
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 17 | score=0.4529 | articulo=51154 | texto=AROS DE CERA PARA INODORO D.11
+        74548
+        Productos quimicos (adhesiv
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 18 | score=0.4527 | articulo=09575 | texto=TE IGUAL IVAR MULTI PRESS 16
+        512001MP
+        Tuberia y accesorios Acces
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 19 | score=0.4521 | articulo=41608 | texto=LATIGUILLO GASOIL RIVER OIL H3/8-H1/4 CODO
+        4547
+        Calefaccion Quem
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 20 | score=0.4519 | articulo=09578 | texto=TE IGUAL IVAR MULTI PRESS 25
+        510143MP
+        Tuberia y accesorios Acces
+2026-05-13 16:34:14,733 | INFO | app.asesor_stock | 21 | score=0.4505 | articulo=55391 | texto=PALETINA PINTOR Nº 15  30 MM
+        109354
+        Herramientas manuales De uso
+2026-05-13 16:34:14,734 | INFO | app.asesor_stock | 22 | score=0.4501 | articulo=51119 | texto=ROLLO TEFLON 12 M. X 12 MM X 0,075 MM
+        70010
+        Productos quimicos (
+2026-05-13 16:34:14,734 | INFO | app.asesor_stock | 23 | score=0.4495 | articulo=99999 | texto=TERMOS OCASION
+        TERMOS OCASION
+        Grupo genérico Grupo Generico
+2026-05-13 16:34:14,734 | INFO | app.asesor_stock | 24 | score=0.4479 | articulo=51830 | texto=SPRAY ANTIPROYECCIONES SOLDADURA ANTI SPATTER
+        32318-AC
+        Productos
+2026-05-13 16:34:14,734 | INFO | app.asesor_stock | 25 | score=0.4478 | articulo=55997 | texto=LAPIZ DE CARPINTERO ROJO/AZUL
+        132387
+        Herramientas manuales De us
+2026-05-13 16:34:14,734 | INFO | app.asesor_stock | 26 | score=0.4475 | articulo=17530 | texto=ESTEARINA DESOXIDANTE BARRA 200 GR.
+        78601
+        Productos quimicos (ad
+2026-05-13 16:34:14,734 | INFO | app.asesor_stock | 27 | score=0.4449 | articulo=51163 | texto=TOALLITA GEL HIGIENIZANTE BIOHANDS
+        0012584
+        Higiene y limpieza in
+2026-05-13 16:34:14,734 | INFO | app.asesor_stock | 28 | score=0.4449 | articulo=10919 | texto=TE IGUAL 90º PRESS ALB GAS 16 X 2,0
+        48881601
+        Tuberia y accesorio
+2026-05-13 16:34:14,734 | INFO | app.asesor_stock | 29 | score=0.4442 | articulo=51104 | texto=GRASA DE SILICONA LUBRI-TOT 135 ML.
+        491135
+        Productos quimicos (a
+2026-05-13 16:34:14,734 | WARNING | app.asesor_stock | ❌ Score bajo → 0.5145019863007927
+2026-05-13 16:35:42,588 | INFO | app.supervisor | 🧠 SUPERVISOR: latiguillos tienes
+2026-05-13 16:35:42,589 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:35:43,183 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 16:35:43,184 | INFO | app.asesor_stock | 📦 STOCK query: latiguillos tienes
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 0 | score=0.3546 | articulo=22125 | texto=LATIGUILLO TAQ-CODO 40 CM H 3/8 X H 3/8
+        2361
+        Valvuleria y conexi
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 1 | score=0.3514 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 2 | score=0.3488 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 3 | score=0.3468 | articulo=22187 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 30 CM
+        7057
+        Valvuleria y conexione
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 4 | score=0.3465 | articulo=22124 | texto=LATIGUILLO TAQ-CODO 35 CM H 3/8 X H 3/8
+        2360
+        Valvuleria y conexi
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 5 | score=0.3452 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 6 | score=0.3437 | articulo=22011 | texto=LATIGUILLO DN12 15 CM M 3/8 X H 3/8
+        6431
+        Valvuleria y conexiones
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 7 | score=0.3427 | articulo=22185 | texto=LATIGUILLO GRIFO M10-L17 H3/8' 30 CM
+        5962
+        Valvuleria y conexione
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 8 | score=0.3427 | articulo=22010 | texto=LATIGUILLO DN12 15 CM H 3/8 X H 3/8
+        4658
+        Valvuleria y conexiones
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 9 | score=0.3426 | articulo=22188 | texto=LATIGUILLO GRIFO M10-L17 H3/8" 50 CM
+        5956
+        Valvuleria y conexione
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 10 | score=0.3420 | articulo=22186 | texto=LATIGUILLO GRIFO M10-L37 H3/8' 30 CM
+        5851
+        Valvuleria y conexione
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 11 | score=0.3411 | articulo=22060 | texto=LATIGUILLO DN12 40 CM H 3/8 X H 3/8
+        6782
+        Valvuleria y conexiones
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 12 | score=0.3409 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 13 | score=0.3408 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 14 | score=0.3405 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 15 | score=0.3405 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 16 | score=0.3403 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 17 | score=0.3398 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 18 | score=0.3385 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 19 | score=0.3381 | articulo=22093 | texto=LATIGUILLO DN12 80 CM H 1/2 X H 3/8
+        6655
+        Valvuleria y conexiones
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 20 | score=0.3380 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 21 | score=0.3379 | articulo=22043 | texto=LATIGUILLO DN12 30 CM H 1/2 X H 3/8
+        5808
+        Valvuleria y conexiones
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 22 | score=0.3378 | articulo=22061 | texto=LATIGUILLO DN12 40 CM M 3/8 X H 3/8
+        6783
+        Valvuleria y conexiones
+2026-05-13 16:35:45,147 | INFO | app.asesor_stock | 23 | score=0.3370 | articulo=22056 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 3/8
+        5892
+        Valvuleria y conexiones
+2026-05-13 16:35:45,148 | INFO | app.asesor_stock | 24 | score=0.3360 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 16:35:45,148 | INFO | app.asesor_stock | 25 | score=0.3353 | articulo=22063 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 3/8
+        6800
+        Valvuleria y conexiones
+2026-05-13 16:35:45,148 | INFO | app.asesor_stock | 26 | score=0.3353 | articulo=22053 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 3/8
+        5809
+        Valvuleria y conexiones
+2026-05-13 16:35:45,148 | INFO | app.asesor_stock | 27 | score=0.3349 | articulo=22051 | texto=LATIGUILLO DN12 35 CM M 3/8 X H 3/8
+        5816
+        Valvuleria y conexiones
+2026-05-13 16:35:45,148 | INFO | app.asesor_stock | 28 | score=0.3348 | articulo=22020 | texto=LATIGUILLO DN12 20 CM H 3/8 X H 3/8
+        3811
+        Valvuleria y conexiones
+2026-05-13 16:35:45,148 | INFO | app.asesor_stock | 29 | score=0.3347 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 16:35:45,148 | WARNING | app.asesor_stock | ❌ Score bajo → 0.3546375925640919
+2026-05-13 16:44:45,107 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 16:44:45,109 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 16:45:00,586 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes latiguillos
+2026-05-13 16:45:00,587 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:45:01,489 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 16:45:01,489 | INFO | app.asesor_stock | 📦 STOCK query: Tienes latiguillos
+2026-05-13 16:45:04,654 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 16:45:04,654 | INFO | app.asesor_stock | 0 | score=0.3545 | articulo=22125 | texto=LATIGUILLO TAQ-CODO 40 CM H 3/8 X H 3/8
+        2361
+        Valvuleria y conexi
+2026-05-13 16:45:04,654 | INFO | app.asesor_stock | 1 | score=0.3513 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 16:45:04,654 | INFO | app.asesor_stock | 2 | score=0.3487 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 16:45:04,654 | INFO | app.asesor_stock | 3 | score=0.3466 | articulo=22187 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 30 CM
+        7057
+        Valvuleria y conexione
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 4 | score=0.3464 | articulo=22124 | texto=LATIGUILLO TAQ-CODO 35 CM H 3/8 X H 3/8
+        2360
+        Valvuleria y conexi
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 5 | score=0.3450 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 6 | score=0.3435 | articulo=22011 | texto=LATIGUILLO DN12 15 CM M 3/8 X H 3/8
+        6431
+        Valvuleria y conexiones
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 7 | score=0.3426 | articulo=22185 | texto=LATIGUILLO GRIFO M10-L17 H3/8' 30 CM
+        5962
+        Valvuleria y conexione
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 8 | score=0.3425 | articulo=22010 | texto=LATIGUILLO DN12 15 CM H 3/8 X H 3/8
+        4658
+        Valvuleria y conexiones
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 9 | score=0.3425 | articulo=22188 | texto=LATIGUILLO GRIFO M10-L17 H3/8" 50 CM
+        5956
+        Valvuleria y conexione
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 10 | score=0.3418 | articulo=22186 | texto=LATIGUILLO GRIFO M10-L37 H3/8' 30 CM
+        5851
+        Valvuleria y conexione
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 11 | score=0.3410 | articulo=22060 | texto=LATIGUILLO DN12 40 CM H 3/8 X H 3/8
+        6782
+        Valvuleria y conexiones
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 12 | score=0.3408 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 13 | score=0.3407 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 14 | score=0.3404 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 15 | score=0.3403 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 16 | score=0.3402 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 17 | score=0.3397 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 18 | score=0.3384 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 16:45:04,655 | INFO | app.asesor_stock | 19 | score=0.3380 | articulo=22093 | texto=LATIGUILLO DN12 80 CM H 1/2 X H 3/8
+        6655
+        Valvuleria y conexiones
+2026-05-13 16:45:04,656 | INFO | app.asesor_stock | 20 | score=0.3379 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 16:45:04,656 | INFO | app.asesor_stock | 21 | score=0.3378 | articulo=22043 | texto=LATIGUILLO DN12 30 CM H 1/2 X H 3/8
+        5808
+        Valvuleria y conexiones
+2026-05-13 16:45:04,656 | INFO | app.asesor_stock | 22 | score=0.3377 | articulo=22061 | texto=LATIGUILLO DN12 40 CM M 3/8 X H 3/8
+        6783
+        Valvuleria y conexiones
+2026-05-13 16:45:04,656 | INFO | app.asesor_stock | 23 | score=0.3369 | articulo=22056 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 3/8
+        5892
+        Valvuleria y conexiones
+2026-05-13 16:45:04,656 | INFO | app.asesor_stock | 24 | score=0.3358 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 16:45:04,656 | INFO | app.asesor_stock | 25 | score=0.3352 | articulo=22063 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 3/8
+        6800
+        Valvuleria y conexiones
+2026-05-13 16:45:04,656 | INFO | app.asesor_stock | 26 | score=0.3352 | articulo=22053 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 3/8
+        5809
+        Valvuleria y conexiones
+2026-05-13 16:45:04,656 | INFO | app.asesor_stock | 27 | score=0.3348 | articulo=22051 | texto=LATIGUILLO DN12 35 CM M 3/8 X H 3/8
+        5816
+        Valvuleria y conexiones
+2026-05-13 16:45:04,656 | INFO | app.asesor_stock | 28 | score=0.3347 | articulo=22020 | texto=LATIGUILLO DN12 20 CM H 3/8 X H 3/8
+        3811
+        Valvuleria y conexiones
+2026-05-13 16:45:04,656 | INFO | app.asesor_stock | 29 | score=0.3346 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 16:45:04,656 | WARNING | app.asesor_stock | ⚠️ fallback activado
+2026-05-13 16:45:04,656 | WARNING | app.asesor_stock | ❌ Score bajo → 0.35451768462427613
+2026-05-13 16:45:10,155 | INFO | app.supervisor | 🧠 SUPERVISOR: Si
+2026-05-13 16:45:10,155 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22125', '22311', '22190', '22187', '22124', '22013', '22011', '22185', '22010', '22188']}
+2026-05-13 16:45:10,904 | INFO | app.supervisor | 🧠 Intención detectada: confirmacion
+2026-05-13 16:48:51,257 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 16:48:51,260 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 16:49:04,286 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes latiguillos
+2026-05-13 16:49:04,287 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:49:05,307 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 16:49:05,307 | INFO | app.asesor_stock | 📦 STOCK query: Tienes latiguillos
+2026-05-13 16:49:09,160 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 16:49:09,160 | INFO | app.asesor_stock | 0 | score=0.3546 | articulo=22125 | texto=LATIGUILLO TAQ-CODO 40 CM H 3/8 X H 3/8
+        2361
+        Valvuleria y conexi
+2026-05-13 16:49:09,160 | INFO | app.asesor_stock | 1 | score=0.3514 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 16:49:09,161 | INFO | app.asesor_stock | 2 | score=0.3488 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 16:49:09,161 | INFO | app.asesor_stock | 3 | score=0.3468 | articulo=22187 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 30 CM
+        7057
+        Valvuleria y conexione
+2026-05-13 16:49:09,161 | INFO | app.asesor_stock | 4 | score=0.3465 | articulo=22124 | texto=LATIGUILLO TAQ-CODO 35 CM H 3/8 X H 3/8
+        2360
+        Valvuleria y conexi
+2026-05-13 16:49:09,161 | INFO | app.asesor_stock | 5 | score=0.3452 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 16:49:09,161 | INFO | app.asesor_stock | 6 | score=0.3437 | articulo=22011 | texto=LATIGUILLO DN12 15 CM M 3/8 X H 3/8
+        6431
+        Valvuleria y conexiones
+2026-05-13 16:49:09,161 | INFO | app.asesor_stock | 7 | score=0.3427 | articulo=22185 | texto=LATIGUILLO GRIFO M10-L17 H3/8' 30 CM
+        5962
+        Valvuleria y conexione
+2026-05-13 16:49:09,161 | INFO | app.asesor_stock | 8 | score=0.3427 | articulo=22010 | texto=LATIGUILLO DN12 15 CM H 3/8 X H 3/8
+        4658
+        Valvuleria y conexiones
+2026-05-13 16:49:09,161 | INFO | app.asesor_stock | 9 | score=0.3426 | articulo=22188 | texto=LATIGUILLO GRIFO M10-L17 H3/8" 50 CM
+        5956
+        Valvuleria y conexione
+2026-05-13 16:49:09,161 | INFO | app.asesor_stock | 10 | score=0.3420 | articulo=22186 | texto=LATIGUILLO GRIFO M10-L37 H3/8' 30 CM
+        5851
+        Valvuleria y conexione
+2026-05-13 16:49:09,161 | INFO | app.asesor_stock | 11 | score=0.3411 | articulo=22060 | texto=LATIGUILLO DN12 40 CM H 3/8 X H 3/8
+        6782
+        Valvuleria y conexiones
+2026-05-13 16:49:09,161 | INFO | app.asesor_stock | 12 | score=0.3409 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 16:49:09,162 | INFO | app.asesor_stock | 13 | score=0.3408 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 16:49:09,162 | INFO | app.asesor_stock | 14 | score=0.3405 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 16:49:09,162 | INFO | app.asesor_stock | 15 | score=0.3405 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 16:49:09,162 | INFO | app.asesor_stock | 16 | score=0.3403 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 16:49:09,162 | INFO | app.asesor_stock | 17 | score=0.3398 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 16:49:09,162 | INFO | app.asesor_stock | 18 | score=0.3385 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 16:49:09,162 | INFO | app.asesor_stock | 19 | score=0.3381 | articulo=22093 | texto=LATIGUILLO DN12 80 CM H 1/2 X H 3/8
+        6655
+        Valvuleria y conexiones
+2026-05-13 16:49:09,162 | INFO | app.asesor_stock | 20 | score=0.3380 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 16:49:09,162 | INFO | app.asesor_stock | 21 | score=0.3379 | articulo=22043 | texto=LATIGUILLO DN12 30 CM H 1/2 X H 3/8
+        5808
+        Valvuleria y conexiones
+2026-05-13 16:49:09,162 | INFO | app.asesor_stock | 22 | score=0.3378 | articulo=22061 | texto=LATIGUILLO DN12 40 CM M 3/8 X H 3/8
+        6783
+        Valvuleria y conexiones
+2026-05-13 16:49:09,162 | INFO | app.asesor_stock | 23 | score=0.3370 | articulo=22056 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 3/8
+        5892
+        Valvuleria y conexiones
+2026-05-13 16:49:09,162 | INFO | app.asesor_stock | 24 | score=0.3360 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 16:49:09,162 | INFO | app.asesor_stock | 25 | score=0.3353 | articulo=22063 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 3/8
+        6800
+        Valvuleria y conexiones
+2026-05-13 16:49:09,162 | INFO | app.asesor_stock | 26 | score=0.3353 | articulo=22053 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 3/8
+        5809
+        Valvuleria y conexiones
+2026-05-13 16:49:09,162 | INFO | app.asesor_stock | 27 | score=0.3349 | articulo=22051 | texto=LATIGUILLO DN12 35 CM M 3/8 X H 3/8
+        5816
+        Valvuleria y conexiones
+2026-05-13 16:49:09,163 | INFO | app.asesor_stock | 28 | score=0.3348 | articulo=22020 | texto=LATIGUILLO DN12 20 CM H 3/8 X H 3/8
+        3811
+        Valvuleria y conexiones
+2026-05-13 16:49:09,163 | INFO | app.asesor_stock | 29 | score=0.3347 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 16:49:09,163 | WARNING | app.asesor_stock | ❌ Score bajo → 0.3546375925640919
+2026-05-13 16:51:29,290 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 16:51:29,291 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 16:51:39,813 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes latiguillos
+2026-05-13 16:51:39,813 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:51:40,714 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 16:51:40,714 | INFO | app.asesor_stock | 📦 STOCK query: Tienes latiguillos
+2026-05-13 16:51:43,132 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 16:51:43,132 | INFO | app.asesor_stock | 0 | score=0.3545 | articulo=22125 | texto=LATIGUILLO TAQ-CODO 40 CM H 3/8 X H 3/8
+        2361
+        Valvuleria y conexi
+2026-05-13 16:51:43,132 | INFO | app.asesor_stock | 1 | score=0.3513 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 16:51:43,133 | INFO | app.asesor_stock | 2 | score=0.3487 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 16:51:43,133 | INFO | app.asesor_stock | 3 | score=0.3466 | articulo=22187 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 30 CM
+        7057
+        Valvuleria y conexione
+2026-05-13 16:51:43,133 | INFO | app.asesor_stock | 4 | score=0.3464 | articulo=22124 | texto=LATIGUILLO TAQ-CODO 35 CM H 3/8 X H 3/8
+        2360
+        Valvuleria y conexi
+2026-05-13 16:51:43,133 | INFO | app.asesor_stock | 5 | score=0.3450 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 16:51:43,133 | INFO | app.asesor_stock | 6 | score=0.3435 | articulo=22011 | texto=LATIGUILLO DN12 15 CM M 3/8 X H 3/8
+        6431
+        Valvuleria y conexiones
+2026-05-13 16:51:43,133 | INFO | app.asesor_stock | 7 | score=0.3426 | articulo=22185 | texto=LATIGUILLO GRIFO M10-L17 H3/8' 30 CM
+        5962
+        Valvuleria y conexione
+2026-05-13 16:51:43,133 | INFO | app.asesor_stock | 8 | score=0.3425 | articulo=22010 | texto=LATIGUILLO DN12 15 CM H 3/8 X H 3/8
+        4658
+        Valvuleria y conexiones
+2026-05-13 16:51:43,133 | INFO | app.asesor_stock | 9 | score=0.3425 | articulo=22188 | texto=LATIGUILLO GRIFO M10-L17 H3/8" 50 CM
+        5956
+        Valvuleria y conexione
+2026-05-13 16:51:43,133 | INFO | app.asesor_stock | 10 | score=0.3418 | articulo=22186 | texto=LATIGUILLO GRIFO M10-L37 H3/8' 30 CM
+        5851
+        Valvuleria y conexione
+2026-05-13 16:51:43,133 | INFO | app.asesor_stock | 11 | score=0.3410 | articulo=22060 | texto=LATIGUILLO DN12 40 CM H 3/8 X H 3/8
+        6782
+        Valvuleria y conexiones
+2026-05-13 16:51:43,133 | INFO | app.asesor_stock | 12 | score=0.3408 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 16:51:43,133 | INFO | app.asesor_stock | 13 | score=0.3407 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 16:51:43,133 | INFO | app.asesor_stock | 14 | score=0.3404 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 16:51:43,133 | INFO | app.asesor_stock | 15 | score=0.3403 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 16:51:43,133 | INFO | app.asesor_stock | 16 | score=0.3402 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 16:51:43,134 | INFO | app.asesor_stock | 17 | score=0.3397 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 16:51:43,134 | INFO | app.asesor_stock | 18 | score=0.3384 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 16:51:43,134 | INFO | app.asesor_stock | 19 | score=0.3380 | articulo=22093 | texto=LATIGUILLO DN12 80 CM H 1/2 X H 3/8
+        6655
+        Valvuleria y conexiones
+2026-05-13 16:51:43,134 | INFO | app.asesor_stock | 20 | score=0.3379 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 16:51:43,134 | INFO | app.asesor_stock | 21 | score=0.3378 | articulo=22043 | texto=LATIGUILLO DN12 30 CM H 1/2 X H 3/8
+        5808
+        Valvuleria y conexiones
+2026-05-13 16:51:43,134 | INFO | app.asesor_stock | 22 | score=0.3377 | articulo=22061 | texto=LATIGUILLO DN12 40 CM M 3/8 X H 3/8
+        6783
+        Valvuleria y conexiones
+2026-05-13 16:51:43,134 | INFO | app.asesor_stock | 23 | score=0.3369 | articulo=22056 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 3/8
+        5892
+        Valvuleria y conexiones
+2026-05-13 16:51:43,134 | INFO | app.asesor_stock | 24 | score=0.3358 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 16:51:43,134 | INFO | app.asesor_stock | 25 | score=0.3352 | articulo=22063 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 3/8
+        6800
+        Valvuleria y conexiones
+2026-05-13 16:51:43,134 | INFO | app.asesor_stock | 26 | score=0.3352 | articulo=22053 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 3/8
+        5809
+        Valvuleria y conexiones
+2026-05-13 16:51:43,134 | INFO | app.asesor_stock | 27 | score=0.3348 | articulo=22051 | texto=LATIGUILLO DN12 35 CM M 3/8 X H 3/8
+        5816
+        Valvuleria y conexiones
+2026-05-13 16:51:43,134 | INFO | app.asesor_stock | 28 | score=0.3347 | articulo=22020 | texto=LATIGUILLO DN12 20 CM H 3/8 X H 3/8
+        3811
+        Valvuleria y conexiones
+2026-05-13 16:51:43,134 | INFO | app.asesor_stock | 29 | score=0.3346 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 16:51:43,134 | WARNING | app.asesor_stock | ❌ Score bajo → 0.35451768462427613
+2026-05-13 16:52:00,247 | INFO | app.supervisor | 🧠 SUPERVISOR: Si
+2026-05-13 16:52:00,247 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22125', '22311', '22190', '22187', '22124', '22013', '22011', '22185', '22010', '22188']}
+2026-05-13 16:52:01,234 | INFO | app.supervisor | 🧠 Intención detectada: confirmacion
+2026-05-13 16:52:54,105 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 16:52:54,107 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 16:53:15,823 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes latiguillos
+2026-05-13 16:53:15,823 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:53:16,580 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 16:53:16,580 | INFO | app.asesor_stock | 📦 STOCK query: Tienes latiguillos
+2026-05-13 16:53:20,250 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 16:53:20,250 | INFO | app.asesor_stock | 0 | score=0.3546 | articulo=22125 | texto=LATIGUILLO TAQ-CODO 40 CM H 3/8 X H 3/8
+        2361
+        Valvuleria y conexi
+2026-05-13 16:53:20,250 | INFO | app.asesor_stock | 1 | score=0.3514 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 16:53:20,250 | INFO | app.asesor_stock | 2 | score=0.3488 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 16:53:20,250 | INFO | app.asesor_stock | 3 | score=0.3468 | articulo=22187 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 30 CM
+        7057
+        Valvuleria y conexione
+2026-05-13 16:53:20,250 | INFO | app.asesor_stock | 4 | score=0.3465 | articulo=22124 | texto=LATIGUILLO TAQ-CODO 35 CM H 3/8 X H 3/8
+        2360
+        Valvuleria y conexi
+2026-05-13 16:53:20,250 | INFO | app.asesor_stock | 5 | score=0.3452 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 16:53:20,250 | INFO | app.asesor_stock | 6 | score=0.3437 | articulo=22011 | texto=LATIGUILLO DN12 15 CM M 3/8 X H 3/8
+        6431
+        Valvuleria y conexiones
+2026-05-13 16:53:20,250 | INFO | app.asesor_stock | 7 | score=0.3427 | articulo=22185 | texto=LATIGUILLO GRIFO M10-L17 H3/8' 30 CM
+        5962
+        Valvuleria y conexione
+2026-05-13 16:53:20,250 | INFO | app.asesor_stock | 8 | score=0.3427 | articulo=22010 | texto=LATIGUILLO DN12 15 CM H 3/8 X H 3/8
+        4658
+        Valvuleria y conexiones
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 9 | score=0.3426 | articulo=22188 | texto=LATIGUILLO GRIFO M10-L17 H3/8" 50 CM
+        5956
+        Valvuleria y conexione
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 10 | score=0.3420 | articulo=22186 | texto=LATIGUILLO GRIFO M10-L37 H3/8' 30 CM
+        5851
+        Valvuleria y conexione
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 11 | score=0.3411 | articulo=22060 | texto=LATIGUILLO DN12 40 CM H 3/8 X H 3/8
+        6782
+        Valvuleria y conexiones
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 12 | score=0.3409 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 13 | score=0.3408 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 14 | score=0.3405 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 15 | score=0.3405 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 16 | score=0.3403 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 17 | score=0.3398 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 18 | score=0.3385 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 19 | score=0.3381 | articulo=22093 | texto=LATIGUILLO DN12 80 CM H 1/2 X H 3/8
+        6655
+        Valvuleria y conexiones
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 20 | score=0.3380 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 21 | score=0.3379 | articulo=22043 | texto=LATIGUILLO DN12 30 CM H 1/2 X H 3/8
+        5808
+        Valvuleria y conexiones
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 22 | score=0.3378 | articulo=22061 | texto=LATIGUILLO DN12 40 CM M 3/8 X H 3/8
+        6783
+        Valvuleria y conexiones
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 23 | score=0.3370 | articulo=22056 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 3/8
+        5892
+        Valvuleria y conexiones
+2026-05-13 16:53:20,251 | INFO | app.asesor_stock | 24 | score=0.3360 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 16:53:20,252 | INFO | app.asesor_stock | 25 | score=0.3353 | articulo=22063 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 3/8
+        6800
+        Valvuleria y conexiones
+2026-05-13 16:53:20,252 | INFO | app.asesor_stock | 26 | score=0.3353 | articulo=22053 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 3/8
+        5809
+        Valvuleria y conexiones
+2026-05-13 16:53:20,252 | INFO | app.asesor_stock | 27 | score=0.3349 | articulo=22051 | texto=LATIGUILLO DN12 35 CM M 3/8 X H 3/8
+        5816
+        Valvuleria y conexiones
+2026-05-13 16:53:20,252 | INFO | app.asesor_stock | 28 | score=0.3348 | articulo=22020 | texto=LATIGUILLO DN12 20 CM H 3/8 X H 3/8
+        3811
+        Valvuleria y conexiones
+2026-05-13 16:53:20,252 | INFO | app.asesor_stock | 29 | score=0.3347 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 16:53:20,252 | WARNING | app.asesor_stock | ❌ Score bajo → 0.3546375925640919
+2026-05-13 16:53:24,888 | INFO | app.supervisor | 🧠 SUPERVISOR: Si
+2026-05-13 16:53:24,888 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22125', '22311', '22190', '22187', '22124', '22013', '22011', '22185', '22010', '22188']}
+2026-05-13 16:53:25,535 | INFO | app.supervisor | 🧠 Intención detectada: confirmacion
+2026-05-13 16:55:19,639 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 16:55:19,641 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 16:55:27,569 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes latiguillos
+2026-05-13 16:55:27,569 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:55:28,311 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 16:55:28,311 | INFO | app.asesor_stock | 📦 STOCK query: Tienes latiguillos
+2026-05-13 16:55:30,319 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 16:55:30,320 | INFO | app.asesor_stock | 0 | score=0.3546 | articulo=22125 | texto=LATIGUILLO TAQ-CODO 40 CM H 3/8 X H 3/8
+        2361
+        Valvuleria y conexi
+2026-05-13 16:55:30,320 | INFO | app.asesor_stock | 1 | score=0.3514 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 16:55:30,320 | INFO | app.asesor_stock | 2 | score=0.3488 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 16:55:30,320 | INFO | app.asesor_stock | 3 | score=0.3468 | articulo=22187 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 30 CM
+        7057
+        Valvuleria y conexione
+2026-05-13 16:55:30,320 | INFO | app.asesor_stock | 4 | score=0.3465 | articulo=22124 | texto=LATIGUILLO TAQ-CODO 35 CM H 3/8 X H 3/8
+        2360
+        Valvuleria y conexi
+2026-05-13 16:55:30,320 | INFO | app.asesor_stock | 5 | score=0.3452 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 16:55:30,320 | INFO | app.asesor_stock | 6 | score=0.3437 | articulo=22011 | texto=LATIGUILLO DN12 15 CM M 3/8 X H 3/8
+        6431
+        Valvuleria y conexiones
+2026-05-13 16:55:30,320 | INFO | app.asesor_stock | 7 | score=0.3427 | articulo=22185 | texto=LATIGUILLO GRIFO M10-L17 H3/8' 30 CM
+        5962
+        Valvuleria y conexione
+2026-05-13 16:55:30,320 | INFO | app.asesor_stock | 8 | score=0.3427 | articulo=22010 | texto=LATIGUILLO DN12 15 CM H 3/8 X H 3/8
+        4658
+        Valvuleria y conexiones
+2026-05-13 16:55:30,320 | INFO | app.asesor_stock | 9 | score=0.3426 | articulo=22188 | texto=LATIGUILLO GRIFO M10-L17 H3/8" 50 CM
+        5956
+        Valvuleria y conexione
+2026-05-13 16:55:30,320 | INFO | app.asesor_stock | 10 | score=0.3420 | articulo=22186 | texto=LATIGUILLO GRIFO M10-L37 H3/8' 30 CM
+        5851
+        Valvuleria y conexione
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 11 | score=0.3411 | articulo=22060 | texto=LATIGUILLO DN12 40 CM H 3/8 X H 3/8
+        6782
+        Valvuleria y conexiones
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 12 | score=0.3409 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 13 | score=0.3408 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 14 | score=0.3405 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 15 | score=0.3405 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 16 | score=0.3403 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 17 | score=0.3398 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 18 | score=0.3385 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 19 | score=0.3381 | articulo=22093 | texto=LATIGUILLO DN12 80 CM H 1/2 X H 3/8
+        6655
+        Valvuleria y conexiones
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 20 | score=0.3380 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 21 | score=0.3379 | articulo=22043 | texto=LATIGUILLO DN12 30 CM H 1/2 X H 3/8
+        5808
+        Valvuleria y conexiones
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 22 | score=0.3378 | articulo=22061 | texto=LATIGUILLO DN12 40 CM M 3/8 X H 3/8
+        6783
+        Valvuleria y conexiones
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 23 | score=0.3370 | articulo=22056 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 3/8
+        5892
+        Valvuleria y conexiones
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 24 | score=0.3360 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 25 | score=0.3353 | articulo=22063 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 3/8
+        6800
+        Valvuleria y conexiones
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 26 | score=0.3353 | articulo=22053 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 3/8
+        5809
+        Valvuleria y conexiones
+2026-05-13 16:55:30,321 | INFO | app.asesor_stock | 27 | score=0.3349 | articulo=22051 | texto=LATIGUILLO DN12 35 CM M 3/8 X H 3/8
+        5816
+        Valvuleria y conexiones
+2026-05-13 16:55:30,322 | INFO | app.asesor_stock | 28 | score=0.3348 | articulo=22020 | texto=LATIGUILLO DN12 20 CM H 3/8 X H 3/8
+        3811
+        Valvuleria y conexiones
+2026-05-13 16:55:30,322 | INFO | app.asesor_stock | 29 | score=0.3347 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 16:55:30,322 | WARNING | app.asesor_stock | ❌ Score bajo → 0.3546375925640919
+2026-05-13 16:57:14,588 | INFO | app.supervisor | 🧠 SUPERVISOR: Si
+2026-05-13 16:57:14,589 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22125', '22311', '22190', '22187', '22124', '22013', '22011', '22185', '22010', '22188']}
+2026-05-13 16:57:18,984 | INFO | app.supervisor | 🧠 Intención detectada: confirmacion
+2026-05-13 16:58:27,685 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 16:58:27,687 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 16:58:38,959 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes latiguillos
+2026-05-13 16:58:38,960 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 16:58:40,023 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 16:58:40,024 | INFO | app.asesor_stock | 📦 STOCK query: Tienes latiguillos
+2026-05-13 16:58:42,341 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 16:58:42,341 | INFO | app.asesor_stock | 0 | score=0.3545 | articulo=22125 | texto=LATIGUILLO TAQ-CODO 40 CM H 3/8 X H 3/8
+        2361
+        Valvuleria y conexi
+2026-05-13 16:58:42,341 | INFO | app.asesor_stock | 1 | score=0.3513 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 16:58:42,341 | INFO | app.asesor_stock | 2 | score=0.3487 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 16:58:42,341 | INFO | app.asesor_stock | 3 | score=0.3466 | articulo=22187 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 30 CM
+        7057
+        Valvuleria y conexione
+2026-05-13 16:58:42,341 | INFO | app.asesor_stock | 4 | score=0.3464 | articulo=22124 | texto=LATIGUILLO TAQ-CODO 35 CM H 3/8 X H 3/8
+        2360
+        Valvuleria y conexi
+2026-05-13 16:58:42,342 | INFO | app.asesor_stock | 5 | score=0.3450 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 16:58:42,342 | INFO | app.asesor_stock | 6 | score=0.3435 | articulo=22011 | texto=LATIGUILLO DN12 15 CM M 3/8 X H 3/8
+        6431
+        Valvuleria y conexiones
+2026-05-13 16:58:42,342 | INFO | app.asesor_stock | 7 | score=0.3426 | articulo=22185 | texto=LATIGUILLO GRIFO M10-L17 H3/8' 30 CM
+        5962
+        Valvuleria y conexione
+2026-05-13 16:58:42,342 | INFO | app.asesor_stock | 8 | score=0.3425 | articulo=22010 | texto=LATIGUILLO DN12 15 CM H 3/8 X H 3/8
+        4658
+        Valvuleria y conexiones
+2026-05-13 16:58:42,342 | INFO | app.asesor_stock | 9 | score=0.3425 | articulo=22188 | texto=LATIGUILLO GRIFO M10-L17 H3/8" 50 CM
+        5956
+        Valvuleria y conexione
+2026-05-13 16:58:42,342 | INFO | app.asesor_stock | 10 | score=0.3418 | articulo=22186 | texto=LATIGUILLO GRIFO M10-L37 H3/8' 30 CM
+        5851
+        Valvuleria y conexione
+2026-05-13 16:58:42,342 | INFO | app.asesor_stock | 11 | score=0.3410 | articulo=22060 | texto=LATIGUILLO DN12 40 CM H 3/8 X H 3/8
+        6782
+        Valvuleria y conexiones
+2026-05-13 16:58:42,342 | INFO | app.asesor_stock | 12 | score=0.3408 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 16:58:42,342 | INFO | app.asesor_stock | 13 | score=0.3407 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 16:58:42,342 | INFO | app.asesor_stock | 14 | score=0.3404 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 16:58:42,342 | INFO | app.asesor_stock | 15 | score=0.3403 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 16:58:42,342 | INFO | app.asesor_stock | 16 | score=0.3402 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 16:58:42,342 | INFO | app.asesor_stock | 17 | score=0.3397 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 16:58:42,342 | INFO | app.asesor_stock | 18 | score=0.3384 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 16:58:42,342 | INFO | app.asesor_stock | 19 | score=0.3380 | articulo=22093 | texto=LATIGUILLO DN12 80 CM H 1/2 X H 3/8
+        6655
+        Valvuleria y conexiones
+2026-05-13 16:58:42,343 | INFO | app.asesor_stock | 20 | score=0.3379 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 16:58:42,343 | INFO | app.asesor_stock | 21 | score=0.3378 | articulo=22043 | texto=LATIGUILLO DN12 30 CM H 1/2 X H 3/8
+        5808
+        Valvuleria y conexiones
+2026-05-13 16:58:42,343 | INFO | app.asesor_stock | 22 | score=0.3377 | articulo=22061 | texto=LATIGUILLO DN12 40 CM M 3/8 X H 3/8
+        6783
+        Valvuleria y conexiones
+2026-05-13 16:58:42,343 | INFO | app.asesor_stock | 23 | score=0.3369 | articulo=22056 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 3/8
+        5892
+        Valvuleria y conexiones
+2026-05-13 16:58:42,343 | INFO | app.asesor_stock | 24 | score=0.3358 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 16:58:42,343 | INFO | app.asesor_stock | 25 | score=0.3352 | articulo=22063 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 3/8
+        6800
+        Valvuleria y conexiones
+2026-05-13 16:58:42,343 | INFO | app.asesor_stock | 26 | score=0.3352 | articulo=22053 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 3/8
+        5809
+        Valvuleria y conexiones
+2026-05-13 16:58:42,343 | INFO | app.asesor_stock | 27 | score=0.3348 | articulo=22051 | texto=LATIGUILLO DN12 35 CM M 3/8 X H 3/8
+        5816
+        Valvuleria y conexiones
+2026-05-13 16:58:42,343 | INFO | app.asesor_stock | 28 | score=0.3347 | articulo=22020 | texto=LATIGUILLO DN12 20 CM H 3/8 X H 3/8
+        3811
+        Valvuleria y conexiones
+2026-05-13 16:58:42,343 | INFO | app.asesor_stock | 29 | score=0.3346 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 16:58:42,343 | WARNING | app.asesor_stock | ❌ Score bajo → 0.35451768462427613
+2026-05-13 16:58:47,212 | INFO | app.supervisor | 🧠 SUPERVISOR: Si
+2026-05-13 16:58:47,212 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22125', '22311', '22190', '22187', '22124', '22013', '22011', '22185', '22010', '22188']}
+2026-05-13 16:58:47,815 | INFO | app.supervisor | 🧠 Intención detectada: confirmacion
+2026-05-13 17:01:30,799 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes machon de media
+2026-05-13 17:01:30,800 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 17:01:31,715 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:01:31,716 | INFO | app.asesor_stock | 📦 STOCK query: Tienes machon de media
+2026-05-13 17:01:33,970 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:01:33,971 | INFO | app.asesor_stock | 0 | score=0.3780 | articulo=03026 | texto=MACHON REDUCIDO LATON 1/2'' X 1''
+        033204
+        Tuberia y accesorios Ac
+2026-05-13 17:01:33,971 | INFO | app.asesor_stock | 1 | score=0.3774 | articulo=05484 | texto=MACHON RETENCION M-M 1/2"
+        054002
+        Tuberia y accesorios Accesorios
+2026-05-13 17:01:33,971 | INFO | app.asesor_stock | 2 | score=0.3773 | articulo=03056 | texto=MACHON REDUCIDO 1/2"X1" CROMO
+        033204-C
+        Tuberia y accesorios Acce
+2026-05-13 17:01:33,971 | INFO | app.asesor_stock | 3 | score=0.3734 | articulo=03027 | texto=MACHON REDUCIDO LATON 1/2'' X 1 1/4''
+        033205
+        Tuberia y accesorio
+2026-05-13 17:01:33,971 | INFO | app.asesor_stock | 4 | score=0.3725 | articulo=03028 | texto=MACHON REDUCIDO LATON 1/2'' X 1 1/2''
+        033206
+        Tuberia y accesorio
+2026-05-13 17:01:33,971 | INFO | app.asesor_stock | 5 | score=0.3719 | articulo=03003 | texto=MACHON LATON 1/2''
+        033002
+        Tuberia y accesorios Accesorios y raco
+2026-05-13 17:01:33,971 | INFO | app.asesor_stock | 6 | score=0.3695 | articulo=03029 | texto=MACHON REDUCIDO LATON 1/2'' X 2''
+        033207
+        Tuberia y accesorios Ac
+2026-05-13 17:01:33,971 | INFO | app.asesor_stock | 7 | score=0.3665 | articulo=03023 | texto=MACHON REDUCIDO LATON 1/4'' X 1/2''
+        033112
+        Tuberia y accesorios 
+2026-05-13 17:01:33,971 | INFO | app.asesor_stock | 8 | score=0.3652 | articulo=03025 | texto=MACHON REDUCIDO LATON 1/2'' X 3/4''
+        033203
+        Tuberia y accesorios 
+2026-05-13 17:01:33,971 | INFO | app.asesor_stock | 9 | score=0.3641 | articulo=03001 | texto=MACHON LATON 1/4''
+        033011
+        Tuberia y accesorios Accesorios y raco
+2026-05-13 17:01:33,971 | INFO | app.asesor_stock | 10 | score=0.3625 | articulo=03013 | texto=MACHON REFORZADO JUNTA PLANA 1/2"
+        6491
+        Tuberia y accesorios Acce
+2026-05-13 17:01:33,971 | INFO | app.asesor_stock | 11 | score=0.3615 | articulo=02446 | texto=MACHON DOBLE INOX 316 1 1/2"
+        0280 08
+        Tuberia y accesorios Acceso
+2026-05-13 17:01:33,971 | INFO | app.asesor_stock | 12 | score=0.3569 | articulo=03055 | texto=MACHON REDUCIDO 1/2"X3/4" CROMO
+        033203-C
+        Tuberia y accesorios Ac
+2026-05-13 17:01:33,971 | INFO | app.asesor_stock | 13 | score=0.3556 | articulo=03046 | texto=MACHON REDUCIDO REFORZ. JUNTA PLANA 3/4" X 1/2"
+        4710019
+        Tuberia 
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 14 | score=0.3552 | articulo=03017 | texto=MACHON LATON 1/2'' CROMO
+        033002-C
+        Tuberia y accesorios Accesorio
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 15 | score=0.3551 | articulo=03007 | texto=MACHON LATON 1 1/2''
+        033006
+        Tuberia y accesorios Accesorios y ra
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 16 | score=0.3546 | articulo=03020 | texto=MACHON REDUCIDO LATON 1/8'' X 1/4''
+        0331211
+        Tuberia y accesorios
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 17 | score=0.3541 | articulo=02463 | texto=MACHON REDUCIDO INOX 316 1 1/4" X 1/2"
+        I2456063
+        Tuberia y acceso
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 18 | score=0.3534 | articulo=03041 | texto=MACHON REDUCIDO LATON 1 1/2'' X 2''
+        033607
+        Tuberia y accesorios 
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 19 | score=0.3531 | articulo=03006 | texto=MACHON LATON 1 1/4''
+        033005
+        Tuberia y accesorios Accesorios y ra
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 20 | score=0.3531 | articulo=03022 | texto=MACHON REDUCIDO LATON 1/4'' X 3/8''
+        033111
+        Tuberia y accesorios 
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 21 | score=0.3527 | articulo=02442 | texto=MACHON DOBLE INOX 316 1/2"
+        0280 04
+        Tuberia y accesorios Accesori
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 22 | score=0.3525 | articulo=03040 | texto=MACHON REDUCIDO LATON 1 1/4'' X 2''
+        033507
+        Tuberia y accesorios 
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 23 | score=0.3515 | articulo=03039 | texto=MACHON REDUCIDO LATON 1 1/4'' X 1 1/2''
+        033506
+        Tuberia y accesor
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 24 | score=0.3500 | articulo=03052 | texto=MACHON REDUCIDO 1/4"X3/8" CROMO
+        033111-C
+        Tuberia y accesorios Ac
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 25 | score=0.3495 | articulo=02440 | texto=MACHON DOBLE INOX 316 1/4"
+        0280 02
+        Tuberia y accesorios Accesori
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 26 | score=0.3489 | articulo=03021 | texto=MACHON REDUCIDO LATON 1/8'' X 3/8''
+        033121
+        Tuberia y accesorios 
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 27 | score=0.3481 | articulo=02467 | texto=MACHON REDUCIDO INOX 316 1 1/2" X 1/2"
+        I2456073
+        Tuberia y acceso
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 28 | score=0.3478 | articulo=03047 | texto=MACHON REDUCIDO REFORZ. JUNTA PLANA 3/4" X 1"
+        4710005
+        Tuberia y 
+2026-05-13 17:01:33,972 | INFO | app.asesor_stock | 29 | score=0.3465 | articulo=03034 | texto=MACHON REDUCIDO LATON 3/4'' X 1 1/2''
+        033306
+        Tuberia y accesorio
+2026-05-13 17:01:33,973 | WARNING | app.asesor_stock | ❌ Score bajo → 0.3779736665437986
+2026-05-13 17:01:39,909 | INFO | app.supervisor | 🧠 SUPERVISOR: Si
+2026-05-13 17:01:39,909 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['03026', '05484', '03056', '03027', '03028', '03003', '03029', '03023', '03025', '03013']}
+2026-05-13 17:01:40,738 | INFO | app.supervisor | 🧠 Intención detectada: confirmacion
+2026-05-13 17:04:20,391 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 17:04:20,393 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 17:04:30,521 | INFO | app.supervisor | 🧠 SUPERVISOR: Latiguillos tienes
+2026-05-13 17:04:30,522 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 17:04:31,782 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:04:31,782 | INFO | app.asesor_stock | 📦 STOCK query: Latiguillos tienes
+2026-05-13 17:04:34,200 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:04:34,200 | INFO | app.asesor_stock | 0 | score=0.3546 | articulo=22125 | texto=LATIGUILLO TAQ-CODO 40 CM H 3/8 X H 3/8
+        2361
+        Valvuleria y conexi
+2026-05-13 17:04:34,200 | INFO | app.asesor_stock | 1 | score=0.3514 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 17:04:34,200 | INFO | app.asesor_stock | 2 | score=0.3488 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 17:04:34,200 | INFO | app.asesor_stock | 3 | score=0.3468 | articulo=22187 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 30 CM
+        7057
+        Valvuleria y conexione
+2026-05-13 17:04:34,200 | INFO | app.asesor_stock | 4 | score=0.3465 | articulo=22124 | texto=LATIGUILLO TAQ-CODO 35 CM H 3/8 X H 3/8
+        2360
+        Valvuleria y conexi
+2026-05-13 17:04:34,200 | INFO | app.asesor_stock | 5 | score=0.3452 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 6 | score=0.3437 | articulo=22011 | texto=LATIGUILLO DN12 15 CM M 3/8 X H 3/8
+        6431
+        Valvuleria y conexiones
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 7 | score=0.3427 | articulo=22185 | texto=LATIGUILLO GRIFO M10-L17 H3/8' 30 CM
+        5962
+        Valvuleria y conexione
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 8 | score=0.3427 | articulo=22010 | texto=LATIGUILLO DN12 15 CM H 3/8 X H 3/8
+        4658
+        Valvuleria y conexiones
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 9 | score=0.3426 | articulo=22188 | texto=LATIGUILLO GRIFO M10-L17 H3/8" 50 CM
+        5956
+        Valvuleria y conexione
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 10 | score=0.3420 | articulo=22186 | texto=LATIGUILLO GRIFO M10-L37 H3/8' 30 CM
+        5851
+        Valvuleria y conexione
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 11 | score=0.3411 | articulo=22060 | texto=LATIGUILLO DN12 40 CM H 3/8 X H 3/8
+        6782
+        Valvuleria y conexiones
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 12 | score=0.3409 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 13 | score=0.3408 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 14 | score=0.3405 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 15 | score=0.3405 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 16 | score=0.3403 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 17 | score=0.3398 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 18 | score=0.3385 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 19 | score=0.3381 | articulo=22093 | texto=LATIGUILLO DN12 80 CM H 1/2 X H 3/8
+        6655
+        Valvuleria y conexiones
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 20 | score=0.3380 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:04:34,201 | INFO | app.asesor_stock | 21 | score=0.3379 | articulo=22043 | texto=LATIGUILLO DN12 30 CM H 1/2 X H 3/8
+        5808
+        Valvuleria y conexiones
+2026-05-13 17:04:34,202 | INFO | app.asesor_stock | 22 | score=0.3378 | articulo=22061 | texto=LATIGUILLO DN12 40 CM M 3/8 X H 3/8
+        6783
+        Valvuleria y conexiones
+2026-05-13 17:04:34,202 | INFO | app.asesor_stock | 23 | score=0.3370 | articulo=22056 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 3/8
+        5892
+        Valvuleria y conexiones
+2026-05-13 17:04:34,202 | INFO | app.asesor_stock | 24 | score=0.3360 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 17:04:34,202 | INFO | app.asesor_stock | 25 | score=0.3353 | articulo=22063 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 3/8
+        6800
+        Valvuleria y conexiones
+2026-05-13 17:04:34,202 | INFO | app.asesor_stock | 26 | score=0.3353 | articulo=22053 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 3/8
+        5809
+        Valvuleria y conexiones
+2026-05-13 17:04:34,202 | INFO | app.asesor_stock | 27 | score=0.3349 | articulo=22051 | texto=LATIGUILLO DN12 35 CM M 3/8 X H 3/8
+        5816
+        Valvuleria y conexiones
+2026-05-13 17:04:34,202 | INFO | app.asesor_stock | 28 | score=0.3348 | articulo=22020 | texto=LATIGUILLO DN12 20 CM H 3/8 X H 3/8
+        3811
+        Valvuleria y conexiones
+2026-05-13 17:04:34,202 | INFO | app.asesor_stock | 29 | score=0.3347 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 17:04:34,202 | INFO | app.asesor_stock | 📊 Vectores encontrados: 30
+2026-05-13 17:04:34,202 | WARNING | app.asesor_stock | ❌ Score bajo → 0.3546375925640919
+2026-05-13 17:05:21,871 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 17:05:21,873 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 17:05:29,199 | INFO | app.supervisor | 🧠 SUPERVISOR: No
+2026-05-13 17:05:29,200 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 17:05:30,324 | INFO | app.supervisor | 🔀 Tool elegida: rag
+2026-05-13 17:05:30,324 | INFO | app.asesor | 📚 ASESOR: ejecutando RAG
+2026-05-13 17:05:30,324 | INFO | app.query | ❓ Pregunta: No
+2026-05-13 17:05:32,932 | INFO | app.query | ⏱ Respuesta en 2.61s
+2026-05-13 17:05:32,933 | DEBUG | app.query | 🔎 Fuente 0: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras
+2026-05-13 17:05:32,933 | DEBUG | app.query | 🔎 Fuente 1: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras
+2026-05-13 17:05:32,933 | DEBUG | app.query | 🔎 Fuente 2: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras
+2026-05-13 17:05:32,933 | DEBUG | app.query | 🔎 Fuente 3: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras
+2026-05-13 17:05:32,933 | DEBUG | app.query | 🔎 Fuente 4: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras
+2026-05-13 17:05:43,323 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes latiguillos
+2026-05-13 17:05:43,323 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 17:05:44,140 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:05:44,140 | INFO | app.asesor_stock | 📦 STOCK query: Tienes latiguillos
+2026-05-13 17:05:47,114 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:05:47,114 | INFO | app.asesor_stock | 0 | score=0.3546 | articulo=22125 | texto=LATIGUILLO TAQ-CODO 40 CM H 3/8 X H 3/8
+        2361
+        Valvuleria y conexi
+2026-05-13 17:05:47,114 | INFO | app.asesor_stock | 1 | score=0.3514 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 17:05:47,114 | INFO | app.asesor_stock | 2 | score=0.3488 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 3 | score=0.3468 | articulo=22187 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 30 CM
+        7057
+        Valvuleria y conexione
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 4 | score=0.3465 | articulo=22124 | texto=LATIGUILLO TAQ-CODO 35 CM H 3/8 X H 3/8
+        2360
+        Valvuleria y conexi
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 5 | score=0.3452 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 6 | score=0.3437 | articulo=22011 | texto=LATIGUILLO DN12 15 CM M 3/8 X H 3/8
+        6431
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 7 | score=0.3427 | articulo=22185 | texto=LATIGUILLO GRIFO M10-L17 H3/8' 30 CM
+        5962
+        Valvuleria y conexione
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 8 | score=0.3427 | articulo=22010 | texto=LATIGUILLO DN12 15 CM H 3/8 X H 3/8
+        4658
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 9 | score=0.3426 | articulo=22188 | texto=LATIGUILLO GRIFO M10-L17 H3/8" 50 CM
+        5956
+        Valvuleria y conexione
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 10 | score=0.3420 | articulo=22186 | texto=LATIGUILLO GRIFO M10-L37 H3/8' 30 CM
+        5851
+        Valvuleria y conexione
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 11 | score=0.3411 | articulo=22060 | texto=LATIGUILLO DN12 40 CM H 3/8 X H 3/8
+        6782
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 12 | score=0.3409 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 13 | score=0.3408 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 14 | score=0.3405 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 15 | score=0.3405 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 16 | score=0.3403 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 17 | score=0.3398 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 18 | score=0.3385 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 19 | score=0.3381 | articulo=22093 | texto=LATIGUILLO DN12 80 CM H 1/2 X H 3/8
+        6655
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 20 | score=0.3380 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 21 | score=0.3379 | articulo=22043 | texto=LATIGUILLO DN12 30 CM H 1/2 X H 3/8
+        5808
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 22 | score=0.3378 | articulo=22061 | texto=LATIGUILLO DN12 40 CM M 3/8 X H 3/8
+        6783
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 23 | score=0.3370 | articulo=22056 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 3/8
+        5892
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 24 | score=0.3360 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 25 | score=0.3353 | articulo=22063 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 3/8
+        6800
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 26 | score=0.3353 | articulo=22053 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 3/8
+        5809
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 27 | score=0.3349 | articulo=22051 | texto=LATIGUILLO DN12 35 CM M 3/8 X H 3/8
+        5816
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 28 | score=0.3348 | articulo=22020 | texto=LATIGUILLO DN12 20 CM H 3/8 X H 3/8
+        3811
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 29 | score=0.3347 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 📊 Vectores encontrados: 30
+2026-05-13 17:05:47,115 | INFO | app.asesor_stock | 📊 Vectores filtrados: 30
+2026-05-13 17:05:47,115 | WARNING | app.asesor_stock | ❌ Score bajo → 0.3546375925640919
+2026-05-13 17:07:03,241 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 17:07:03,242 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 17:07:08,722 | INFO | app.supervisor | 🧠 SUPERVISOR: Si
+2026-05-13 17:07:08,723 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 17:07:10,270 | INFO | app.supervisor | 🔀 Tool elegida: rag
+2026-05-13 17:07:10,271 | INFO | app.asesor | 📚 ASESOR: ejecutando RAG
+2026-05-13 17:07:10,271 | INFO | app.query | ❓ Pregunta: Si
+2026-05-13 17:07:11,395 | INFO | app.query | ⏱ Respuesta en 1.12s
+2026-05-13 17:07:11,395 | DEBUG | app.query | 🔎 Fuente 0: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 17:07:11,395 | DEBUG | app.query | 🔎 Fuente 1: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 17:07:11,395 | DEBUG | app.query | 🔎 Fuente 2: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 17:07:11,395 | DEBUG | app.query | 🔎 Fuente 3: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 17:07:11,395 | DEBUG | app.query | 🔎 Fuente 4: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 17:07:17,872 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes latiguillos
+2026-05-13 17:07:17,872 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 17:07:19,177 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:07:19,177 | INFO | app.asesor_stock | 📦 STOCK query: Tienes latiguillos
+2026-05-13 17:07:21,422 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:07:21,422 | INFO | app.asesor_stock | 0 | score=0.3546 | articulo=22125 | texto=LATIGUILLO TAQ-CODO 40 CM H 3/8 X H 3/8
+        2361
+        Valvuleria y conexi
+2026-05-13 17:07:21,422 | INFO | app.asesor_stock | 1 | score=0.3514 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 17:07:21,422 | INFO | app.asesor_stock | 2 | score=0.3488 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 17:07:21,422 | INFO | app.asesor_stock | 3 | score=0.3468 | articulo=22187 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 30 CM
+        7057
+        Valvuleria y conexione
+2026-05-13 17:07:21,422 | INFO | app.asesor_stock | 4 | score=0.3465 | articulo=22124 | texto=LATIGUILLO TAQ-CODO 35 CM H 3/8 X H 3/8
+        2360
+        Valvuleria y conexi
+2026-05-13 17:07:21,422 | INFO | app.asesor_stock | 5 | score=0.3452 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:07:21,422 | INFO | app.asesor_stock | 6 | score=0.3437 | articulo=22011 | texto=LATIGUILLO DN12 15 CM M 3/8 X H 3/8
+        6431
+        Valvuleria y conexiones
+2026-05-13 17:07:21,422 | INFO | app.asesor_stock | 7 | score=0.3427 | articulo=22185 | texto=LATIGUILLO GRIFO M10-L17 H3/8' 30 CM
+        5962
+        Valvuleria y conexione
+2026-05-13 17:07:21,422 | INFO | app.asesor_stock | 8 | score=0.3427 | articulo=22010 | texto=LATIGUILLO DN12 15 CM H 3/8 X H 3/8
+        4658
+        Valvuleria y conexiones
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 9 | score=0.3426 | articulo=22188 | texto=LATIGUILLO GRIFO M10-L17 H3/8" 50 CM
+        5956
+        Valvuleria y conexione
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 10 | score=0.3420 | articulo=22186 | texto=LATIGUILLO GRIFO M10-L37 H3/8' 30 CM
+        5851
+        Valvuleria y conexione
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 11 | score=0.3411 | articulo=22060 | texto=LATIGUILLO DN12 40 CM H 3/8 X H 3/8
+        6782
+        Valvuleria y conexiones
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 12 | score=0.3409 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 13 | score=0.3408 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 14 | score=0.3405 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 15 | score=0.3405 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 16 | score=0.3403 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 17 | score=0.3398 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 18 | score=0.3385 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 19 | score=0.3381 | articulo=22093 | texto=LATIGUILLO DN12 80 CM H 1/2 X H 3/8
+        6655
+        Valvuleria y conexiones
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 20 | score=0.3380 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 21 | score=0.3379 | articulo=22043 | texto=LATIGUILLO DN12 30 CM H 1/2 X H 3/8
+        5808
+        Valvuleria y conexiones
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 22 | score=0.3378 | articulo=22061 | texto=LATIGUILLO DN12 40 CM M 3/8 X H 3/8
+        6783
+        Valvuleria y conexiones
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 23 | score=0.3370 | articulo=22056 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 3/8
+        5892
+        Valvuleria y conexiones
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 24 | score=0.3360 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 17:07:21,423 | INFO | app.asesor_stock | 25 | score=0.3353 | articulo=22063 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 3/8
+        6800
+        Valvuleria y conexiones
+2026-05-13 17:07:21,424 | INFO | app.asesor_stock | 26 | score=0.3353 | articulo=22053 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 3/8
+        5809
+        Valvuleria y conexiones
+2026-05-13 17:07:21,424 | INFO | app.asesor_stock | 27 | score=0.3349 | articulo=22051 | texto=LATIGUILLO DN12 35 CM M 3/8 X H 3/8
+        5816
+        Valvuleria y conexiones
+2026-05-13 17:07:21,424 | INFO | app.asesor_stock | 28 | score=0.3348 | articulo=22020 | texto=LATIGUILLO DN12 20 CM H 3/8 X H 3/8
+        3811
+        Valvuleria y conexiones
+2026-05-13 17:07:21,424 | INFO | app.asesor_stock | 29 | score=0.3347 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 17:07:21,424 | INFO | app.asesor_stock | 📊 Vectores encontrados: 30
+2026-05-13 17:07:21,424 | INFO | app.asesor_stock | 📊 Vectores filtrados: 30
+2026-05-13 17:07:21,424 | WARNING | app.asesor_stock | ❌ Score bajo → 0.3546375925640919
+2026-05-13 17:07:21,424 | INFO | app.asesor_stock | 📊 Articulos encontrados: 10
+2026-05-13 17:08:20,139 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 17:08:20,141 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 17:08:25,423 | INFO | app.supervisor | 🧠 SUPERVISOR: Si
+2026-05-13 17:08:25,423 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 17:08:26,433 | INFO | app.supervisor | 🔀 Tool elegida: rag
+2026-05-13 17:08:26,434 | INFO | app.asesor | 📚 ASESOR: ejecutando RAG
+2026-05-13 17:08:26,434 | INFO | app.query | ❓ Pregunta: Si
+2026-05-13 17:08:27,677 | INFO | app.query | ⏱ Respuesta en 1.24s
+2026-05-13 17:08:27,677 | DEBUG | app.query | 🔎 Fuente 0: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 17:08:27,677 | DEBUG | app.query | 🔎 Fuente 1: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 17:08:27,677 | DEBUG | app.query | 🔎 Fuente 2: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 17:08:27,677 | DEBUG | app.query | 🔎 Fuente 3: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 17:08:27,677 | DEBUG | app.query | 🔎 Fuente 4: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-13 17:08:33,809 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes latiguillos
+2026-05-13 17:08:33,809 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 17:08:34,949 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:08:34,950 | INFO | app.asesor_stock | 📦 STOCK query: Tienes latiguillos
+2026-05-13 17:08:38,532 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:08:38,532 | INFO | app.asesor_stock | 0 | score=0.3546 | articulo=22125 | texto=LATIGUILLO TAQ-CODO 40 CM H 3/8 X H 3/8
+        2361
+        Valvuleria y conexi
+2026-05-13 17:08:38,532 | INFO | app.asesor_stock | 1 | score=0.3514 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 17:08:38,532 | INFO | app.asesor_stock | 2 | score=0.3488 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 17:08:38,532 | INFO | app.asesor_stock | 3 | score=0.3468 | articulo=22187 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 30 CM
+        7057
+        Valvuleria y conexione
+2026-05-13 17:08:38,532 | INFO | app.asesor_stock | 4 | score=0.3465 | articulo=22124 | texto=LATIGUILLO TAQ-CODO 35 CM H 3/8 X H 3/8
+        2360
+        Valvuleria y conexi
+2026-05-13 17:08:38,532 | INFO | app.asesor_stock | 5 | score=0.3452 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:08:38,532 | INFO | app.asesor_stock | 6 | score=0.3437 | articulo=22011 | texto=LATIGUILLO DN12 15 CM M 3/8 X H 3/8
+        6431
+        Valvuleria y conexiones
+2026-05-13 17:08:38,532 | INFO | app.asesor_stock | 7 | score=0.3427 | articulo=22185 | texto=LATIGUILLO GRIFO M10-L17 H3/8' 30 CM
+        5962
+        Valvuleria y conexione
+2026-05-13 17:08:38,532 | INFO | app.asesor_stock | 8 | score=0.3427 | articulo=22010 | texto=LATIGUILLO DN12 15 CM H 3/8 X H 3/8
+        4658
+        Valvuleria y conexiones
+2026-05-13 17:08:38,532 | INFO | app.asesor_stock | 9 | score=0.3426 | articulo=22188 | texto=LATIGUILLO GRIFO M10-L17 H3/8" 50 CM
+        5956
+        Valvuleria y conexione
+2026-05-13 17:08:38,532 | INFO | app.asesor_stock | 10 | score=0.3420 | articulo=22186 | texto=LATIGUILLO GRIFO M10-L37 H3/8' 30 CM
+        5851
+        Valvuleria y conexione
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 11 | score=0.3411 | articulo=22060 | texto=LATIGUILLO DN12 40 CM H 3/8 X H 3/8
+        6782
+        Valvuleria y conexiones
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 12 | score=0.3409 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 13 | score=0.3408 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 14 | score=0.3405 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 15 | score=0.3405 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 16 | score=0.3403 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 17 | score=0.3398 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 18 | score=0.3385 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 19 | score=0.3381 | articulo=22093 | texto=LATIGUILLO DN12 80 CM H 1/2 X H 3/8
+        6655
+        Valvuleria y conexiones
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 20 | score=0.3380 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 21 | score=0.3379 | articulo=22043 | texto=LATIGUILLO DN12 30 CM H 1/2 X H 3/8
+        5808
+        Valvuleria y conexiones
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 22 | score=0.3378 | articulo=22061 | texto=LATIGUILLO DN12 40 CM M 3/8 X H 3/8
+        6783
+        Valvuleria y conexiones
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 23 | score=0.3370 | articulo=22056 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 3/8
+        5892
+        Valvuleria y conexiones
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 24 | score=0.3360 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 25 | score=0.3353 | articulo=22063 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 3/8
+        6800
+        Valvuleria y conexiones
+2026-05-13 17:08:38,533 | INFO | app.asesor_stock | 26 | score=0.3353 | articulo=22053 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 3/8
+        5809
+        Valvuleria y conexiones
+2026-05-13 17:08:38,534 | INFO | app.asesor_stock | 27 | score=0.3349 | articulo=22051 | texto=LATIGUILLO DN12 35 CM M 3/8 X H 3/8
+        5816
+        Valvuleria y conexiones
+2026-05-13 17:08:38,534 | INFO | app.asesor_stock | 28 | score=0.3348 | articulo=22020 | texto=LATIGUILLO DN12 20 CM H 3/8 X H 3/8
+        3811
+        Valvuleria y conexiones
+2026-05-13 17:08:38,534 | INFO | app.asesor_stock | 29 | score=0.3347 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 17:08:38,534 | INFO | app.asesor_stock | 📊 Vectores encontrados: 30
+2026-05-13 17:08:38,534 | INFO | app.asesor_stock | 📊 Vectores filtrados: 30
+2026-05-13 17:08:38,534 | WARNING | app.asesor_stock | ❌ Score bajo → 0.3546375925640919
+2026-05-13 17:08:38,534 | INFO | app.asesor_stock | 📊 Articulos encontrados: 30
+2026-05-13 17:08:48,107 | INFO | app.supervisor | 🧠 SUPERVISOR: Latiguillos de media
+2026-05-13 17:08:48,107 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22125', '22311', '22190', '22187', '22124', '22013', '22011', '22185', '22010', '22188', '22186', '22060', '22062', '22015', '22026', '22033', '22016', '22073', '22012', '22093', '22035', '22043', '22061', '22056', '22025', '22063', '22053', '22051', '22020', '22036']}
+2026-05-13 17:08:48,754 | INFO | app.supervisor | 🧠 Intención detectada: nueva_consulta
+2026-05-13 17:08:48,754 | INFO | app.supervisor | 🆕 Nueva consulta detectada → ignorando contexto
+2026-05-13 17:08:49,283 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:08:49,283 | INFO | app.asesor_stock | 📦 STOCK query: Latiguillos de media
+2026-05-13 17:08:51,128 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:08:51,128 | INFO | app.asesor_stock | 0 | score=0.4328 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:08:51,128 | INFO | app.asesor_stock | 1 | score=0.4267 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 17:08:51,128 | INFO | app.asesor_stock | 2 | score=0.4265 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 3 | score=0.4259 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 4 | score=0.4258 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 5 | score=0.4241 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 6 | score=0.4230 | articulo=03322 | texto=MANGUITO REDUCIDO LATON H-H 1/2'' X 1''
+        065204
+        Tuberia y accesor
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 7 | score=0.4228 | articulo=22055 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 1/2
+        5876
+        Valvuleria y conexiones
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 8 | score=0.4226 | articulo=22005 | texto=LATIGUILLO DN12 10 CM M 1/2 X H 1/2
+        906
+        Valvuleria y conexiones 
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 9 | score=0.4225 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 10 | score=0.4211 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 11 | score=0.4195 | articulo=22085 | texto=LATIGUILLO DN12 60 CM M 1/2 X H 1/2
+        1866
+        Valvuleria y conexiones
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 12 | score=0.4193 | articulo=22105 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 1/2
+        1547
+        Valvuleria y conexione
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 13 | score=0.4193 | articulo=22075 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 1/2
+        1865
+        Valvuleria y conexiones
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 14 | score=0.4191 | articulo=22032 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 1/2
+        709
+        Valvuleria y conexiones 
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 15 | score=0.4191 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 16 | score=0.4188 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 17 | score=0.4179 | articulo=22056 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 3/8
+        5892
+        Valvuleria y conexiones
+2026-05-13 17:08:51,129 | INFO | app.asesor_stock | 18 | score=0.4176 | articulo=22052 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 1/2
+        5805
+        Valvuleria y conexiones
+2026-05-13 17:08:51,130 | INFO | app.asesor_stock | 19 | score=0.4172 | articulo=22082 | texto=LATIGUILLO DN12 60 CM H 1/2 X H 1/2
+        3953
+        Valvuleria y conexiones
+2026-05-13 17:08:51,130 | INFO | app.asesor_stock | 20 | score=0.4170 | articulo=03321 | texto=MANGUITO REDUCIDO LATON H-H 1/2'' X 3/4''
+        065203
+        Tuberia y acces
+2026-05-13 17:08:51,130 | INFO | app.asesor_stock | 21 | score=0.4169 | articulo=22102 | texto=LATIGUILLO DN12 100 CM H 1/2 X H 1/2
+        3955
+        Valvuleria y conexione
+2026-05-13 17:08:51,130 | INFO | app.asesor_stock | 22 | score=0.4167 | articulo=22022 | texto=LATIGUILLO DN12 20 CM H 1/2 X H 1/2
+        3949
+        Valvuleria y conexiones
+2026-05-13 17:08:51,130 | INFO | app.asesor_stock | 23 | score=0.4160 | articulo=22045 | texto=LATIGUILLO DN12 30 CM M 1/2 X H 1/2
+        1863
+        Valvuleria y conexiones
+2026-05-13 17:08:51,130 | INFO | app.asesor_stock | 24 | score=0.4159 | articulo=22042 | texto=LATIGUILLO DN12 30 CM H 1/2 X H 1/2
+        3618
+        Valvuleria y conexiones
+2026-05-13 17:08:51,130 | INFO | app.asesor_stock | 25 | score=0.4158 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 17:08:51,130 | INFO | app.asesor_stock | 26 | score=0.4157 | articulo=22086 | texto=LATIGUILLO DN12 60 CM M 1/2 X H 3/8
+        1870
+        Valvuleria y conexiones
+2026-05-13 17:08:51,130 | INFO | app.asesor_stock | 27 | score=0.4155 | articulo=22072 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 1/2
+        3623
+        Valvuleria y conexiones
+2026-05-13 17:08:51,130 | INFO | app.asesor_stock | 28 | score=0.4150 | articulo=22043 | texto=LATIGUILLO DN12 30 CM H 1/2 X H 3/8
+        5808
+        Valvuleria y conexiones
+2026-05-13 17:08:51,130 | INFO | app.asesor_stock | 29 | score=0.4137 | articulo=22076 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 3/8
+        1869
+        Valvuleria y conexiones
+2026-05-13 17:08:51,130 | INFO | app.asesor_stock | 📊 Vectores encontrados: 30
+2026-05-13 17:08:51,130 | INFO | app.asesor_stock | 📊 Vectores filtrados: 30
+2026-05-13 17:08:51,130 | WARNING | app.asesor_stock | ❌ Score bajo → 0.43278228360034365
+2026-05-13 17:08:51,130 | INFO | app.asesor_stock | 📊 Articulos encontrados: 30
+2026-05-13 17:09:17,647 | INFO | app.supervisor | 🧠 SUPERVISOR: Latiguillos de media 50 cm
+2026-05-13 17:09:17,647 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22015', '22012', '22016', '22035', '22013', '22025', '03322', '22055', '22005', '22026', '22033', '22085', '22105', '22075', '22032', '22062', '22073', '22056', '22052', '22082', '03321', '22102', '22022', '22045', '22042', '22036', '22086', '22072', '22043', '22076']}
+2026-05-13 17:09:18,516 | INFO | app.supervisor | 🧠 Intención detectada: nueva_consulta
+2026-05-13 17:09:18,517 | INFO | app.supervisor | 🆕 Nueva consulta detectada → ignorando contexto
+2026-05-13 17:09:19,389 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:09:19,389 | INFO | app.asesor_stock | 📦 STOCK query: Latiguillos de media 50 cm
+2026-05-13 17:09:21,951 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:09:21,951 | INFO | app.asesor_stock | 0 | score=0.5152 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 17:09:21,952 | INFO | app.asesor_stock | 1 | score=0.5095 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:09:21,952 | INFO | app.asesor_stock | 2 | score=0.5079 | articulo=22075 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 1/2
+        1865
+        Valvuleria y conexiones
+2026-05-13 17:09:21,952 | INFO | app.asesor_stock | 3 | score=0.5071 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:09:21,952 | INFO | app.asesor_stock | 4 | score=0.5034 | articulo=22350 | texto=LATIGUILLO CONTADOR TRENZ. INOX 50 CM M1 X H1
+        6695
+        Valvuleria y 
+2026-05-13 17:09:21,952 | INFO | app.asesor_stock | 5 | score=0.5033 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 17:09:21,952 | INFO | app.asesor_stock | 6 | score=0.5014 | articulo=22055 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 1/2
+        5876
+        Valvuleria y conexiones
+2026-05-13 17:09:21,952 | INFO | app.asesor_stock | 7 | score=0.5014 | articulo=22072 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 1/2
+        3623
+        Valvuleria y conexiones
+2026-05-13 17:09:21,952 | INFO | app.asesor_stock | 8 | score=0.5007 | articulo=22105 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 1/2
+        1547
+        Valvuleria y conexione
+2026-05-13 17:09:21,952 | INFO | app.asesor_stock | 9 | score=0.4993 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 17:09:21,952 | INFO | app.asesor_stock | 10 | score=0.4985 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:09:21,952 | INFO | app.asesor_stock | 11 | score=0.4984 | articulo=22032 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 1/2
+        709
+        Valvuleria y conexiones 
+2026-05-13 17:09:21,952 | INFO | app.asesor_stock | 12 | score=0.4980 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:09:21,952 | INFO | app.asesor_stock | 13 | score=0.4979 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:09:21,952 | INFO | app.asesor_stock | 14 | score=0.4978 | articulo=22005 | texto=LATIGUILLO DN12 10 CM M 1/2 X H 1/2
+        906
+        Valvuleria y conexiones 
+2026-05-13 17:09:21,952 | INFO | app.asesor_stock | 15 | score=0.4977 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 16 | score=0.4971 | articulo=22102 | texto=LATIGUILLO DN12 100 CM H 1/2 X H 1/2
+        3955
+        Valvuleria y conexione
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 17 | score=0.4964 | articulo=22106 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 3/8
+        1550
+        Valvuleria y conexione
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 18 | score=0.4964 | articulo=22052 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 1/2
+        5805
+        Valvuleria y conexiones
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 19 | score=0.4960 | articulo=22076 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 3/8
+        1869
+        Valvuleria y conexiones
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 20 | score=0.4947 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 21 | score=0.4947 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 22 | score=0.4934 | articulo=22085 | texto=LATIGUILLO DN12 60 CM M 1/2 X H 1/2
+        1866
+        Valvuleria y conexiones
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 23 | score=0.4912 | articulo=22093 | texto=LATIGUILLO DN12 80 CM H 1/2 X H 3/8
+        6655
+        Valvuleria y conexiones
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 24 | score=0.4907 | articulo=22082 | texto=LATIGUILLO DN12 60 CM H 1/2 X H 1/2
+        3953
+        Valvuleria y conexiones
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 25 | score=0.4905 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 26 | score=0.4897 | articulo=22260 | texto=LATIGUILLO DN17 50 CM H 1/2 X H 1/2
+        1432
+        Valvuleria y conexiones
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 27 | score=0.4892 | articulo=22056 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 3/8
+        5892
+        Valvuleria y conexiones
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 28 | score=0.4890 | articulo=22045 | texto=LATIGUILLO DN12 30 CM M 1/2 X H 1/2
+        1863
+        Valvuleria y conexiones
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 29 | score=0.4889 | articulo=22103 | texto=LATIGUILLO DN12 100 CM H 1/2 X H 3/8
+        3956
+        Valvuleria y conexione
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 📊 Vectores encontrados: 30
+2026-05-13 17:09:21,953 | INFO | app.asesor_stock | 📊 Vectores filtrados: 27
+2026-05-13 17:09:21,954 | WARNING | app.asesor_stock | ❌ Score bajo → 0.5152122454669308
+2026-05-13 17:09:21,954 | INFO | app.asesor_stock | 📊 Articulos encontrados: 27
+2026-05-13 17:12:11,932 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 17:12:11,934 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 17:12:27,918 | INFO | app.supervisor | 🧠 SUPERVISOR: Latiguillos de media 50 cm
+2026-05-13 17:12:27,918 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 17:12:44,103 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:12:44,103 | INFO | app.asesor_stock | 📦 STOCK query: Latiguillos de media 50 cm
+2026-05-13 17:12:45,015 | INFO | app.asesor_stock | 📊 Query Clean: 20
+2026-05-13 17:12:46,434 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:12:46,434 | INFO | app.asesor_stock | 0 | score=0.5151 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 17:12:46,434 | INFO | app.asesor_stock | 1 | score=0.5094 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:12:46,434 | INFO | app.asesor_stock | 2 | score=0.5079 | articulo=22075 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 1/2
+        1865
+        Valvuleria y conexiones
+2026-05-13 17:12:46,434 | INFO | app.asesor_stock | 3 | score=0.5071 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:12:46,434 | INFO | app.asesor_stock | 4 | score=0.5034 | articulo=22350 | texto=LATIGUILLO CONTADOR TRENZ. INOX 50 CM M1 X H1
+        6695
+        Valvuleria y 
+2026-05-13 17:12:46,434 | INFO | app.asesor_stock | 5 | score=0.5033 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 6 | score=0.5014 | articulo=22055 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 1/2
+        5876
+        Valvuleria y conexiones
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 7 | score=0.5014 | articulo=22072 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 1/2
+        3623
+        Valvuleria y conexiones
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 8 | score=0.5007 | articulo=22105 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 1/2
+        1547
+        Valvuleria y conexione
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 9 | score=0.4993 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 10 | score=0.4985 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 11 | score=0.4984 | articulo=22032 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 1/2
+        709
+        Valvuleria y conexiones 
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 12 | score=0.4980 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 13 | score=0.4978 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 14 | score=0.4978 | articulo=22005 | texto=LATIGUILLO DN12 10 CM M 1/2 X H 1/2
+        906
+        Valvuleria y conexiones 
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 15 | score=0.4977 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 16 | score=0.4971 | articulo=22102 | texto=LATIGUILLO DN12 100 CM H 1/2 X H 1/2
+        3955
+        Valvuleria y conexione
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 17 | score=0.4964 | articulo=22052 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 1/2
+        5805
+        Valvuleria y conexiones
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 18 | score=0.4964 | articulo=22106 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 3/8
+        1550
+        Valvuleria y conexione
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 19 | score=0.4960 | articulo=22076 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 3/8
+        1869
+        Valvuleria y conexiones
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 20 | score=0.4947 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 21 | score=0.4946 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 17:12:46,435 | INFO | app.asesor_stock | 22 | score=0.4934 | articulo=22085 | texto=LATIGUILLO DN12 60 CM M 1/2 X H 1/2
+        1866
+        Valvuleria y conexiones
+2026-05-13 17:12:46,436 | INFO | app.asesor_stock | 23 | score=0.4912 | articulo=22093 | texto=LATIGUILLO DN12 80 CM H 1/2 X H 3/8
+        6655
+        Valvuleria y conexiones
+2026-05-13 17:12:46,436 | INFO | app.asesor_stock | 24 | score=0.4907 | articulo=22082 | texto=LATIGUILLO DN12 60 CM H 1/2 X H 1/2
+        3953
+        Valvuleria y conexiones
+2026-05-13 17:12:46,436 | INFO | app.asesor_stock | 25 | score=0.4905 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 17:12:46,436 | INFO | app.asesor_stock | 26 | score=0.4897 | articulo=22260 | texto=LATIGUILLO DN17 50 CM H 1/2 X H 1/2
+        1432
+        Valvuleria y conexiones
+2026-05-13 17:12:46,436 | INFO | app.asesor_stock | 27 | score=0.4891 | articulo=22056 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 3/8
+        5892
+        Valvuleria y conexiones
+2026-05-13 17:12:46,436 | INFO | app.asesor_stock | 28 | score=0.4890 | articulo=22045 | texto=LATIGUILLO DN12 30 CM M 1/2 X H 1/2
+        1863
+        Valvuleria y conexiones
+2026-05-13 17:12:46,436 | INFO | app.asesor_stock | 29 | score=0.4889 | articulo=22103 | texto=LATIGUILLO DN12 100 CM H 1/2 X H 3/8
+        3956
+        Valvuleria y conexione
+2026-05-13 17:12:46,436 | INFO | app.asesor_stock | 📊 Vectores encontrados: 30
+2026-05-13 17:12:46,436 | INFO | app.asesor_stock | 📊 Vectores filtrados: 27
+2026-05-13 17:12:46,436 | WARNING | app.asesor_stock | ❌ Score bajo → 0.5151395608938387
+2026-05-13 17:12:46,436 | INFO | app.asesor_stock | 📊 Articulos encontrados: 27
+2026-05-13 17:13:49,035 | INFO | app.supervisor | 🧠 SUPERVISOR: Latiguillos dn12 50
+2026-05-13 17:13:49,035 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22015', '22075', '22035', '22073', '22055', '22072', '22105', '22012', '22013', '22032', '22033', '22016', '22005', '22025', '22102', '22052', '22106', '22076', '22062', '22085', '22093', '22082', '22036', '22260', '22056', '22045', '22103']}
+2026-05-13 17:13:49,938 | INFO | app.supervisor | 🧠 Intención detectada: nueva_consulta
+2026-05-13 17:13:49,939 | INFO | app.supervisor | 🆕 Nueva consulta detectada → ignorando contexto
+2026-05-13 17:13:50,337 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:13:50,337 | INFO | app.asesor_stock | 📦 STOCK query: Latiguillos dn12 50
+2026-05-13 17:13:51,370 | INFO | app.asesor_stock | 📊 Query Clean: 18
+2026-05-13 17:13:52,486 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:13:52,486 | INFO | app.asesor_stock | 0 | score=0.5366 | articulo=89475 | texto=MANGUITO DESLIZ.  EVAC. INSONORIZ. ULTRA SILENT DN125
+        7071750070
+       
+2026-05-13 17:13:52,487 | INFO | app.asesor_stock | 1 | score=0.5359 | articulo=47806 | texto=ANCLAJE LIGERO C/ TUERCA DINAK DEKO LEÑA DN125
+        039012075SWNA
+        Con
+2026-05-13 17:13:52,487 | INFO | app.asesor_stock | 2 | score=0.5356 | articulo=48005 | texto=ANCLAJE INTERMEDIO DINAK DP DN125
+        030912080
+        Conductos y ventilac
+2026-05-13 17:13:52,487 | INFO | app.asesor_stock | 3 | score=0.5238 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 17:13:52,487 | INFO | app.asesor_stock | 4 | score=0.5221 | articulo=49912 | texto=MANGUITO FIJ. BOCA AUTO BE DN125 A CONDUCTO DN125
+        FBE 125
+        Conduc
+2026-05-13 17:13:52,487 | INFO | app.asesor_stock | 5 | score=0.5219 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 17:13:52,487 | INFO | app.asesor_stock | 6 | score=0.5216 | articulo=48007 | texto=ANCLAJE REGULABLE 70-120 MM DINAK DP DN125
+        030912083
+        Conductos y
+2026-05-13 17:13:52,487 | INFO | app.asesor_stock | 7 | score=0.5207 | articulo=47816 | texto=CODO 45º DEKO LEÑA DN125
+        039A12040DEN
+        Conductos y ventilacion Co
+2026-05-13 17:13:52,487 | INFO | app.asesor_stock | 8 | score=0.5204 | articulo=48001 | texto=ANCLAJE PLANO REGULABLE DINAK DP DN125
+        030912831
+        Conductos y ven
+2026-05-13 17:13:52,487 | INFO | app.asesor_stock | 9 | score=0.5202 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:13:52,487 | INFO | app.asesor_stock | 10 | score=0.5180 | articulo=22075 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 1/2
+        1865
+        Valvuleria y conexiones
+2026-05-13 17:13:52,488 | INFO | app.asesor_stock | 11 | score=0.5176 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:13:52,488 | INFO | app.asesor_stock | 12 | score=0.5176 | articulo=22072 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 1/2
+        3623
+        Valvuleria y conexiones
+2026-05-13 17:13:52,488 | INFO | app.asesor_stock | 13 | score=0.5175 | articulo=47006 | texto=ANCLAJE LIGERO CON TUERCA DINAK SW DN125
+        059012075SW
+        Conductos y
+2026-05-13 17:13:52,488 | INFO | app.asesor_stock | 14 | score=0.5172 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:13:52,488 | INFO | app.asesor_stock | 15 | score=0.5153 | articulo=22032 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 1/2
+        709
+        Valvuleria y conexiones 
+2026-05-13 17:13:52,488 | INFO | app.asesor_stock | 16 | score=0.5153 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 17:13:52,488 | INFO | app.asesor_stock | 17 | score=0.5152 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 17:13:52,488 | INFO | app.asesor_stock | 18 | score=0.5145 | articulo=22063 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 3/8
+        6800
+        Valvuleria y conexiones
+2026-05-13 17:13:52,488 | INFO | app.asesor_stock | 19 | score=0.5142 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 17:13:52,488 | INFO | app.asesor_stock | 20 | score=0.5140 | articulo=22005 | texto=LATIGUILLO DN12 10 CM M 1/2 X H 1/2
+        906
+        Valvuleria y conexiones 
+2026-05-13 17:13:52,488 | INFO | app.asesor_stock | 21 | score=0.5140 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:13:52,489 | INFO | app.asesor_stock | 22 | score=0.5136 | articulo=15492 | texto=MANGUITO UNION PEGAR H-H SDP D.50
+        210.050
+        Tuberia y accesorios A
+2026-05-13 17:13:52,489 | INFO | app.asesor_stock | 23 | score=0.5130 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:13:52,489 | INFO | app.asesor_stock | 24 | score=0.5108 | articulo=15506 | texto=MANGUITO DESLIZANTE SDP D.125
+        1.111.125
+        Tuberia y accesorios Acc
+2026-05-13 17:13:52,489 | INFO | app.asesor_stock | 25 | score=0.5098 | articulo=22022 | texto=LATIGUILLO DN12 20 CM H 1/2 X H 1/2
+        3949
+        Valvuleria y conexiones
+2026-05-13 17:13:52,489 | INFO | app.asesor_stock | 26 | score=0.5098 | articulo=22102 | texto=LATIGUILLO DN12 100 CM H 1/2 X H 1/2
+        3955
+        Valvuleria y conexione
+2026-05-13 17:13:52,489 | INFO | app.asesor_stock | 27 | score=0.5093 | articulo=22052 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 1/2
+        5805
+        Valvuleria y conexiones
+2026-05-13 17:13:52,489 | INFO | app.asesor_stock | 28 | score=0.5091 | articulo=22082 | texto=LATIGUILLO DN12 60 CM H 1/2 X H 1/2
+        3953
+        Valvuleria y conexiones
+2026-05-13 17:13:52,489 | INFO | app.asesor_stock | 29 | score=0.5091 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 17:13:52,489 | INFO | app.asesor_stock | 📊 Vectores encontrados: 30
+2026-05-13 17:13:52,489 | INFO | app.asesor_stock | 📊 Vectores filtrados: 29
+2026-05-13 17:13:52,490 | WARNING | app.asesor_stock | ❌ Score bajo → 0.5366497105441675
+2026-05-13 17:13:52,490 | INFO | app.asesor_stock | 📊 Articulos encontrados: 29
+2026-05-13 17:14:27,723 | INFO | app.supervisor | 🧠 SUPERVISOR: Latiguillos de dn12 50 cm de media
+2026-05-13 17:14:27,724 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['89475', '47806', '48005', '22073', '49912', '22012', '48007', '47816', '48001', '22035', '22075', '22013', '22072', '47006', '22015', '22032', '22311', '22062', '22063', '22025', '22005', '22033', '15492', '22016', '22022', '22102', '22052', '22082', '22036']}
+2026-05-13 17:14:29,395 | INFO | app.supervisor | 🧠 Intención detectada: nueva_consulta
+2026-05-13 17:14:29,396 | INFO | app.supervisor | 🆕 Nueva consulta detectada → ignorando contexto
+2026-05-13 17:14:29,875 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:14:29,875 | INFO | app.asesor_stock | 📦 STOCK query: Latiguillos de dn12 50 cm de media
+2026-05-13 17:14:30,797 | INFO | app.asesor_stock | 📊 Query Clean: 25
+2026-05-13 17:14:32,569 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:14:32,569 | INFO | app.asesor_stock | 0 | score=0.6566 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:14:32,569 | INFO | app.asesor_stock | 1 | score=0.6555 | articulo=22075 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 1/2
+        1865
+        Valvuleria y conexiones
+2026-05-13 17:14:32,569 | INFO | app.asesor_stock | 2 | score=0.6548 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 17:14:32,569 | INFO | app.asesor_stock | 3 | score=0.6547 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:14:32,569 | INFO | app.asesor_stock | 4 | score=0.6536 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 17:14:32,569 | INFO | app.asesor_stock | 5 | score=0.6512 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:14:32,569 | INFO | app.asesor_stock | 6 | score=0.6509 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:14:32,570 | INFO | app.asesor_stock | 7 | score=0.6505 | articulo=22005 | texto=LATIGUILLO DN12 10 CM M 1/2 X H 1/2
+        906
+        Valvuleria y conexiones 
+2026-05-13 17:14:32,570 | INFO | app.asesor_stock | 8 | score=0.6499 | articulo=22105 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 1/2
+        1547
+        Valvuleria y conexione
+2026-05-13 17:14:32,570 | INFO | app.asesor_stock | 9 | score=0.6499 | articulo=22072 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 1/2
+        3623
+        Valvuleria y conexiones
+2026-05-13 17:14:32,570 | INFO | app.asesor_stock | 10 | score=0.6470 | articulo=22032 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 1/2
+        709
+        Valvuleria y conexiones 
+2026-05-13 17:14:32,570 | INFO | app.asesor_stock | 11 | score=0.6464 | articulo=22076 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 3/8
+        1869
+        Valvuleria y conexiones
+2026-05-13 17:14:32,570 | INFO | app.asesor_stock | 12 | score=0.6459 | articulo=22102 | texto=LATIGUILLO DN12 100 CM H 1/2 X H 1/2
+        3955
+        Valvuleria y conexione
+2026-05-13 17:14:32,570 | INFO | app.asesor_stock | 13 | score=0.6456 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:14:32,570 | INFO | app.asesor_stock | 14 | score=0.6452 | articulo=22106 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 3/8
+        1550
+        Valvuleria y conexione
+2026-05-13 17:14:32,570 | INFO | app.asesor_stock | 15 | score=0.6447 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 17:14:32,570 | INFO | app.asesor_stock | 16 | score=0.6440 | articulo=22085 | texto=LATIGUILLO DN12 60 CM M 1/2 X H 1/2
+        1866
+        Valvuleria y conexiones
+2026-05-13 17:14:32,571 | INFO | app.asesor_stock | 17 | score=0.6430 | articulo=22055 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 1/2
+        5876
+        Valvuleria y conexiones
+2026-05-13 17:14:32,571 | INFO | app.asesor_stock | 18 | score=0.6421 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 17:14:32,571 | INFO | app.asesor_stock | 19 | score=0.6404 | articulo=22063 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 3/8
+        6800
+        Valvuleria y conexiones
+2026-05-13 17:14:32,571 | INFO | app.asesor_stock | 20 | score=0.6403 | articulo=22086 | texto=LATIGUILLO DN12 60 CM M 1/2 X H 3/8
+        1870
+        Valvuleria y conexiones
+2026-05-13 17:14:32,571 | INFO | app.asesor_stock | 21 | score=0.6392 | articulo=22082 | texto=LATIGUILLO DN12 60 CM H 1/2 X H 1/2
+        3953
+        Valvuleria y conexiones
+2026-05-13 17:14:32,571 | INFO | app.asesor_stock | 22 | score=0.6391 | articulo=22036 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 3/8
+        5890
+        Valvuleria y conexiones
+2026-05-13 17:14:32,571 | INFO | app.asesor_stock | 23 | score=0.6382 | articulo=22052 | texto=LATIGUILLO DN12 35 CM H 1/2 X H 1/2
+        5805
+        Valvuleria y conexiones
+2026-05-13 17:14:32,571 | INFO | app.asesor_stock | 24 | score=0.6382 | articulo=22103 | texto=LATIGUILLO DN12 100 CM H 1/2 X H 3/8
+        3956
+        Valvuleria y conexione
+2026-05-13 17:14:32,571 | INFO | app.asesor_stock | 25 | score=0.6377 | articulo=22065 | texto=LATIGUILLO DN12 40 CM M 1/2 X H 1/2
+        1864
+        Valvuleria y conexiones
+2026-05-13 17:14:32,571 | INFO | app.asesor_stock | 26 | score=0.6370 | articulo=22066 | texto=LATIGUILLO DN12 40 CM M 1/2 X H 3/8
+        1868
+        Valvuleria y conexiones
+2026-05-13 17:14:32,571 | INFO | app.asesor_stock | 27 | score=0.6370 | articulo=22093 | texto=LATIGUILLO DN12 80 CM H 1/2 X H 3/8
+        6655
+        Valvuleria y conexiones
+2026-05-13 17:14:32,571 | INFO | app.asesor_stock | 28 | score=0.6369 | articulo=22045 | texto=LATIGUILLO DN12 30 CM M 1/2 X H 1/2
+        1863
+        Valvuleria y conexiones
+2026-05-13 17:14:32,571 | INFO | app.asesor_stock | 29 | score=0.6368 | articulo=22002 | texto=LATIGUILLO DN12 10 CM H 1/2 X H 1/2
+        902
+        Valvuleria y conexiones 
+2026-05-13 17:14:32,571 | INFO | app.asesor_stock | 📊 Vectores encontrados: 30
+2026-05-13 17:14:32,572 | INFO | app.asesor_stock | 📊 Vectores filtrados: 30
+2026-05-13 17:14:32,572 | INFO | app.asesor_stock | 📊 Articulos encontrados: 30
+2026-05-13 17:17:10,356 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 17:17:10,358 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 17:17:24,042 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes latiguillos de media de 50 cm
+2026-05-13 17:17:24,042 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 17:17:24,896 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:17:24,896 | INFO | app.asesor_stock | 📦 STOCK query: Tienes latiguillos de media de 50 cm
+2026-05-13 17:17:25,658 | INFO | app.asesor_stock | 📊 Query Clean: 21
+2026-05-13 17:17:27,071 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:17:27,072 | INFO | app.asesor_stock | 0 | score=0.6081 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 17:17:27,072 | INFO | app.asesor_stock | 1 | score=0.6051 | articulo=22075 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 1/2
+        1865
+        Valvuleria y conexiones
+2026-05-13 17:17:27,072 | INFO | app.asesor_stock | 2 | score=0.6045 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:17:27,072 | INFO | app.asesor_stock | 3 | score=0.6035 | articulo=22106 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 3/8
+        1550
+        Valvuleria y conexione
+2026-05-13 17:17:27,072 | INFO | app.asesor_stock | 4 | score=0.6028 | articulo=22105 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 1/2
+        1547
+        Valvuleria y conexione
+2026-05-13 17:17:27,072 | INFO | app.asesor_stock | 5 | score=0.6020 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:17:27,072 | INFO | app.asesor_stock | 6 | score=0.6018 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:17:27,072 | INFO | app.asesor_stock | 7 | score=0.6008 | articulo=22076 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 3/8
+        1869
+        Valvuleria y conexiones
+2026-05-13 17:17:27,072 | INFO | app.asesor_stock | 8 | score=0.6001 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:17:27,072 | INFO | app.asesor_stock | 9 | score=0.5991 | articulo=22005 | texto=LATIGUILLO DN12 10 CM M 1/2 X H 1/2
+        906
+        Valvuleria y conexiones 
+2026-05-13 17:17:27,072 | INFO | app.asesor_stock | 10 | score=0.5988 | articulo=22102 | texto=LATIGUILLO DN12 100 CM H 1/2 X H 1/2
+        3955
+        Valvuleria y conexione
+2026-05-13 17:17:27,073 | INFO | app.asesor_stock | 11 | score=0.5981 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:17:27,073 | INFO | app.asesor_stock | 12 | score=0.5979 | articulo=22072 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 1/2
+        3623
+        Valvuleria y conexiones
+2026-05-13 17:17:27,073 | INFO | app.asesor_stock | 13 | score=0.5973 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 17:17:27,073 | INFO | app.asesor_stock | 14 | score=0.5964 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 17:17:27,073 | INFO | app.asesor_stock | 📊 Vectores encontrados: 15
+2026-05-13 17:17:27,073 | WARNING | app.asesor_stock | ⚠️ fallback activado
+2026-05-13 17:17:27,073 | INFO | app.asesor_stock | 📊 Vectores filtrados: 0
+2026-05-13 17:17:27,073 | INFO | app.asesor_stock | 📊 Articulos encontrados: 0
+2026-05-13 17:18:27,885 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 17:18:27,887 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 17:18:36,050 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes latiguillos
+2026-05-13 17:18:36,051 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 17:18:36,924 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:18:36,924 | INFO | app.asesor_stock | 📦 STOCK query: Tienes latiguillos
+2026-05-13 17:18:37,484 | INFO | app.asesor_stock | 📊 Query Clean: latiguillo
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 0 | score=0.3546 | articulo=22125 | texto=LATIGUILLO TAQ-CODO 40 CM H 3/8 X H 3/8
+        2361
+        Valvuleria y conexi
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 1 | score=0.3514 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 2 | score=0.3488 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 3 | score=0.3468 | articulo=22187 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 30 CM
+        7057
+        Valvuleria y conexione
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 4 | score=0.3465 | articulo=22124 | texto=LATIGUILLO TAQ-CODO 35 CM H 3/8 X H 3/8
+        2360
+        Valvuleria y conexi
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 5 | score=0.3452 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 6 | score=0.3437 | articulo=22011 | texto=LATIGUILLO DN12 15 CM M 3/8 X H 3/8
+        6431
+        Valvuleria y conexiones
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 7 | score=0.3427 | articulo=22185 | texto=LATIGUILLO GRIFO M10-L17 H3/8' 30 CM
+        5962
+        Valvuleria y conexione
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 8 | score=0.3427 | articulo=22010 | texto=LATIGUILLO DN12 15 CM H 3/8 X H 3/8
+        4658
+        Valvuleria y conexiones
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 9 | score=0.3426 | articulo=22188 | texto=LATIGUILLO GRIFO M10-L17 H3/8" 50 CM
+        5956
+        Valvuleria y conexione
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 10 | score=0.3420 | articulo=22186 | texto=LATIGUILLO GRIFO M10-L37 H3/8' 30 CM
+        5851
+        Valvuleria y conexione
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 11 | score=0.3411 | articulo=22060 | texto=LATIGUILLO DN12 40 CM H 3/8 X H 3/8
+        6782
+        Valvuleria y conexiones
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 12 | score=0.3409 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 13 | score=0.3408 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 14 | score=0.3405 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 📊 Vectores encontrados: 15
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 📊 Vectores filtrados: 15
+2026-05-13 17:18:38,714 | WARNING | app.asesor_stock | ❌ Score bajo → 0.3546375925640919
+2026-05-13 17:18:38,714 | INFO | app.asesor_stock | 📊 Articulos encontrados: 15
+2026-05-13 17:19:11,296 | INFO | app.supervisor | 🧠 SUPERVISOR: Latiguillo de media
+2026-05-13 17:19:11,296 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22125', '22311', '22190', '22187', '22124', '22013', '22011', '22185', '22010', '22188', '22186', '22060', '22062', '22015', '22026']}
+2026-05-13 17:19:11,977 | INFO | app.supervisor | 🧠 Intención detectada: nueva_consulta
+2026-05-13 17:19:11,977 | INFO | app.supervisor | 🆕 Nueva consulta detectada → ignorando contexto
+2026-05-13 17:19:12,841 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:19:12,841 | INFO | app.asesor_stock | 📦 STOCK query: Latiguillo de media
+2026-05-13 17:19:13,492 | INFO | app.asesor_stock | 📊 Query Clean: latiguillo 1/2
+2026-05-13 17:19:17,780 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:19:17,780 | INFO | app.asesor_stock | 0 | score=0.4328 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:19:17,781 | INFO | app.asesor_stock | 1 | score=0.4267 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 17:19:17,781 | INFO | app.asesor_stock | 2 | score=0.4265 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:19:17,781 | INFO | app.asesor_stock | 3 | score=0.4259 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:19:17,781 | INFO | app.asesor_stock | 4 | score=0.4258 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:19:17,781 | INFO | app.asesor_stock | 5 | score=0.4241 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 17:19:17,781 | INFO | app.asesor_stock | 6 | score=0.4230 | articulo=03322 | texto=MANGUITO REDUCIDO LATON H-H 1/2'' X 1''
+        065204
+        Tuberia y accesor
+2026-05-13 17:19:17,781 | INFO | app.asesor_stock | 7 | score=0.4228 | articulo=22055 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 1/2
+        5876
+        Valvuleria y conexiones
+2026-05-13 17:19:17,781 | INFO | app.asesor_stock | 8 | score=0.4226 | articulo=22005 | texto=LATIGUILLO DN12 10 CM M 1/2 X H 1/2
+        906
+        Valvuleria y conexiones 
+2026-05-13 17:19:17,781 | INFO | app.asesor_stock | 9 | score=0.4225 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 17:19:17,781 | INFO | app.asesor_stock | 10 | score=0.4211 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:19:17,781 | INFO | app.asesor_stock | 11 | score=0.4195 | articulo=22085 | texto=LATIGUILLO DN12 60 CM M 1/2 X H 1/2
+        1866
+        Valvuleria y conexiones
+2026-05-13 17:19:17,781 | INFO | app.asesor_stock | 12 | score=0.4193 | articulo=22105 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 1/2
+        1547
+        Valvuleria y conexione
+2026-05-13 17:19:17,781 | INFO | app.asesor_stock | 13 | score=0.4193 | articulo=22075 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 1/2
+        1865
+        Valvuleria y conexiones
+2026-05-13 17:19:17,781 | INFO | app.asesor_stock | 14 | score=0.4191 | articulo=22032 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 1/2
+        709
+        Valvuleria y conexiones 
+2026-05-13 17:19:17,781 | INFO | app.asesor_stock | 📊 Vectores encontrados: 15
+2026-05-13 17:19:17,782 | INFO | app.asesor_stock | 📊 Vectores filtrados: 15
+2026-05-13 17:19:17,782 | WARNING | app.asesor_stock | ❌ Score bajo → 0.43278228360034365
+2026-05-13 17:19:17,782 | INFO | app.asesor_stock | 📊 Articulos encontrados: 15
+2026-05-13 17:19:39,416 | INFO | app.supervisor | 🧠 SUPERVISOR: Latiguillo de media de 50 cm
+2026-05-13 17:19:39,416 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22015', '22012', '22016', '22035', '22013', '22025', '03322', '22055', '22005', '22026', '22033', '22085', '22105', '22075', '22032']}
+2026-05-13 17:19:40,364 | INFO | app.supervisor | 🧠 Intención detectada: nueva_consulta
+2026-05-13 17:19:40,364 | INFO | app.supervisor | 🆕 Nueva consulta detectada → ignorando contexto
+2026-05-13 17:19:40,975 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:19:40,975 | INFO | app.asesor_stock | 📦 STOCK query: Latiguillo de media de 50 cm
+2026-05-13 17:19:41,588 | INFO | app.asesor_stock | 📊 Query Clean: latiguillo de 1/2" de 50 cm
+2026-05-13 17:19:43,390 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:19:43,390 | INFO | app.asesor_stock | 0 | score=0.5740 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 17:19:43,390 | INFO | app.asesor_stock | 1 | score=0.5738 | articulo=22075 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 1/2
+        1865
+        Valvuleria y conexiones
+2026-05-13 17:19:43,390 | INFO | app.asesor_stock | 2 | score=0.5723 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:19:43,390 | INFO | app.asesor_stock | 3 | score=0.5705 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 17:19:43,390 | INFO | app.asesor_stock | 4 | score=0.5693 | articulo=22106 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 3/8
+        1550
+        Valvuleria y conexione
+2026-05-13 17:19:43,390 | INFO | app.asesor_stock | 5 | score=0.5688 | articulo=22105 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 1/2
+        1547
+        Valvuleria y conexione
+2026-05-13 17:19:43,391 | INFO | app.asesor_stock | 6 | score=0.5678 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:19:43,391 | INFO | app.asesor_stock | 7 | score=0.5671 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:19:43,391 | INFO | app.asesor_stock | 8 | score=0.5667 | articulo=22072 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 1/2
+        3623
+        Valvuleria y conexiones
+2026-05-13 17:19:43,391 | INFO | app.asesor_stock | 9 | score=0.5667 | articulo=22076 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 3/8
+        1869
+        Valvuleria y conexiones
+2026-05-13 17:19:43,391 | INFO | app.asesor_stock | 10 | score=0.5665 | articulo=22055 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 1/2
+        5876
+        Valvuleria y conexiones
+2026-05-13 17:19:43,391 | INFO | app.asesor_stock | 11 | score=0.5661 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:19:43,391 | INFO | app.asesor_stock | 12 | score=0.5660 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:19:43,391 | INFO | app.asesor_stock | 13 | score=0.5647 | articulo=22102 | texto=LATIGUILLO DN12 100 CM H 1/2 X H 1/2
+        3955
+        Valvuleria y conexione
+2026-05-13 17:19:43,391 | INFO | app.asesor_stock | 14 | score=0.5643 | articulo=22350 | texto=LATIGUILLO CONTADOR TRENZ. INOX 50 CM M1 X H1
+        6695
+        Valvuleria y 
+2026-05-13 17:19:43,391 | INFO | app.asesor_stock | 📊 Vectores encontrados: 15
+2026-05-13 17:19:43,392 | WARNING | app.asesor_stock | ⚠️ fallback activado
+2026-05-13 17:19:43,392 | INFO | app.asesor_stock | 📊 Vectores filtrados: 0
+2026-05-13 17:19:43,392 | INFO | app.asesor_stock | 📊 Articulos encontrados: 0
+2026-05-13 17:23:21,135 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 17:23:21,137 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 17:23:39,468 | INFO | app.supervisor | 🧠 SUPERVISOR: Latiguillos de media de 50 cm
+2026-05-13 17:23:39,469 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 17:23:40,734 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:23:40,734 | INFO | app.asesor_stock | 📦 STOCK query: Latiguillos de media de 50 cm
+2026-05-13 17:23:41,622 | INFO | app.asesor_stock | 📊 Query Clean: latiguillo 1/2 50 cm
+2026-05-13 17:23:43,758 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:23:43,758 | INFO | app.asesor_stock | 0 | score=0.5151 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 17:23:43,758 | INFO | app.asesor_stock | 1 | score=0.5094 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:23:43,758 | INFO | app.asesor_stock | 2 | score=0.5079 | articulo=22075 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 1/2
+        1865
+        Valvuleria y conexiones
+2026-05-13 17:23:43,758 | INFO | app.asesor_stock | 3 | score=0.5071 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:23:43,758 | INFO | app.asesor_stock | 4 | score=0.5034 | articulo=22350 | texto=LATIGUILLO CONTADOR TRENZ. INOX 50 CM M1 X H1
+        6695
+        Valvuleria y 
+2026-05-13 17:23:43,758 | INFO | app.asesor_stock | 5 | score=0.5033 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 17:23:43,758 | INFO | app.asesor_stock | 6 | score=0.5014 | articulo=22055 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 1/2
+        5876
+        Valvuleria y conexiones
+2026-05-13 17:23:43,759 | INFO | app.asesor_stock | 7 | score=0.5014 | articulo=22072 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 1/2
+        3623
+        Valvuleria y conexiones
+2026-05-13 17:23:43,759 | INFO | app.asesor_stock | 8 | score=0.5007 | articulo=22105 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 1/2
+        1547
+        Valvuleria y conexione
+2026-05-13 17:23:43,759 | INFO | app.asesor_stock | 9 | score=0.4993 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 17:23:43,759 | INFO | app.asesor_stock | 10 | score=0.4985 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:23:43,759 | INFO | app.asesor_stock | 11 | score=0.4984 | articulo=22032 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 1/2
+        709
+        Valvuleria y conexiones 
+2026-05-13 17:23:43,759 | INFO | app.asesor_stock | 12 | score=0.4980 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:23:43,759 | INFO | app.asesor_stock | 13 | score=0.4978 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:23:43,759 | INFO | app.asesor_stock | 14 | score=0.4978 | articulo=22005 | texto=LATIGUILLO DN12 10 CM M 1/2 X H 1/2
+        906
+        Valvuleria y conexiones 
+2026-05-13 17:23:43,759 | INFO | app.asesor_stock | 📊 Vectores encontrados: 15
+2026-05-13 17:23:43,759 | INFO | app.asesor_stock | 📊 Palabras: ['latiguillo', '1/2', '50', 'cm']
+2026-05-13 17:23:43,760 | INFO | app.asesor_stock | 📊 Medida: 1/2
+2026-05-13 17:23:43,760 | INFO | app.asesor_stock | 📊 Vectores filtrados: 13
+2026-05-13 17:23:43,760 | WARNING | app.asesor_stock | ❌ Score bajo → 0.5151395608938387
+2026-05-13 17:23:43,760 | INFO | app.asesor_stock | 📊 Articulos encontrados: 13
+2026-05-13 17:25:00,922 | INFO | app.supervisor | 🧠 SUPERVISOR: Latiguillos de media x media de 50 cm
+2026-05-13 17:25:00,923 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22015', '22075', '22035', '22073', '22055', '22072', '22105', '22012', '22013', '22032', '22033', '22016', '22005']}
+2026-05-13 17:25:01,536 | INFO | app.supervisor | 🧠 Intención detectada: nueva_consulta
+2026-05-13 17:25:01,537 | INFO | app.supervisor | 🆕 Nueva consulta detectada → ignorando contexto
+2026-05-13 17:25:02,516 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:25:02,516 | INFO | app.asesor_stock | 📦 STOCK query: Latiguillos de media x media de 50 cm
+2026-05-13 17:25:04,053 | INFO | app.asesor_stock | 📊 Query Clean: latiguillo 1/2" x 1/2" 50 cm
+2026-05-13 17:25:05,592 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:25:05,592 | INFO | app.asesor_stock | 0 | score=0.6110 | articulo=22075 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 1/2
+        1865
+        Valvuleria y conexiones
+2026-05-13 17:25:05,592 | INFO | app.asesor_stock | 1 | score=0.6109 | articulo=22105 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 1/2
+        1547
+        Valvuleria y conexione
+2026-05-13 17:25:05,593 | INFO | app.asesor_stock | 2 | score=0.6107 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:25:05,593 | INFO | app.asesor_stock | 3 | score=0.6103 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 17:25:05,593 | INFO | app.asesor_stock | 4 | score=0.6066 | articulo=22106 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 3/8
+        1550
+        Valvuleria y conexione
+2026-05-13 17:25:05,593 | INFO | app.asesor_stock | 5 | score=0.6064 | articulo=22005 | texto=LATIGUILLO DN12 10 CM M 1/2 X H 1/2
+        906
+        Valvuleria y conexiones 
+2026-05-13 17:25:05,593 | INFO | app.asesor_stock | 6 | score=0.6063 | articulo=22102 | texto=LATIGUILLO DN12 100 CM H 1/2 X H 1/2
+        3955
+        Valvuleria y conexione
+2026-05-13 17:25:05,593 | INFO | app.asesor_stock | 7 | score=0.6061 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:25:05,593 | INFO | app.asesor_stock | 8 | score=0.6044 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:25:05,593 | INFO | app.asesor_stock | 9 | score=0.6035 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:25:05,593 | INFO | app.asesor_stock | 10 | score=0.6035 | articulo=22076 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 3/8
+        1869
+        Valvuleria y conexiones
+2026-05-13 17:25:05,593 | INFO | app.asesor_stock | 11 | score=0.6033 | articulo=22072 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 1/2
+        3623
+        Valvuleria y conexiones
+2026-05-13 17:25:05,593 | INFO | app.asesor_stock | 12 | score=0.6032 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 17:25:05,593 | INFO | app.asesor_stock | 13 | score=0.6017 | articulo=22055 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 1/2
+        5876
+        Valvuleria y conexiones
+2026-05-13 17:25:05,593 | INFO | app.asesor_stock | 14 | score=0.5998 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:25:05,593 | INFO | app.asesor_stock | 📊 Vectores encontrados: 15
+2026-05-13 17:25:05,593 | INFO | app.asesor_stock | 📊 Palabras: ['latiguillo', '1/2"', 'x', '1/2"', '50', 'cm']
+2026-05-13 17:25:05,594 | INFO | app.asesor_stock | 📊 Medida: 1/2"
+2026-05-13 17:25:05,594 | WARNING | app.asesor_stock | ⚠️ fallback activado
+2026-05-13 17:25:05,594 | INFO | app.asesor_stock | 📊 Vectores filtrados: 0
+2026-05-13 17:25:05,594 | INFO | app.asesor_stock | 📊 Articulos encontrados: 0
+2026-05-13 17:26:52,128 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 17:26:52,130 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 17:27:06,628 | INFO | app.supervisor | 🧠 SUPERVISOR: Laguillos de media de 50 cm
+2026-05-13 17:27:06,629 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 17:27:07,868 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:27:07,868 | INFO | app.asesor_stock | 📦 STOCK query: Laguillos de media de 50 cm
+2026-05-13 17:27:08,820 | INFO | app.asesor_stock | 📊 Query Clean: latiguillo de 1/2" de 50 cm
+2026-05-13 17:27:10,214 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:27:10,214 | INFO | app.asesor_stock | 0 | score=0.5740 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 17:27:10,215 | INFO | app.asesor_stock | 1 | score=0.5738 | articulo=22075 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 1/2
+        1865
+        Valvuleria y conexiones
+2026-05-13 17:27:10,215 | INFO | app.asesor_stock | 2 | score=0.5723 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:27:10,215 | INFO | app.asesor_stock | 3 | score=0.5705 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 17:27:10,215 | INFO | app.asesor_stock | 4 | score=0.5693 | articulo=22106 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 3/8
+        1550
+        Valvuleria y conexione
+2026-05-13 17:27:10,215 | INFO | app.asesor_stock | 5 | score=0.5688 | articulo=22105 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 1/2
+        1547
+        Valvuleria y conexione
+2026-05-13 17:27:10,215 | INFO | app.asesor_stock | 6 | score=0.5678 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:27:10,215 | INFO | app.asesor_stock | 7 | score=0.5671 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:27:10,215 | INFO | app.asesor_stock | 8 | score=0.5667 | articulo=22072 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 1/2
+        3623
+        Valvuleria y conexiones
+2026-05-13 17:27:10,215 | INFO | app.asesor_stock | 9 | score=0.5667 | articulo=22076 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 3/8
+        1869
+        Valvuleria y conexiones
+2026-05-13 17:27:10,215 | INFO | app.asesor_stock | 10 | score=0.5665 | articulo=22055 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 1/2
+        5876
+        Valvuleria y conexiones
+2026-05-13 17:27:10,215 | INFO | app.asesor_stock | 11 | score=0.5661 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:27:10,215 | INFO | app.asesor_stock | 12 | score=0.5660 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:27:10,215 | INFO | app.asesor_stock | 13 | score=0.5647 | articulo=22102 | texto=LATIGUILLO DN12 100 CM H 1/2 X H 1/2
+        3955
+        Valvuleria y conexione
+2026-05-13 17:27:10,215 | INFO | app.asesor_stock | 14 | score=0.5643 | articulo=22350 | texto=LATIGUILLO CONTADOR TRENZ. INOX 50 CM M1 X H1
+        6695
+        Valvuleria y 
+2026-05-13 17:27:10,215 | INFO | app.asesor_stock | 📊 Vectores encontrados: 15
+2026-05-13 17:27:10,216 | INFO | app.asesor_stock | 📊 Palabras: ['latiguillo', 'de', '1/2"', 'de', '50', 'cm']
+2026-05-13 17:27:10,216 | INFO | app.asesor_stock | 📊 Medida: 1/2"
+2026-05-13 17:27:10,216 | INFO | app.asesor_stock | 📊 Vectores filtrados: 15
+2026-05-13 17:27:10,216 | INFO | app.asesor_stock | 📊 Articulos encontrados: 15
+2026-05-13 17:35:38,904 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 17:35:38,906 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 17:36:08,034 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes latiguillos
+2026-05-13 17:36:08,035 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 17:36:08,861 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:36:08,862 | INFO | app.asesor_stock | 📦 STOCK query: Tienes latiguillos
+2026-05-13 17:36:10,079 | INFO | app.asesor_stock | 📊 Query Clean: latiguillo
+2026-05-13 17:36:13,154 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:36:13,155 | INFO | app.asesor_stock | 0 | score=0.3546 | articulo=22125 | texto=LATIGUILLO TAQ-CODO 40 CM H 3/8 X H 3/8
+        2361
+        Valvuleria y conexi
+2026-05-13 17:36:13,155 | INFO | app.asesor_stock | 1 | score=0.3514 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 17:36:13,155 | INFO | app.asesor_stock | 2 | score=0.3488 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 17:36:13,155 | INFO | app.asesor_stock | 3 | score=0.3468 | articulo=22187 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 30 CM
+        7057
+        Valvuleria y conexione
+2026-05-13 17:36:13,155 | INFO | app.asesor_stock | 4 | score=0.3465 | articulo=22124 | texto=LATIGUILLO TAQ-CODO 35 CM H 3/8 X H 3/8
+        2360
+        Valvuleria y conexi
+2026-05-13 17:36:13,155 | INFO | app.asesor_stock | 5 | score=0.3452 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:36:13,155 | INFO | app.asesor_stock | 6 | score=0.3437 | articulo=22011 | texto=LATIGUILLO DN12 15 CM M 3/8 X H 3/8
+        6431
+        Valvuleria y conexiones
+2026-05-13 17:36:13,155 | INFO | app.asesor_stock | 7 | score=0.3427 | articulo=22185 | texto=LATIGUILLO GRIFO M10-L17 H3/8' 30 CM
+        5962
+        Valvuleria y conexione
+2026-05-13 17:36:13,155 | INFO | app.asesor_stock | 8 | score=0.3427 | articulo=22010 | texto=LATIGUILLO DN12 15 CM H 3/8 X H 3/8
+        4658
+        Valvuleria y conexiones
+2026-05-13 17:36:13,155 | INFO | app.asesor_stock | 9 | score=0.3426 | articulo=22188 | texto=LATIGUILLO GRIFO M10-L17 H3/8" 50 CM
+        5956
+        Valvuleria y conexione
+2026-05-13 17:36:13,156 | INFO | app.asesor_stock | 10 | score=0.3420 | articulo=22186 | texto=LATIGUILLO GRIFO M10-L37 H3/8' 30 CM
+        5851
+        Valvuleria y conexione
+2026-05-13 17:36:13,156 | INFO | app.asesor_stock | 11 | score=0.3411 | articulo=22060 | texto=LATIGUILLO DN12 40 CM H 3/8 X H 3/8
+        6782
+        Valvuleria y conexiones
+2026-05-13 17:36:13,156 | INFO | app.asesor_stock | 12 | score=0.3409 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 17:36:13,156 | INFO | app.asesor_stock | 13 | score=0.3408 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:36:13,156 | INFO | app.asesor_stock | 14 | score=0.3405 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 17:36:13,156 | INFO | app.asesor_stock | 📊 Vectores encontrados: 15
+2026-05-13 17:36:13,156 | INFO | app.asesor_stock | 📊 Palabras: ['latiguillo']
+2026-05-13 17:36:13,156 | INFO | app.asesor_stock | 📊 Medida: None
+2026-05-13 17:36:13,156 | INFO | app.asesor_stock | 📊 Vectores filtrados: 15
+2026-05-13 17:36:13,156 | WARNING | app.asesor_stock | ❌ Score bajo → 0.3546375925640919
+2026-05-13 17:36:13,157 | INFO | app.asesor_stock | 📊 Articulos encontrados: 10
+2026-05-13 17:36:24,315 | INFO | app.supervisor | 🧠 SUPERVISOR: Si
+2026-05-13 17:36:24,315 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22125', '22311', '22190', '22187', '22124', '22013', '22011', '22185', '22010', '22188']}
+2026-05-13 17:36:25,955 | INFO | app.supervisor | 🧠 Intención detectada: confirmacion
+2026-05-13 17:39:23,607 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 17:39:23,609 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-13 17:39:31,330 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes latiguillos
+2026-05-13 17:39:31,330 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-13 17:39:32,265 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:39:32,265 | INFO | app.asesor_stock | 📦 STOCK query: Tienes latiguillos
+2026-05-13 17:39:33,382 | INFO | app.asesor_stock | 📊 Query Clean: latiguillo
+2026-05-13 17:39:35,091 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:39:35,091 | INFO | app.asesor_stock | 0 | score=0.3546 | articulo=22125 | texto=LATIGUILLO TAQ-CODO 40 CM H 3/8 X H 3/8
+        2361
+        Valvuleria y conexi
+2026-05-13 17:39:35,091 | INFO | app.asesor_stock | 1 | score=0.3514 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 17:39:35,091 | INFO | app.asesor_stock | 2 | score=0.3488 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-13 17:39:35,092 | INFO | app.asesor_stock | 3 | score=0.3468 | articulo=22187 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 30 CM
+        7057
+        Valvuleria y conexione
+2026-05-13 17:39:35,092 | INFO | app.asesor_stock | 4 | score=0.3465 | articulo=22124 | texto=LATIGUILLO TAQ-CODO 35 CM H 3/8 X H 3/8
+        2360
+        Valvuleria y conexi
+2026-05-13 17:39:35,092 | INFO | app.asesor_stock | 5 | score=0.3452 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:39:35,092 | INFO | app.asesor_stock | 6 | score=0.3437 | articulo=22011 | texto=LATIGUILLO DN12 15 CM M 3/8 X H 3/8
+        6431
+        Valvuleria y conexiones
+2026-05-13 17:39:35,092 | INFO | app.asesor_stock | 7 | score=0.3427 | articulo=22185 | texto=LATIGUILLO GRIFO M10-L17 H3/8' 30 CM
+        5962
+        Valvuleria y conexione
+2026-05-13 17:39:35,092 | INFO | app.asesor_stock | 8 | score=0.3427 | articulo=22010 | texto=LATIGUILLO DN12 15 CM H 3/8 X H 3/8
+        4658
+        Valvuleria y conexiones
+2026-05-13 17:39:35,092 | INFO | app.asesor_stock | 9 | score=0.3426 | articulo=22188 | texto=LATIGUILLO GRIFO M10-L17 H3/8" 50 CM
+        5956
+        Valvuleria y conexione
+2026-05-13 17:39:35,092 | INFO | app.asesor_stock | 10 | score=0.3420 | articulo=22186 | texto=LATIGUILLO GRIFO M10-L37 H3/8' 30 CM
+        5851
+        Valvuleria y conexione
+2026-05-13 17:39:35,092 | INFO | app.asesor_stock | 11 | score=0.3411 | articulo=22060 | texto=LATIGUILLO DN12 40 CM H 3/8 X H 3/8
+        6782
+        Valvuleria y conexiones
+2026-05-13 17:39:35,092 | INFO | app.asesor_stock | 12 | score=0.3409 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-13 17:39:35,092 | INFO | app.asesor_stock | 13 | score=0.3408 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:39:35,092 | INFO | app.asesor_stock | 14 | score=0.3405 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 17:39:35,092 | INFO | app.asesor_stock | 📊 Vectores encontrados: 15
+2026-05-13 17:39:35,092 | INFO | app.asesor_stock | 📊 Palabras: ['latiguillo']
+2026-05-13 17:39:35,092 | INFO | app.asesor_stock | 📊 Medida: None
+2026-05-13 17:39:35,093 | INFO | app.asesor_stock | 📊 Vectores filtrados: 15
+2026-05-13 17:39:35,093 | WARNING | app.asesor_stock | ❌ Score bajo → 0.3546375925640919
+2026-05-13 17:39:35,093 | INFO | app.asesor_stock | 📊 Articulos encontrados: 15
+2026-05-13 17:39:45,213 | INFO | app.supervisor | 🧠 SUPERVISOR: Latiguillos de 1/2
+2026-05-13 17:39:45,213 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22125', '22311', '22190', '22187', '22124', '22013', '22011', '22185', '22010', '22188', '22186', '22060', '22062', '22015', '22026']}
+2026-05-13 17:39:46,105 | INFO | app.supervisor | 🧠 Intención detectada: nueva_consulta
+2026-05-13 17:39:46,105 | INFO | app.supervisor | 🆕 Nueva consulta detectada → ignorando contexto
+2026-05-13 17:39:46,662 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:39:46,662 | INFO | app.asesor_stock | 📦 STOCK query: Latiguillos de 1/2
+2026-05-13 17:39:47,583 | INFO | app.asesor_stock | 📊 Query Clean: latiguillo 1/2
+2026-05-13 17:39:51,181 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:39:51,181 | INFO | app.asesor_stock | 0 | score=0.4328 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:39:51,182 | INFO | app.asesor_stock | 1 | score=0.4267 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 17:39:51,182 | INFO | app.asesor_stock | 2 | score=0.4265 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:39:51,182 | INFO | app.asesor_stock | 3 | score=0.4259 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:39:51,182 | INFO | app.asesor_stock | 4 | score=0.4258 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:39:51,182 | INFO | app.asesor_stock | 5 | score=0.4241 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-13 17:39:51,182 | INFO | app.asesor_stock | 6 | score=0.4230 | articulo=03322 | texto=MANGUITO REDUCIDO LATON H-H 1/2'' X 1''
+        065204
+        Tuberia y accesor
+2026-05-13 17:39:51,182 | INFO | app.asesor_stock | 7 | score=0.4228 | articulo=22055 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 1/2
+        5876
+        Valvuleria y conexiones
+2026-05-13 17:39:51,182 | INFO | app.asesor_stock | 8 | score=0.4226 | articulo=22005 | texto=LATIGUILLO DN12 10 CM M 1/2 X H 1/2
+        906
+        Valvuleria y conexiones 
+2026-05-13 17:39:51,182 | INFO | app.asesor_stock | 9 | score=0.4225 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-13 17:39:51,182 | INFO | app.asesor_stock | 10 | score=0.4211 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:39:51,182 | INFO | app.asesor_stock | 11 | score=0.4195 | articulo=22085 | texto=LATIGUILLO DN12 60 CM M 1/2 X H 1/2
+        1866
+        Valvuleria y conexiones
+2026-05-13 17:39:51,182 | INFO | app.asesor_stock | 12 | score=0.4193 | articulo=22105 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 1/2
+        1547
+        Valvuleria y conexione
+2026-05-13 17:39:51,182 | INFO | app.asesor_stock | 13 | score=0.4193 | articulo=22075 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 1/2
+        1865
+        Valvuleria y conexiones
+2026-05-13 17:39:51,183 | INFO | app.asesor_stock | 14 | score=0.4191 | articulo=22032 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 1/2
+        709
+        Valvuleria y conexiones 
+2026-05-13 17:39:51,183 | INFO | app.asesor_stock | 📊 Vectores encontrados: 15
+2026-05-13 17:39:51,183 | INFO | app.asesor_stock | 📊 Palabras: ['latiguillo', '1/2']
+2026-05-13 17:39:51,183 | INFO | app.asesor_stock | 📊 Medida: 1/2
+2026-05-13 17:39:51,183 | INFO | app.asesor_stock | 📊 Vectores filtrados: 15
+2026-05-13 17:39:51,183 | WARNING | app.asesor_stock | ❌ Score bajo → 0.43278228360034365
+2026-05-13 17:39:51,183 | INFO | app.asesor_stock | 📊 Articulos encontrados: 15
+2026-05-13 17:40:18,850 | INFO | app.supervisor | 🧠 SUPERVISOR: Latiguillos de 1/2 de 50 cm
+2026-05-13 17:40:18,850 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22015', '22012', '22016', '22035', '22013', '22025', '03322', '22055', '22005', '22026', '22033', '22085', '22105', '22075', '22032']}
+2026-05-13 17:40:20,762 | INFO | app.supervisor | 🧠 Intención detectada: nueva_consulta
+2026-05-13 17:40:20,762 | INFO | app.supervisor | 🆕 Nueva consulta detectada → ignorando contexto
+2026-05-13 17:40:21,375 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-13 17:40:21,375 | INFO | app.asesor_stock | 📦 STOCK query: Latiguillos de 1/2 de 50 cm
+2026-05-13 17:40:22,441 | INFO | app.asesor_stock | 📊 Query Clean: latiguillo 1/2 50 cm
+2026-05-13 17:40:23,826 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-13 17:40:23,826 | INFO | app.asesor_stock | 0 | score=0.5151 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-13 17:40:23,826 | INFO | app.asesor_stock | 1 | score=0.5094 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-13 17:40:23,826 | INFO | app.asesor_stock | 2 | score=0.5079 | articulo=22075 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 1/2
+        1865
+        Valvuleria y conexiones
+2026-05-13 17:40:23,826 | INFO | app.asesor_stock | 3 | score=0.5071 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-13 17:40:23,826 | INFO | app.asesor_stock | 4 | score=0.5034 | articulo=22350 | texto=LATIGUILLO CONTADOR TRENZ. INOX 50 CM M1 X H1
+        6695
+        Valvuleria y 
+2026-05-13 17:40:23,826 | INFO | app.asesor_stock | 5 | score=0.5033 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-13 17:40:23,827 | INFO | app.asesor_stock | 6 | score=0.5014 | articulo=22055 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 1/2
+        5876
+        Valvuleria y conexiones
+2026-05-13 17:40:23,827 | INFO | app.asesor_stock | 7 | score=0.5014 | articulo=22072 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 1/2
+        3623
+        Valvuleria y conexiones
+2026-05-13 17:40:23,827 | INFO | app.asesor_stock | 8 | score=0.5007 | articulo=22105 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 1/2
+        1547
+        Valvuleria y conexione
+2026-05-13 17:40:23,827 | INFO | app.asesor_stock | 9 | score=0.4993 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-13 17:40:23,827 | INFO | app.asesor_stock | 10 | score=0.4985 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-13 17:40:23,827 | INFO | app.asesor_stock | 11 | score=0.4984 | articulo=22032 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 1/2
+        709
+        Valvuleria y conexiones 
+2026-05-13 17:40:23,827 | INFO | app.asesor_stock | 12 | score=0.4980 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-13 17:40:23,827 | INFO | app.asesor_stock | 13 | score=0.4978 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-13 17:40:23,827 | INFO | app.asesor_stock | 14 | score=0.4978 | articulo=22005 | texto=LATIGUILLO DN12 10 CM M 1/2 X H 1/2
+        906
+        Valvuleria y conexiones 
+2026-05-13 17:40:23,827 | INFO | app.asesor_stock | 📊 Vectores encontrados: 15
+2026-05-13 17:40:23,827 | INFO | app.asesor_stock | 📊 Palabras: ['latiguillo', '1/2', '50', 'cm']
+2026-05-13 17:40:23,827 | INFO | app.asesor_stock | 📊 Medida: 1/2
+2026-05-13 17:40:23,827 | INFO | app.asesor_stock | 📊 Vectores filtrados: 15
+2026-05-13 17:40:23,828 | WARNING | app.asesor_stock | ❌ Score bajo → 0.5151395608938387
+2026-05-13 17:40:23,828 | INFO | app.asesor_stock | 📊 Articulos encontrados: 15
+2026-05-13 17:42:17,283 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-13 17:42:17,285 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-14 22:28:04,222 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-14 22:28:04,224 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-14 22:28:29,466 | INFO | app.supervisor | 🧠 SUPERVISOR: Hola
+2026-05-14 22:28:29,466 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-14 22:28:31,933 | INFO | app.supervisor | 🔀 Tool elegida: rag
+2026-05-14 22:28:31,934 | INFO | app.asesor | 📚 ASESOR: ejecutando RAG
+2026-05-14 22:28:31,934 | INFO | app.query | ❓ Pregunta: Hola
+2026-05-14 22:28:35,610 | INFO | app.query | ⏱ Respuesta en 3.68s
+2026-05-14 22:28:35,610 | DEBUG | app.query | 🔎 Fuente 0: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-14 22:28:35,610 | DEBUG | app.query | 🔎 Fuente 1: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-14 22:28:35,610 | DEBUG | app.query | 🔎 Fuente 2: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-14 22:28:35,610 | DEBUG | app.query | 🔎 Fuente 3: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-14 22:28:35,610 | DEBUG | app.query | 🔎 Fuente 4: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-14 22:29:06,464 | INFO | app.supervisor | 🧠 SUPERVISOR: Estoy en ferrol y quiero saber si hay una tienda de bermudez ulloa me puedes dar sus datos
+2026-05-14 22:29:06,464 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-14 22:29:07,871 | INFO | app.supervisor | 🔀 Tool elegida: rag
+2026-05-14 22:29:07,871 | INFO | app.asesor | 📚 ASESOR: ejecutando RAG
+2026-05-14 22:29:07,871 | INFO | app.query | ❓ Pregunta: Estoy en ferrol y quiero saber si hay una tienda de bermudez ulloa me puedes dar sus datos
+2026-05-14 22:29:10,941 | INFO | app.query | ⏱ Respuesta en 3.07s
+2026-05-14 22:29:10,941 | DEBUG | app.query | 🔎 Fuente 0: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras
+2026-05-14 22:29:10,942 | DEBUG | app.query | 🔎 Fuente 1: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras
+2026-05-14 22:29:10,942 | DEBUG | app.query | 🔎 Fuente 2: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras
+2026-05-14 22:29:10,942 | DEBUG | app.query | 🔎 Fuente 3: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras
+2026-05-14 22:29:10,942 | DEBUG | app.query | 🔎 Fuente 4: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras
+2026-05-14 22:29:49,337 | INFO | app.supervisor | 🧠 SUPERVISOR: Tienes stock dee latiguillos
+2026-05-14 22:29:49,337 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-14 22:29:51,489 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-14 22:29:51,490 | INFO | app.asesor_stock | 📦 STOCK query: Tienes stock dee latiguillos
+2026-05-14 22:29:52,718 | INFO | app.asesor_stock | 📊 Query Clean: latiguillo
+2026-05-14 22:29:54,765 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-14 22:29:54,765 | INFO | app.asesor_stock | 0 | score=0.3546 | articulo=22125 | texto=LATIGUILLO TAQ-CODO 40 CM H 3/8 X H 3/8
+        2361
+        Valvuleria y conexi
+2026-05-14 22:29:54,765 | INFO | app.asesor_stock | 1 | score=0.3514 | articulo=22311 | texto=LATIGUILLO CONTADOR RIVER BAT 50 CM M 1 X H 1
+        1367
+        Valvuleria y 
+2026-05-14 22:29:54,765 | INFO | app.asesor_stock | 2 | score=0.3488 | articulo=22190 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 50 CM
+        7063
+        Valvuleria y conexione
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 3 | score=0.3468 | articulo=22187 | texto=LATIGUILLO GRIFO M10-L50 H3/8" 30 CM
+        7057
+        Valvuleria y conexione
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 4 | score=0.3465 | articulo=22124 | texto=LATIGUILLO TAQ-CODO 35 CM H 3/8 X H 3/8
+        2360
+        Valvuleria y conexi
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 5 | score=0.3452 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 6 | score=0.3437 | articulo=22011 | texto=LATIGUILLO DN12 15 CM M 3/8 X H 3/8
+        6431
+        Valvuleria y conexiones
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 7 | score=0.3427 | articulo=22185 | texto=LATIGUILLO GRIFO M10-L17 H3/8' 30 CM
+        5962
+        Valvuleria y conexione
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 8 | score=0.3427 | articulo=22010 | texto=LATIGUILLO DN12 15 CM H 3/8 X H 3/8
+        4658
+        Valvuleria y conexiones
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 9 | score=0.3426 | articulo=22188 | texto=LATIGUILLO GRIFO M10-L17 H3/8" 50 CM
+        5956
+        Valvuleria y conexione
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 10 | score=0.3420 | articulo=22186 | texto=LATIGUILLO GRIFO M10-L37 H3/8' 30 CM
+        5851
+        Valvuleria y conexione
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 11 | score=0.3411 | articulo=22060 | texto=LATIGUILLO DN12 40 CM H 3/8 X H 3/8
+        6782
+        Valvuleria y conexiones
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 12 | score=0.3409 | articulo=22062 | texto=LATIGUILLO DN12 40 CM H 1/2 X H 1/2
+        6339
+        Valvuleria y conexiones
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 13 | score=0.3408 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 14 | score=0.3405 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 📊 Vectores encontrados: 15
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 📊 Palabras: ['latiguillo']
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 📊 Medida: None
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 📊 Vectores filtrados: 15
+2026-05-14 22:29:54,766 | WARNING | app.asesor_stock | ❌ Score bajo → 0.3546375925640919
+2026-05-14 22:29:54,766 | INFO | app.asesor_stock | 📊 Articulos encontrados: 10
+2026-05-14 22:30:03,116 | INFO | app.supervisor | 🧠 SUPERVISOR: Si
+2026-05-14 22:30:03,116 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22125', '22311', '22190', '22187', '22124', '22013', '22011', '22185', '22010', '22188']}
+2026-05-14 22:30:04,703 | INFO | app.supervisor | 🧠 Intención detectada: confirmacion
+2026-05-14 22:30:26,351 | INFO | app.supervisor | 🧠 SUPERVISOR: Quiero latiguillo de  media
+2026-05-14 22:30:26,351 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-14 22:30:27,428 | INFO | app.supervisor | 🔀 Tool elegida: stock
+2026-05-14 22:30:27,428 | INFO | app.asesor_stock | 📦 STOCK query: Quiero latiguillo de  media
+2026-05-14 22:30:28,145 | INFO | app.asesor_stock | 📊 Query Clean: latiguillo de 1/2
+2026-05-14 22:30:31,815 | INFO | app.asesor_stock | 📊 Resultados vectoriales:
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 0 | score=0.4562 | articulo=22015 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 1/2
+        1546
+        Valvuleria y conexiones
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 1 | score=0.4498 | articulo=22016 | texto=LATIGUILLO DN12 15 CM M 1/2 X H 3/8
+        1548
+        Valvuleria y conexiones
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 2 | score=0.4491 | articulo=22035 | texto=LATIGUILLO DN12 25 CM M 1/2 X H 1/2
+        733
+        Valvuleria y conexiones 
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 3 | score=0.4476 | articulo=22012 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 1/2
+        5709
+        Valvuleria y conexiones
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 4 | score=0.4472 | articulo=22013 | texto=LATIGUILLO DN12 15 CM H 1/2 X H 3/8
+        6457
+        Valvuleria y conexiones
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 5 | score=0.4471 | articulo=22055 | texto=LATIGUILLO DN12 35 CM M 1/2 X H 1/2
+        5876
+        Valvuleria y conexiones
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 6 | score=0.4463 | articulo=22085 | texto=LATIGUILLO DN12 60 CM M 1/2 X H 1/2
+        1866
+        Valvuleria y conexiones
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 7 | score=0.4457 | articulo=22025 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 1/2
+        3905
+        Valvuleria y conexiones
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 8 | score=0.4454 | articulo=03322 | texto=MANGUITO REDUCIDO LATON H-H 1/2'' X 1''
+        065204
+        Tuberia y accesor
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 9 | score=0.4452 | articulo=22005 | texto=LATIGUILLO DN12 10 CM M 1/2 X H 1/2
+        906
+        Valvuleria y conexiones 
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 10 | score=0.4451 | articulo=22033 | texto=LATIGUILLO DN12 25 CM H 1/2 X H 3/8
+        715
+        Valvuleria y conexiones 
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 11 | score=0.4449 | articulo=22105 | texto=LATIGUILLO DN12 100 CM M 1/2 X H 1/2
+        1547
+        Valvuleria y conexione
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 12 | score=0.4445 | articulo=22075 | texto=LATIGUILLO DN12 50 CM M 1/2 X H 1/2
+        1865
+        Valvuleria y conexiones
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 13 | score=0.4443 | articulo=22026 | texto=LATIGUILLO DN12 20 CM M 1/2 X H 3/8
+        6796
+        Valvuleria y conexiones
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 14 | score=0.4425 | articulo=22073 | texto=LATIGUILLO DN12 50 CM H 1/2 X H 3/8
+        3810
+        Valvuleria y conexiones
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 📊 Vectores encontrados: 15
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 📊 Palabras: ['latiguillo', 'de', '1/2']
+2026-05-14 22:30:31,816 | INFO | app.asesor_stock | 📊 Medida: 1/2
+2026-05-14 22:30:31,817 | INFO | app.asesor_stock | 📊 Vectores filtrados: 15
+2026-05-14 22:30:31,817 | WARNING | app.asesor_stock | ❌ Score bajo → 0.45620360866630905
+2026-05-14 22:30:31,817 | INFO | app.asesor_stock | 📊 Articulos encontrados: 10
+2026-05-14 22:30:37,567 | INFO | app.supervisor | 🧠 SUPERVISOR: Si
+2026-05-14 22:30:37,567 | INFO | app.supervisor | 🧠 CONTEXTO: {'estado': 'esperando_confirmacion', 'articulos': ['22015', '22016', '22035', '22012', '22013', '22055', '22085', '22025', '03322', '22005']}
+2026-05-14 22:30:38,489 | INFO | app.supervisor | 🧠 Intención detectada: confirmacion
+2026-05-14 22:31:18,875 | INFO | app.supervisor | 🧠 SUPERVISOR: Que no mempuedes dar landieeccion de almeiras?
+2026-05-14 22:31:18,875 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-14 22:31:19,961 | INFO | app.supervisor | 🔀 Tool elegida: rag
+2026-05-14 22:31:19,961 | INFO | app.asesor | 📚 ASESOR: ejecutando RAG
+2026-05-14 22:31:19,961 | INFO | app.query | ❓ Pregunta: Que no mempuedes dar landieeccion de almeiras?
+2026-05-14 22:31:21,401 | INFO | app.query | ⏱ Respuesta en 1.44s
+2026-05-14 22:31:21,401 | DEBUG | app.query | 🔎 Fuente 0: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras
+2026-05-14 22:31:21,401 | DEBUG | app.query | 🔎 Fuente 1: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-14 22:31:21,401 | DEBUG | app.query | 🔎 Fuente 2: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-14 22:31:21,401 | DEBUG | app.query | 🔎 Fuente 3: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-14 22:31:21,401 | DEBUG | app.query | 🔎 Fuente 4: Ind. A Gándara, C/4G Nº33, 15404
+Email: ferrol@bermudezulloa.es
+Horario: L–V 08:30–13:00 / 15:00–19:00
+Delegación Santiago de Compostela
+Dirección: Vía de la Cierva, 11 – Pol. del Tambre, 15790
+Email:
+2026-05-14 22:39:07,829 | INFO | app.supervisor | 🧠 SUPERVISOR: Que no funciona con audio
+2026-05-14 22:39:07,831 | INFO | app.supervisor | 🧠 CONTEXTO: None
+2026-05-14 22:39:08,531 | INFO | app.supervisor | 🔀 Tool elegida: rag
+2026-05-14 22:39:08,531 | INFO | app.asesor | 📚 ASESOR: ejecutando RAG
+2026-05-14 22:39:08,531 | INFO | app.query | ❓ Pregunta: Que no funciona con audio
+2026-05-14 22:39:09,973 | INFO | app.query | ⏱ Respuesta en 1.44s
+2026-05-14 22:39:09,973 | DEBUG | app.query | 🔎 Fuente 0: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras
+2026-05-14 22:39:09,973 | DEBUG | app.query | 🔎 Fuente 1: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras
+2026-05-14 22:39:09,973 | DEBUG | app.query | 🔎 Fuente 2: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras
+2026-05-14 22:39:09,973 | DEBUG | app.query | 🔎 Fuente 3: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras
+2026-05-14 22:39:09,973 | DEBUG | app.query | 🔎 Fuente 4: Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras

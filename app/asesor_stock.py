@@ -76,8 +76,24 @@ def buscar_vectores(query_clean: str):
         embed_model=EMBED_MODEL
     )
 
-    query_engine = index.as_query_engine(similarity_top_k=30)
+    query_engine = index.as_query_engine(similarity_top_k=15)
     results = query_engine.query(query_clean)
+    
+    # ==========================================
+    # 🔥 LOG DETALLADO DE RESULTADOS VECTORIALES
+    # ==========================================
+    logger.info("📊 Resultados vectoriales:")
+    for i, node in enumerate(results.source_nodes):
+        try:
+            logger.info(
+                f"{i} | "
+                f"score={node.score:.4f} | "
+                f"articulo={node.metadata.get('articulo')} | "
+                f"texto={node.text[:80]}"
+            )
+
+        except Exception as e:
+            logger.warning(f"⚠️ Error logeando nodo {i}: {e}")
 
     return results.source_nodes
 
@@ -110,13 +126,15 @@ def filtrar_por_palabras(nodes, query_clean):
     medida = next((p for p in palabras if "/" in p or '"' in p), None)
 
     resultados = []
+    logger.info(f"📊 Palabras: {palabras}")
+    logger.info(f"📊 Medida: {medida}")
 
     for node in nodes:
         texto = node.text.lower()
 
         # medida obligatoria
-        if medida and medida not in texto:
-            continue
+        #if medida and medida not in texto:
+        #    continue
 
         matches = sum(1 for p in palabras if p in texto)
 
@@ -127,7 +145,7 @@ def filtrar_por_palabras(nodes, query_clean):
         })
 
     # 🔥 FILTRO DURO
-    resultados_filtrados = [r for r in resultados if r["matches"] >= 2]
+    resultados_filtrados = [r for r in resultados if r["matches"] >= 1]
 
     # 🔥 fallback correcto (NO romper)
     if not resultados_filtrados:
@@ -223,7 +241,7 @@ def formatear_respuesta(rows):
     if not rows:
         return "❌ No hay stock disponible"
 
-    respuesta = "📦 Productos encontrados:\n\n"
+    respuesta = "📦 Productos encontrados:\n\n" 
 
     for r in rows:
         respuesta += (
@@ -247,19 +265,22 @@ def asesor_stock(question: str):
     logger.info(f"📦 STOCK query: {question}")
 
     query_clean = normalizar_query(question)
-
+    logger.info(f"📊 Query Clean: {query_clean}")
+    
     nodes = buscar_vectores(query_clean)
-
+    logger.info(f"📊 Vectores encontrados: {len(nodes)}")
     # 🔥 VALIDACIÓN REAL DE DOMINIO
-    if not es_producto_valido(nodes):
-        return "❌ No trabajamos ese tipo de productos", None
+   # if not es_producto_valido(nodes):
+   #     return "❌ No trabajamos ese tipo de productos", None
 
     nodes_filtrados = filtrar_por_palabras(nodes, query_clean)
-
-    if not nodes_filtrados:
+    logger.info(f"📊 Vectores filtrados: {len(nodes_filtrados)}")
+    
+    if not es_producto_valido(nodes) and not nodes_filtrados:
         return "❌ No hay resultados relevantes", None
 
     articulos = obtener_articulos(nodes_filtrados)
+    logger.info(f"📊 Articulos encontrados: {len(articulos)}")
 
     decision = evaluar_resultados(nodes_filtrados, articulos)
 
