@@ -11,11 +11,14 @@ import time
 
 logger = get_logger(__name__)
 
-def ingest_pdf(path):
+def ingest_pdf(path, reset = False):
     
     logger.info("🧨 Reseteando base vectorial...")
-    reset_vector_table()   # 👈 🔥 SE EJECUTA SIEMPRE
+    # 🔥 SOLO SI SE INDICA
 
+    if reset:
+        logger.info("🧨 Reseteando base vectorial...")
+        reset_vector_table()
     logger.info(f"📄 Cargando PDF: {path}")
 
     # 🔹 cargar PDF

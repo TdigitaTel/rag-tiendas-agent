@@ -1,6 +1,6 @@
 from telegram import Update
 from telegram.ext import ContextTypes
-from app.asesor_stock import asesor_stock
+from app.asesor_stockbk import asesor_stock
 from app.supervisor import supervisor
 from app.logger import get_logger
 
@@ -46,7 +46,7 @@ def manejar_confirmacion(ctx, texto):
     if texto in ["si", "sí", "vale", "ok"]:
 
         articulos = ctx.get("articulos", [])
-        from app.asesor_stock import consultar_stock, formatear_respuesta
+        from app.asesor_stockbk import consultar_stock, formatear_respuesta
         rows = consultar_stock(articulos)
         respuesta = formatear_respuesta(rows)
         ctx.clear()

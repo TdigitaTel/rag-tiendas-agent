@@ -5,6 +5,8 @@ from llama_index.vector_stores.postgres import PGVectorStore
 from app.config import DB_CONFIG, EMBED_MODEL, LLM
 from app.logger import get_logger
 
+import re
+
 logger = get_logger(__name__)
 
 
@@ -35,7 +37,7 @@ engine = create_engine(get_db_url())
 
 
 # ==============================
-# 🧠 NORMALIZACIÓN
+# 🧠 NORMALIZACIÓN LLM
 # ==============================
 
 def normalizar_query(q: str) -> str:
@@ -54,10 +56,11 @@ Reglas:
   - pulgadas → "
 
 - usa términos típicos de producto (codo, tubo, machon, latiguillo…)
-- elimina palabras irrelevantes (hola, tienes, stock…)
+- elimina palabras irrelevantes
 - no expliques nada
 - devuelve solo la búsqueda final
-
+- SIEMPRE incluye el tipo de producto (machon, codo, latiguillo, etc)
+- NUNCA devuelvas solo material o medida
 Consulta:
 {q}
 """
@@ -65,7 +68,7 @@ Consulta:
 
 
 # ==============================
-# 🔎 VECTOR SEARCH
+# 🔎 VECTOR SEARCH + LOG
 # ==============================
 
 def buscar_vectores(query_clean: str):
@@ -76,88 +79,136 @@ def buscar_vectores(query_clean: str):
         embed_model=EMBED_MODEL
     )
 
-    query_engine = index.as_query_engine(similarity_top_k=15)
+    query_engine = index.as_query_engine(similarity_top_k=30)
     results = query_engine.query(query_clean)
-    
-    # ==========================================
-    # 🔥 LOG DETALLADO DE RESULTADOS VECTORIALES
-    # ==========================================
-    logger.info("📊 Resultados vectoriales:")
-    for i, node in enumerate(results.source_nodes):
-        try:
-            logger.info(
-                f"{i} | "
-                f"score={node.score:.4f} | "
-                f"articulo={node.metadata.get('articulo')} | "
-                f"texto={node.text[:80]}"
-            )
 
-        except Exception as e:
-            logger.warning(f"⚠️ Error logeando nodo {i}: {e}")
+    nodes = results.source_nodes
 
-    return results.source_nodes
+    logger.info(f"📊 Vectores encontrados: {len(nodes)}")
+
+    for i, node in enumerate(nodes):
+        logger.info(
+            f"{i} | score={node.score:.4f} | "
+            f"articulo={node.metadata.get('articulo')} | "
+            f"texto={node.text[:80]}"
+        )
+
+    return nodes
 
 
 # ==============================
-# 🔍 VALIDACIÓN DE DOMINIO (🔥 NUEVO)
+# 🧠 NLP SIMPLE
 # ==============================
 
-def es_producto_valido(nodes):
-    if not nodes:
-        return False
+def normalizar_texto(texto: str) -> str:
+    texto = texto.lower()
+    texto = re.sub(r"[^\w/]+", " ", texto)
+    texto = re.sub(r"\s+", " ", texto).strip()
+    return texto
 
-    top_score = nodes[0].score
 
-    # 🔥 threshold realista
-    if top_score < 0.55:
-        logger.warning(f"❌ Score bajo → {top_score}")
-        return False
-
-    return True
+def tokenizar(texto: str):
+    return normalizar_texto(texto).split()
 
 
 # ==============================
-# 🔍 FILTRO INTELIGENTE
+# 🔥 SCORING HÍBRIDO
 # ==============================
 
-def filtrar_por_palabras(nodes, query_clean):
-    palabras = query_clean.split()
+def analizar_candidatos(nodes, consulta: str ):
 
-    medida = next((p for p in palabras if "/" in p or '"' in p), None)
+    tokens_consulta = tokenizar(consulta)
 
-    resultados = []
-    logger.info(f"📊 Palabras: {palabras}")
-    logger.info(f"📊 Medida: {medida}")
+    candidatos = []
 
     for node in nodes:
-        texto = node.text.lower()
+        texto_node = normalizar_texto(node.text)
+        tokens_node = tokenizar(node.text)
 
-        # medida obligatoria
-        #if medida and medida not in texto:
-        #    continue
+        matches = [
+            p for p in tokens_consulta
+            if p in tokens_node or p in texto_node
+        ]
+        logger.info(f"📊 Palabras {texto_node}: {len(matches)}")
 
-        matches = sum(1 for p in palabras if p in texto)
+        if not matches:
+            continue
 
-        resultados.append({
+        matches_unicos = list(set(matches))
+
+        ratio_consulta = len(matches_unicos) / len(tokens_consulta)
+        ratio_articulo = len(matches_unicos) / max(len(tokens_node), 1)
+
+        score_final = (
+            node.score * 0.50 +
+            ratio_consulta * 0.35 +
+            ratio_articulo * 0.15
+        )
+
+        # 🔥 FILTRO POR SCORE
+
+        candidatos.append({
             "node": node,
-            "matches": matches,
-            "score": node.score
-        })
+            "score_final": score_final,
+            "texto": node.text
+            })
+        
+    candidatos.sort(key=lambda x: x["score_final"], reverse=True)
+    logger.info(f"📊 Candidatos válidos : {len(candidatos)}")
 
-    # 🔥 FILTRO DURO
-    resultados_filtrados = [r for r in resultados if r["matches"] >= 1]
+    for i, c in enumerate(candidatos[:10]):
+        logger.info(
+            f"{i} | score_final={c['score_final']:.4f} | texto={c['texto']}"
+        )
 
-    # 🔥 fallback correcto (NO romper)
-    if not resultados_filtrados:
-        logger.warning("⚠️ fallback activado")
-        resultados_filtrados = resultados
+    return candidatos
 
-    resultados_filtrados.sort(
-        key=lambda x: (x["matches"], x["score"]),
-        reverse=True
-    )
 
-    return [r["node"] for r in resultados_filtrados]
+# ==============================
+# 🧠 DECISIÓN
+# ==============================
+
+def decidir_respuesta(candidatos, limite_bajo=5, limite_alto=10):
+
+    total = len(candidatos)
+
+    if total == 0:
+        return {"accion": "sin_resultados"}
+
+    # 🔥 NUEVO: detectar precisión real
+    top_score = candidatos[0]["score_final"]
+    logger.info(f"🎯 Top score_final: {top_score:.4f}")
+
+    # ============================
+    # 🎯 MATCH REAL (preciso aunque haya muchos)
+    # ============================
+
+    if top_score >= 0.70:
+        return {"accion": "mostrar_directo"}
+
+    # ============================
+    # ⚠️ MUCHOS RESULTADOS (genérico)
+    # ============================
+
+    if total > 15:
+        return {
+            "accion": "pedir_especificacion",
+            "mensaje": f"Encontré {total} productos. ¿Puedes especificar más?"
+        }
+    # ============================
+    # 👍 INTERMEDIO
+    # ============================
+    if limite_bajo <= total <= 15:
+        return {
+            "accion": "confirmar_mostrar",
+            "mensaje": f"He encontrado {total} opciones.\n¿Quieres que te las muestre todas?"
+        }
+
+    # ============================
+    # 🔍 POCOS → DIRECTO
+    # ============================
+
+    return {"accion": "mostrar"}
 
 
 # ==============================
@@ -165,42 +216,11 @@ def filtrar_por_palabras(nodes, query_clean):
 # ==============================
 
 def obtener_articulos(nodes):
-    candidatos = []
-
-    for node in nodes:
-        art = node.metadata.get("articulo")
-        if art:
-            candidatos.append((node.score, str(art)))
-
-    candidatos.sort(key=lambda x: x[0], reverse=True)
-
-    # 🔥 límite controlado
-    candidatos = candidatos[:10]
-
-    return [c[1] for c in candidatos]
-
-
-# ==============================
-# 🧠 DECISIÓN
-# ==============================
-
-def evaluar_resultados(nodes, articulos):
-    if not nodes:
-        return "❌ No trabajamos ese tipo de productos"
-
-    if len(articulos) > 10:
-        return (
-            "Tengo varios tipos de productos relacionados.\n"
-            "¿Puedes especificar más?"
-        )
-
-    if 5 < len(articulos) <= 10:
-        return (
-            f"He encontrado {len(articulos)} opciones.\n"
-            "¿Quieres que te las muestre todas?"
-        )
-
-    return None
+    return [
+        str(n["node"].metadata.get("articulo"))
+        for n in nodes
+        if n["node"].metadata.get("articulo")
+    ]
 
 
 # ==============================
@@ -223,9 +243,6 @@ def consultar_stock(articulos):
     with engine.connect() as conn:
         rows = conn.execute(sql, {"articulos": articulos}).fetchall()
 
-    if not rows:
-        return []
-
     unique = {}
     for r in rows:
         unique[r.descripcion] = r
@@ -238,10 +255,11 @@ def consultar_stock(articulos):
 # ==============================
 
 def formatear_respuesta(rows):
+
     if not rows:
         return "❌ No hay stock disponible"
 
-    respuesta = "📦 Productos encontrados:\n\n" 
+    respuesta = "📦 Productos encontrados:\n\n"
 
     for r in rows:
         respuesta += (
@@ -262,30 +280,41 @@ def formatear_respuesta(rows):
 # ==============================
 
 def asesor_stock(question: str):
+
     logger.info(f"📦 STOCK query: {question}")
 
     query_clean = normalizar_query(question)
-    logger.info(f"📊 Query Clean: {query_clean}")
-    
+    logger.info(f"🧠 Query normalizada: {query_clean}")
+    if "no se encontró" in query_clean:
+        logger.warning("❌ Consulta fuera de dominio detectada por LLM")
+        return "❌ No trabajamos ese tipo de productos", None
+
     nodes = buscar_vectores(query_clean)
-    logger.info(f"📊 Vectores encontrados: {len(nodes)}")
-    # 🔥 VALIDACIÓN REAL DE DOMINIO
-   # if not es_producto_valido(nodes):
-   #     return "❌ No trabajamos ese tipo de productos", None
-
-    nodes_filtrados = filtrar_por_palabras(nodes, query_clean)
-    logger.info(f"📊 Vectores filtrados: {len(nodes_filtrados)}")
+    logger.info(f"🧠 Nodos encontrados: {len(nodes)}")
     
-    if not es_producto_valido(nodes) and not nodes_filtrados:
-        return "❌ No hay resultados relevantes", None
+    if not nodes:
+        return "❌ No trabajamos ese tipo de productos", None
 
-    articulos = obtener_articulos(nodes_filtrados)
-    logger.info(f"📊 Articulos encontrados: {len(articulos)}")
+    candidatos = analizar_candidatos(nodes, query_clean)
 
-    decision = evaluar_resultados(nodes_filtrados, articulos)
+    if not candidatos:
+        return "❌ No trabajamos ese tipo de productos", None
 
-    if decision:
-        return decision, {
+    decision = decidir_respuesta(candidatos)
+
+    accion = decision["accion"]
+    top_nodes = candidatos[:10]
+
+    articulos = obtener_articulos(top_nodes)
+
+    if accion == "sin_resultados":
+        return "❌ No encontré productos", None
+
+    if accion == "pedir_especificacion":
+        return decision["mensaje"], None
+
+    if accion == "confirmar_mostrar":
+        return decision["mensaje"], {
             "estado": "esperando_confirmacion",
             "articulos": articulos
         }
