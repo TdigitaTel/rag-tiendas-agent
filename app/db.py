@@ -18,7 +18,14 @@ def get_vector_store():
         password=DB_CONFIG["password"],
         table_name=DB_CONFIG["table_name"],
         embed_dim=DB_CONFIG["embed_dim"],
-        perform_setup=True
+        perform_setup=True,
+        use_jsonb=True,
+        hnsw_kwargs=None,
+        create_engine_kwargs={
+            "connect_args": {
+                "client_encoding": "utf8"
+            }
+        }
     )
 
     logger.info("✅ PostgreSQL listo")
