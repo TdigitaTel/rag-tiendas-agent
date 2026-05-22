@@ -9284,3 +9284,27 @@ Email: sanxenxo@bermude
         5709
         Valvuleria y conexiones agua/gas Conexiones flexibles para agua (latiguillos)
 2026-05-19 16:06:33,839 | INFO | app.asesor_stock | 🎯 Top score_final: 0.7445
+2026-05-22 10:29:57,734 | INFO | __main__ | 🧨 Reseteando base vectorial...
+2026-05-22 10:29:57,735 | INFO | __main__ | 📄 Cargando PDF: data/Bermudez_Ulloa_Contacto.pdf
+2026-05-22 10:29:58,189 | INFO | __main__ | 📚 Documentos: 1
+2026-05-22 10:29:58,189 | DEBUG | __main__ | 
+--- DOC 0 ---
+2026-05-22 10:29:58,189 | DEBUG | __main__ | Bermúdez Ulloa – Información de Contacto
+Contacto General
+Dirección: Av. Almeiras, 21, 15180 Culleredo, A Coruña
+Teléfono: 981 663 001
+Email: info@bermudezulloa.es
+Delegación Culleredo
+Email: almeiras@bermudezulloa.es
+Horario: L–V 08:00–19:00 | S 09:00–13:00
+Delegación La Coruña
+Dirección: C/ San Diego, 2, 15009 La Coruña
+Email: suministros@bermudezulloa.es
+Horario: L–V 08:30–14:00 / 15:00–19:00 | S 09:30–13:30
+Delegación Sanxenxo
+Dirección: Lugar Forxan, 61, Adina, 36979
+Email: sanxenxo@bermude
+2026-05-22 10:29:58,189 | INFO | app.db | 🔌 Conectando a PostgreSQL
+2026-05-22 10:29:58,191 | INFO | app.db | ✅ PostgreSQL listo
+2026-05-22 10:30:01,781 | INFO | __main__ | ⏱ Indexado en 3.52s
+2026-05-22 10:30:01,781 | INFO | __main__ | ✅ Embeddings guardados en PostgreSQL
