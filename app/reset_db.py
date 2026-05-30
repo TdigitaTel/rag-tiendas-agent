@@ -11,7 +11,13 @@ def get_connection():
         f"@{DB_CONFIG['host']}:{DB_CONFIG['port']}/{DB_CONFIG['database']}"
     )
 
+def reset_stock_table():
 
+    engine = get_connection()
+    with engine.begin() as conn:
+        conn.execute(text("DELETE FROM stock"))
+    logger.info("🗑️ Registros eliminados de la tabla stock")
+    
 def reset_vector_table(table_base_name: str):
     """
     🔥 Borra tabla vectorial de LlamaIndex
@@ -45,4 +51,5 @@ def reset_stock_embeddings():
 
 
 if __name__ == "__main__":
+    reset_stock_table()
     reset_stock_embeddings()

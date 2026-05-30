@@ -5,6 +5,7 @@ from llama_index.vector_stores.postgres import PGVectorStore
 from app.config import DB_CONFIG
 from app.logger import get_logger
 
+
 logger = get_logger(__name__)
 
 def get_vector_store():
@@ -30,3 +31,4 @@ def get_vector_store():
 
     logger.info("✅ PostgreSQL listo")
     return store
+

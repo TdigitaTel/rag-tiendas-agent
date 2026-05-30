@@ -88,14 +88,14 @@ def load_stock_to_db():
         texto = f"""
         {row['descripcion']}
         {row['ref_fabricante']}
-        {row['grupo']} {row['subgrupo']}
-        """
-
+    """
         docs.append(
             Document(
                 text=texto,
                 metadata={
-                    "articulo": row["articulo"]
+                    "articulo": row["articulo"],
+                    "grupo": row["grupo"],
+                    "subgrupo": row["subgrupo"]
                 }
             )
         )

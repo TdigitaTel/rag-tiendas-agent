@@ -6,7 +6,7 @@ print("✅ entro logger")
 from app.asesor import asesor_rag
 print("✅ asesor_rag OK")
 
-from app.asesor_stock import asesor_stock, consultar_stock, formatear_respuesta
+from app.asesor_stock import asesor_stock, consultar_stock_sql, formatear_respuesta_sql,consultar_stock, formatear_respuesta_p
 print("✅ asesor_stock OK")
 
 from app.config import LLM
@@ -92,7 +92,7 @@ def supervisor(question: str, ctx: dict | None = None):
                     return "❌ Error recuperando resultados", None
 
                 rows = consultar_stock(articulos)
-                respuesta = formatear_respuesta(rows)
+                respuesta = formatear_respuesta_p(rows)
 
                 return respuesta, None  # limpiar contexto
 

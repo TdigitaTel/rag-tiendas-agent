@@ -1,11 +1,11 @@
 from sqlalchemy import create_engine, text
 from llama_index.core import VectorStoreIndex
 from llama_index.vector_stores.postgres import PGVectorStore
-
+from app.sqlserverconnect import get_sqlserver_connection
 from app.config import DB_CONFIG, EMBED_MODEL, LLM
 from app.logger import get_logger
-
 import re
+import unicodedata
 
 logger = get_logger(__name__)
 
@@ -99,9 +99,15 @@ def buscar_vectores(query_clean: str):
 # ==============================
 # 🧠 NLP SIMPLE
 # ==============================
+def quitar_tildes(texto: str) -> str:
+    return ''.join(
+        c for c in unicodedata.normalize('NFD', texto)
+        if unicodedata.category(c) != 'Mn'
 
+    )
 def normalizar_texto(texto: str) -> str:
     texto = texto.lower()
+    texto = quitar_tildes(texto)
     texto = re.sub(r"[^\w/]+", " ", texto)
     texto = re.sub(r"\s+", " ", texto).strip()
     return texto
@@ -138,6 +144,10 @@ def analizar_candidatos(nodes, consulta: str ):
 
         ratio_consulta = len(matches_unicos) / len(tokens_consulta)
         ratio_articulo = len(matches_unicos) / max(len(tokens_node), 1)
+
+        logger.info(
+            f"{node.text} | score_vector={node.score:.4f} | ratio_consulta={ratio_consulta} | ratio_articulo={ratio_articulo}"
+        )
 
         score_final = (
             node.score * 0.50 +
@@ -249,12 +259,7 @@ def consultar_stock(articulos):
 
     return list(unique.values())
 
-
-# ==============================
-# 📤 RESPUESTA
-# ==============================
-
-def formatear_respuesta(rows):
+def formatear_respuesta_p(rows):
 
     if not rows:
         return "❌ No hay stock disponible"
@@ -274,6 +279,84 @@ def formatear_respuesta(rows):
 
     return respuesta
 
+def consultar_stock_sql(articulos, almacen=None):
+    if not articulos:
+        return []
+    conn = get_sqlserver_connection()
+    if not conn:
+        return []
+    try:
+        cursor = conn.cursor()
+        placeholders = ",".join(["?"] * len(articulos))
+        # 🔥 CASO CON ALMACÉN
+        if almacen:
+            query = f"""
+                SELECT 
+                    s.codigoarticulo as codigoarticulo,
+                    a.descripcionarticulo as descripcionarticulo,
+                    s.codigoalmacen as codigoalmacen,
+                    al.almacen as almacen,
+                    SUM(s.unidadsaldo) AS stock
+                FROM acumuladostock s
+                JOIN articulos a 
+                    ON s.codigoarticulo = a.codigoarticulo
+                JOIN almacenes al
+                    ON s.codigoalmacen = al.codigoalmacen
+                WHERE s.codigoarticulo IN ({placeholders})
+                  AND s.codigoalmacen = ?
+                GROUP BY  
+                    s.codigoarticulo,
+                    a.descripcionarticulo,
+                    s.codigoalmacen
+            """
+            params = list(articulos) + [almacen]
+
+        # 🔥 CASO TOTAL
+        else:
+            query = f"""
+                SELECT 
+                    s.codigoarticulo as codigoarticulo,
+                    a.descripcionarticulo as descripcionarticulo,
+                    SUM(s.unidadsaldo) AS stock_total
+                FROM acumuladostock s
+                JOIN articulos a 
+                    ON s.codigoarticulo = a.codigoarticulo
+                WHERE s.codigoarticulo IN ({placeholders})
+                GROUP BY 
+                    s.codigoarticulo,
+                    a.descripcionarticulo
+            """
+            params = articulos
+        cursor.execute(query, params)
+        rows = cursor.fetchall()
+        return rows
+    
+    except Exception as e:
+        logger.error(f"❌ Error consultando stock: {e}")
+        return []
+    finally:
+        conn.close()
+# ==============================
+# 📤 RESPUESTA
+# ==============================
+
+
+def formatear_respuesta_sql(rows):
+    if not rows:
+        return "❌ No hay stock disponible"
+    respuesta = "📦 Productos encontrados:\n\n"
+    for r in rows:
+        respuesta += f"🔹 {r.descripcionarticulo}\n"
+        if hasattr(r, "almacen"):
+            respuesta += (
+                f"   🏪 {r.almacen} ({r.codigoalmacen})\n"
+                f"   📦 Stock: {r.stock: ,2f}\n\n"
+            )
+        else:
+            respuesta += (
+                f"   📊 Stock Total: {r.stock_total :, 2f}\n\n"
+            )
+    return respuesta
 
 # ==============================
 # 🚀 MAIN
@@ -299,12 +382,13 @@ def asesor_stock(question: str):
 
     if not candidatos:
         return "❌ No trabajamos ese tipo de productos", None
-
+    logger.info(f"🧠 decidiendo respuestas...")
     decision = decidir_respuesta(candidatos)
 
     accion = decision["accion"]
     top_nodes = candidatos[:10]
 
+    logger.info(f"🧠 obtenienido articulos...")
     articulos = obtener_articulos(top_nodes)
 
     if accion == "sin_resultados":
@@ -318,7 +402,8 @@ def asesor_stock(question: str):
             "estado": "esperando_confirmacion",
             "articulos": articulos
         }
-
+    logger.info(f"🧠 Consultando stock...")
     rows = consultar_stock(articulos)
-
-    return formatear_respuesta(rows), None
+    
+    logger.info(f"🧠 Formateando respuesta..")
+    return formatear_respuesta_p(rows), None
