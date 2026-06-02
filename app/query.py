@@ -17,7 +17,7 @@ def query_index(question):
     logger.info(f"❓ Pregunta: {question}")
 
     engine = index.as_query_engine(
-        similarity_top_k=5,
+        similarity_top_k=10,
         llm=LLM   # 🔥 AQUÍ USAMOS EL LLM
     )
 

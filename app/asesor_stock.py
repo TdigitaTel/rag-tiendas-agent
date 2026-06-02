@@ -5,6 +5,7 @@ from app.sqlserverconnect import get_sqlserver_connection
 from app.config import DB_CONFIG, EMBED_MODEL, LLM
 from app.logger import get_logger
 import re
+import json
 import unicodedata
 
 logger = get_logger(__name__)
@@ -96,6 +97,17 @@ def buscar_vectores(query_clean: str):
     return nodes
 
 
+
+def obtener_codigo_almacen(texto):
+    with open("data/almacenes.json","r",encoding="utf-8") as f:
+        ALMACENES = json.load(f)
+
+    texto = texto.lower()
+    for almacen, datos in ALMACENES.items():
+        for alias in datos["alias"]:
+            if alias.lower() in texto:
+                return datos["codigo"]
+    return None
 # ==============================
 # 🧠 NLP SIMPLE
 # ==============================
@@ -150,8 +162,8 @@ def analizar_candidatos(nodes, consulta: str ):
         )
 
         score_final = (
-            node.score * 0.50 +
-            ratio_consulta * 0.35 +
+            node.score * 0.35 +
+            ratio_consulta * 0.50 +
             ratio_articulo * 0.15
         )
 
@@ -307,7 +319,8 @@ def consultar_stock_sql(articulos, almacen=None):
                 GROUP BY  
                     s.codigoarticulo,
                     a.descripcionarticulo,
-                    s.codigoalmacen
+                    s.codigoalmacen,
+                    al.almacen 
             """
             params = list(articulos) + [almacen]
 
@@ -342,6 +355,8 @@ def consultar_stock_sql(articulos, almacen=None):
 
 
 def formatear_respuesta_sql(rows):
+    
+    logger.info(f"📦 Dando formato a respuesta...")
     if not rows:
         return "❌ No hay stock disponible"
     respuesta = "📦 Productos encontrados:\n\n"
@@ -350,12 +365,14 @@ def formatear_respuesta_sql(rows):
         if hasattr(r, "almacen"):
             respuesta += (
                 f"   🏪 {r.almacen} ({r.codigoalmacen})\n"
-                f"   📦 Stock: {r.stock: ,2f}\n\n"
+                f"   📦 Stock: {r.stock: ,.2f}\n\n"
             )
         else:
             respuesta += (
-                f"   📊 Stock Total: {r.stock_total :, 2f}\n\n"
+                f"   📊 Stock Total: {r.stock_total :,.2f}\n\n"
             )
+    
+    logger.info(f"📦 Formato completado...")
     return respuesta
 
 # ==============================
@@ -398,12 +415,26 @@ def asesor_stock(question: str):
         return decision["mensaje"], None
 
     if accion == "confirmar_mostrar":
+        almacen = obtener_codigo_almacen(question)
         return decision["mensaje"], {
             "estado": "esperando_confirmacion",
-            "articulos": articulos
-        }
+            "articulos": articulos,
+            "almacen": almacen,
+                "tema_actual": {
+                "tipo": "stock",
+                "articulos": articulos,
+                "query": query_clean}
+    }
+    almacen = obtener_codigo_almacen(question)
+    logger.info(f"🏪 Almacén detectado: {almacen if almacen else 'TOTAL'}")
+    
     logger.info(f"🧠 Consultando stock...")
-    rows = consultar_stock(articulos)
+    rows = consultar_stock_sql(articulos, almacen=almacen)
     
     logger.info(f"🧠 Formateando respuesta..")
-    return formatear_respuesta_p(rows), None
+    return formatear_respuesta_sql(rows),  {"tema_actual": {
+        "tipo": "stock",
+        "articulos": articulos,
+        "query": query_clean}
+
+}

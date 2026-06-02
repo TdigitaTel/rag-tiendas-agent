@@ -16,7 +16,8 @@ from app.config import TELEGRAM_TOKEN
 print("✅ PASO 4: config import OK")
 
 import traceback
-
+import os
+import uvicorn
 
 # ==============================
 # 🧠 MEMORIA SIMPLE (POR USUARIO)

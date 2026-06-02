@@ -1,0 +1,44 @@
+{
+  "sanxenxo": {
+    "codigo": "05",
+    "alias": [
+      "sanxenxo",
+      "san xenxo",
+      "delegacion sanxenxo"
+    ]
+  },
+  "ferrol": {
+    "codigo": "02",
+    "alias": [
+      "ferrol",
+      "delegacion ferrol"
+    ]
+  },
+  "santiago": {
+    "codigo": "04",
+    "alias": [
+      "santiago",
+      "santiago de compostela",
+      "delegacion santiago"
+    ]
+  },
+  "coruna": {
+    "codigo": "01",
+    "alias": [
+      "coruna",
+      "coruña",
+      "la coruna",
+      "la coruña",
+      "a coruña",
+      "San diego"
+    ]
+  },
+  "Culleredo": {
+    "codigo": "00",
+    "alias": [
+      "Almeiras",
+      "Principal",
+      "Culleredo"
+    ]
+    }
+}
