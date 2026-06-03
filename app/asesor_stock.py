@@ -1,18 +1,19 @@
+
 from sqlalchemy import create_engine, text
 from llama_index.core import VectorStoreIndex
 from llama_index.vector_stores.postgres import PGVectorStore
 from app.sqlserverconnect import get_sqlserver_connection
-from app.config import DB_CONFIG, EMBED_MODEL, LLM
-from app.config import  TOP_SCORE
-from app.logger import get_logger
+from app.config import DB_CONFIG, EMBED_MODEL, LLM, TOP_SCORE
 import re
 import json
 import unicodedata
 
-
+from app.logger import get_logger
+logger = get_logger(__name__)
 # ==============================
 # 🔌 CONEXIONES
 # ==============================
+
 
 def get_db_url():
     return (
@@ -403,11 +404,17 @@ def asesor_stock(question: str):
     decision = decidir_respuesta(candidatos)
 
     accion = decision["accion"]
-    #top_nodes = candidatos[:10]
+    candidatos = sorted(
+        candidatos,
+        key=lambda x: x["score_final"],
+        reverse=True)
     #Fltrando solo los que pasan el umbral
     top_score = candidatos[0]["score_final"]
     top_nodes = [c for c in candidatos
-        if c["score_final"] >= top_score * TOPL_SCORE]
+        if c["score_final"] >=  TOP_SCORE
+        ]
+    logger.info(f"🎯 Top score_final: {top_score:.4f}")
+    logger.info(f"✅ Artículos que pasan umbral: {len(top_nodes)}")
     
     logger.info(f"🧠 obtenienido articulos...")
     articulos = obtener_articulos(top_nodes)

@@ -6,8 +6,7 @@ from llama_index.embeddings.openai import OpenAIEmbedding
 
 load_dotenv()
 
-
-TOP_SCORE = os.getenv("TOP_SCORE")
+TOP_SCORE = float(os.getenv("TOP_SCORE", "0.70"))
 
 # 🔥 LLM explícito
 LLM = OpenAI(
