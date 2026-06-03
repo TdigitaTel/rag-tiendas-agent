@@ -17,7 +17,11 @@ print("✅ PASO 4: config import OK")
 
 import traceback
 import os
-import uvicorn
+import uvicorn 
+
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # ==============================
 # 🧠 MEMORIA SIMPLE (POR USUARIO)
@@ -128,5 +132,26 @@ def main():
 # 🔹 ENTRYPOINT
 # ==============================
 
+
 if __name__ == "__main__":
-    main()
+
+    canal = os.getenv(
+        "CANAL",
+        "telegram"
+    )
+
+    if canal == "telegram":
+
+        print("🚀 MODO TELEGRAM")
+        main()
+
+    elif canal == "whatsapp":
+
+        print("🚀 MODO WHATSAPP")
+
+        uvicorn.run(
+            "app.whatsapp_webhook:app",
+            host="0.0.0.0",
+            port=8000,
+            reload=True
+        )

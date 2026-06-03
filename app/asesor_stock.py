@@ -3,12 +3,11 @@ from llama_index.core import VectorStoreIndex
 from llama_index.vector_stores.postgres import PGVectorStore
 from app.sqlserverconnect import get_sqlserver_connection
 from app.config import DB_CONFIG, EMBED_MODEL, LLM
+from app.config import  TOP_SCORE
 from app.logger import get_logger
 import re
 import json
 import unicodedata
-
-logger = get_logger(__name__)
 
 
 # ==============================
@@ -205,7 +204,7 @@ def decidir_respuesta(candidatos, limite_bajo=5, limite_alto=10):
     # 🎯 MATCH REAL (preciso aunque haya muchos)
     # ============================
 
-    if top_score >= 0.70:
+    if top_score >= TOP_SCORE:
         return {"accion": "mostrar_directo"}
 
     # ============================
@@ -399,12 +398,17 @@ def asesor_stock(question: str):
 
     if not candidatos:
         return "❌ No trabajamos ese tipo de productos", None
+    
     logger.info(f"🧠 decidiendo respuestas...")
     decision = decidir_respuesta(candidatos)
 
     accion = decision["accion"]
-    top_nodes = candidatos[:10]
-
+    #top_nodes = candidatos[:10]
+    #Fltrando solo los que pasan el umbral
+    top_score = candidatos[0]["score_final"]
+    top_nodes = [c for c in candidatos
+        if c["score_final"] >= top_score * TOPL_SCORE]
+    
     logger.info(f"🧠 obtenienido articulos...")
     articulos = obtener_articulos(top_nodes)
 

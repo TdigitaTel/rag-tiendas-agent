@@ -78,16 +78,24 @@ def supervisor(question: str, ctx: dict | None = None):
         # 🔥 CONSULTA CONTEXTUAL
         # ==========================================
         if ctx and ctx.get("tema_actual"):
-            if es_consulta_contextual(question):
+            tema = ctx["tema_actual"]
+            articulos = tema.get("articulos", [])
+            almacen = obtener_codigo_almacen(question)
+
+            if articulos and almacen:
+                logger.info("🧠 Consulta contextual de almacén detectada")
+                logger.info(f"📦 Artículos contexto: {articulos}")
+                logger.info(f"🏪 Almacén contexto: {almacen}")
+                rows = consultar_stock_sql(articulos,almacen=almacen)
+                respuesta = formatear_respuesta_sql(rows)
+                return respuesta, ctx
+
+            if articulos and es_consulta_contextual(question):
                 logger.info("🧠 Consulta contextual detectada")
-                tema = ctx["tema_actual"]
-                articulos = tema["articulos"]
-                almacen = obtener_codigo_almacen(question)
-                rows = consultar_stock_sql(articulos,
-                                           almacen=almacen)
+                logger.info(f"📦 Artículos contexto: {articulos}")
+                rows = consultar_stock_sql(articulos,almacen=None)
 
                 respuesta = formatear_respuesta_sql(rows)
-
                 return respuesta, ctx
         # ==========================================
         # 🔥 CONFIRMACIÓN

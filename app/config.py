@@ -6,6 +6,9 @@ from llama_index.embeddings.openai import OpenAIEmbedding
 
 load_dotenv()
 
+
+TOP_SCORE = os.getenv("TOP_SCORE")
+
 # 🔥 LLM explícito
 LLM = OpenAI(
     model="gpt-4o-mini",
@@ -28,3 +31,4 @@ DB_CONFIG = {
 }
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+
